@@ -23,17 +23,20 @@ ga('create','UA-113302990-1','auto');ga('send','pageview');
 </ol>
 </blockquote>
 <p>其实我感觉2和3是一样的，毕竟都是次级域名，操作起来不应该有太大区别。不过这不是我的需求，我的目的是把<strong>根域名</strong>绑定到Github Page，实现用根域名访问Github的托管空间，解放我的VPS。</p>
-<p>说白了，其实只有两步：1， 把域名A记录指向Github Page服务器；2，在Github上“认领”你的域名</p>
+<p>说白了，其实只有三步：</p>
 <ol>
-<li><p>进入域名NS设置界面，把域名A记录改为一下四个中至少一个，稳妥起见多加几个。这一步就好像把域名指向自己的网站服务器。</p>
-<ul>
+<li>本地生成<a href="https://ferristale.com/SSH_your_VPS/">ssh密钥</a>，添加到github ssh key 里</li>
+<li>把域名A记录指向Github Page服务器</li>
+<li>在Github上“认领”你的域名<ol>
+<li>进入域名NS设置界面，把域名A记录改为一下四个中至少一个，稳妥起见多加几个。这一步就好像把域名指向自己的网站服务器。<ul>
 <li>185.199.108.153</li>
 <li>185.199.109.153</li>
 <li>185.199.110.153</li>
 <li>185.199.111.153</li>
 </ul>
 </li>
-<li><p>在Github Page对应的仓库的<strong>设置</strong>里，找到<code>Custom domain</code>，把域名填进去，这一步相当于在服务器里装上ngnix然后在里面新建站点，配置网站域名etc</p>
+<li>在Github Page对应的仓库的<strong>设置</strong>里，找到<code>Custom domain</code>，把域名填进去，这一步相当于在服务器里装上ngnix然后在里面新建站点，配置网站域名etc</li>
+</ol>
 </li>
 </ol>
 <p>然后，到这里就大功告成了，成功转移之后Github Page设置里会显示<code>Your site is published at https://ferristale.com/</code>意味着你的网站成功托管在Github的服务器上</p>
