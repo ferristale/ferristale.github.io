@@ -3,57 +3,44 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 ga('create','UA-113302990-1','auto');ga('send','pageview');
-</script></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">VESTA面板升級PHP7.0</h1><a id="logo" href="/.">九燈</a><p class="description">朝蒸藜藿暮烹葵</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">VESTA面板升級PHP7.0</h1><div class="post-meta">Dec 14, 2015<span> | </span><span class="category"><a href="/categories/瞎搞/">瞎搞</a></span></div><div class="post-content"><p>&nbsp;</p>
+</script></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">VESTA面板升級PHP7.0</h1><a id="logo" href="/.">九燈</a><p class="description">朝蒸藜藿暮烹葵</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">VESTA面板升級PHP7.0</h1><div class="post-meta">Dec 14, 2015<span> | </span><span class="category"><a href="/categories/瞎搞/">瞎搞</a></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#修改-etc-yum-repos-d-remi-php70-repo"><span class="toc-number">1.</span> <span class="toc-text">修改/etc/yum.repos.d/remi-php70.repo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#開始升級"><span class="toc-number">2.</span> <span class="toc-text">開始升級</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#重啟服務器"><span class="toc-number">3.</span> <span class="toc-text">重啟服務器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Enjoy-it"><span class="toc-number">4.</span> <span class="toc-text">Enjoy it !</span></a></li></ol></div></div><div class="post-content"><p>&nbsp;</p>
 <p>VESTA的各種部件安裝位置令人神傷</p>
 <p>網上爬了很多文章</p>
 <p>終於無痛升級PHP7.0</p>
 <p>&nbsp;</p>
 <a id="more"></a>
 
-<h3 id="修改-etc-yum-repos-d-remi-php70-repo"><a href="#修改-etc-yum-repos-d-remi-php70-repo" class="headerlink" title="修改/etc/yum.repos.d/remi-php70.repo"></a>修改/etc/yum.repos.d/remi-php70.repo</h3><pre><span style="color: #0000ff;">cd /etc/yum.repos.d/</span>
-<span style="color: #0000ff;">vi remi-php70.repo</span></pre>
-<p>把[remi-php70]下的enabled=0</p>
-<p>改為enabled=1</p>
+<h3 id="修改-etc-yum-repos-d-remi-php70-repo"><a href="#修改-etc-yum-repos-d-remi-php70-repo" class="headerlink" title="修改/etc/yum.repos.d/remi-php70.repo"></a>修改/etc/yum.repos.d/remi-php70.repo</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/yum<span class="selector-class">.repos</span><span class="selector-class">.d</span>/</span><br><span class="line">vi remi-php70.repo</span><br></pre></td></tr></table></figure>
+
+<p>把<code>[remi-php70]</code>下的<code>enabled=0</code></p>
+<p>改為<code>enabled=1</code></p>
 <p>如果沒有這個文件，那你可能要更新一下</p>
-<pre><span style="color: #0000ff;">`yum install epel-release
-`yum install http://rpms.famillecollet.com/enterprise/remi-release-6.rpm</span>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> epel-<span class="keyword">release</span></span><br><span class="line">yum <span class="keyword">install</span> <span class="keyword">http</span>://rpms.famillecollet.com/<span class="keyword">enterprise</span>/remi-<span class="keyword">release</span><span class="number">-6.</span>rpm</span><br></pre></td></tr></table></figure>
 
-</pre>
-<p>**//如果要安裝5.5或5.6，就修改remi.repo文件的相應數值</p>
-<p>即執行</p>
-<pre><span style="color: #0000ff;">cd /etc/yum.repos.d/</span>
-<span style="color: #0000ff;">vi remi.repo</span></pre>
-<p>**vi编辑器的一些命令：i 键是编辑；ESC 键是退出编辑；:wq!+回车是保存并退出；:q! 是不做修改直接退出</p>
+<p>如果要安裝5.5或5.6，就修改<code>remi.repo</code>文件的相應數值</p>
+<p>即：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/yum<span class="selector-class">.repos</span><span class="selector-class">.d</span>/</span><br><span class="line">vi remi.repo</span><br></pre></td></tr></table></figure>
+
+<p>vi编辑器的一些命令<code>：i</code> 是编辑；ESC 键是退出编辑；<code>:wq!+回车</code>是保存并退出；<code>:q!</code> 是不做修改直接退出</p>
 <h3 id="開始升級"><a href="#開始升級" class="headerlink" title="開始升級"></a>開始升級</h3><p>執行命令</p>
-<pre><span style="color: #0000ff;">yum update php --enablerepo=remi -y</span></pre>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum update php <span class="attribute">--enablerepo</span>=remi -y</span><br></pre></td></tr></table></figure>
+
 <p>完成之後會有Complete的字樣</p>
-<h3 id="重啟服務器"><a href="#重啟服務器" class="headerlink" title="重啟服務器"></a>重啟服務器</h3><pre><span style="color: #0000ff;">service nginx restart</span>
-<span style="color: #0000ff;">service vesta restart`
-`</span></pre>
-<pre><span style="color: #0000ff;">PHP 7.0.0 (cli) (built: Dec  5 2015 07:17:51) ( NTS )
-Copyright (c) 1997-2015 The PHP Group
-Zend Engine v3.0.0, Copyright (c) 1998-2015 Zend Technologies
-    with Zend OPcache v7.0.6-dev, Copyright (c) 1999-2015, by Zend Technologies</span>
+<h3 id="重啟服務器"><a href="#重啟服務器" class="headerlink" title="重啟服務器"></a>重啟服務器</h3><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">service nginx restart</span><br><span class="line">service vesta restart</span><br></pre></td></tr></table></figure>
 
-</pre>
-
-<h3 id="Enjoy-it！"><a href="#Enjoy-it！" class="headerlink" title="Enjoy it！"></a><span style="font-family: monospace;">Enjoy it！</span></h3><p>附上我重啟服務器的輸出</p>
-<pre>[root /]# service vesta restart
-Stopping vesta-nginx: [  OK  ]
-Stopping vesta-php: [  OK  ]
-Starting vesta-nginx: [      ]
-Starting vesta-php: [  OK  ]</pre>
-<pre>[root /]# service nginx restart
-Stopping nginx: [  OK  ]
-Starting nginx: [  OK  ]</pre>
-<pre>[root /]# service vesta restart
-Stopping vesta-nginx: [FAILED]
-Stopping vesta-php: [  OK  ]
-Starting vesta-nginx: [  OK  ]
-Starting vesta-php: [  OK  ]
-</pre>
-<p>&nbsp;</p>
-<p>升級之後網站速度確實快了不少！哈哈</p>
+<h3 id="Enjoy-it"><a href="#Enjoy-it" class="headerlink" title="Enjoy it !"></a>Enjoy it !</h3><p><code>PHP 7.0.0 (cli) (built: Dec  5 2015 07:17:51) ( NTS )</code><br><code>Copyright (c) 1997-2015 The PHP GroupZend Engine v3.0.0, Copyright (c) 1998-2015 Zend Technologies</code><br>    <code>with Zend OPcache v7.0.6-dev, Copyright (c) 1999-2015, by Zend Technologies</code></p>
+<p>升級之後網站响应速度確實快了不少！哈哈</p>
 <p>附上安裝了opcache後的圖。。</p>
-<p><img src="http://7xp3vk.com1.z0.glb.clouddn.com/tu-after%20opcache.png" alt></p>
-</div><div class="tags"><a href="/tags/折腾/">折腾</a><a href="/tags/WP/">WP</a></div><div class="post-nav"><a class="pre" href="/two-app-milk-coffe/">升級了兩個應用/牛奶咖啡</a><a class="next" href="/when-you-r-old/">當你老了，當你  老了</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="http://ferristale.com"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/分享/">分享</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂文/">杂文</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/瞎搞/">瞎搞</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/讲座/" style="font-size: 15px;">讲座</a> <a href="/tags/生活/" style="font-size: 15px;">生活</a> <a href="/tags/杂谈/" style="font-size: 15px;">杂谈</a> <a href="/tags/Linux/" style="font-size: 15px;">Linux</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/歌词幽灵/" style="font-size: 15px;">歌词幽灵</a> <a href="/tags/阅读/" style="font-size: 15px;">阅读</a> <a href="/tags/音乐/" style="font-size: 15px;">音乐</a> <a href="/tags/Ubuntu/" style="font-size: 15px;">Ubuntu</a> <a href="/tags/Wifi/" style="font-size: 15px;">Wifi</a> <a href="/tags/扇貝/" style="font-size: 15px;">扇貝</a> <a href="/tags/网站/" style="font-size: 15px;">网站</a> <a href="/tags/折腾/" style="font-size: 15px;">折腾</a> <a href="/tags/杂记/" style="font-size: 15px;">杂记</a> <a href="/tags/摄影/" style="font-size: 15px;">摄影</a> <a href="/tags/读书/" style="font-size: 15px;">读书</a> <a href="/tags/职业/" style="font-size: 15px;">职业</a> <a href="/tags/科普/" style="font-size: 15px;">科普</a> <a href="/tags/叩问/" style="font-size: 15px;">叩问</a> <a href="/tags/无题/" style="font-size: 15px;">无题</a> <a href="/tags/回忆录/" style="font-size: 15px;">回忆录</a> <a href="/tags/回忆/" style="font-size: 15px;">回忆</a> <a href="/tags/VPS/" style="font-size: 15px;">VPS</a> <a href="/tags/瞎搞/" style="font-size: 15px;">瞎搞</a> <a href="/tags/科学上网/" style="font-size: 15px;">科学上网</a> <a href="/tags/理想/" style="font-size: 15px;">理想</a> <a href="/tags/WP/" style="font-size: 15px;">WP</a> <a href="/tags/荐文/" style="font-size: 15px;">荐文</a> <a href="/tags/美剧/" style="font-size: 15px;">美剧</a> <a href="/tags/考研/" style="font-size: 15px;">考研</a> <a href="/tags/电影/" style="font-size: 15px;">电影</a> <a href="/tags/科研/" style="font-size: 15px;">科研</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.iplaysoft.com/" title="异次元软件：不错的软件分享站" target="_blank">异次元软件：不错的软件分享站</a><ul></ul><a href="https://tinypng.com/" title="TinyPng：高质量在线图片压缩" target="_blank">TinyPng：高质量在线图片压缩</a><ul></ul><a href="https://smallpdf.com" title="Smallpdf：优秀的PDF在线工具" target="_blank">Smallpdf：优秀的PDF在线工具</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">九燈.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" color="0,0,0" opacity="0.5" zindex="-2" count="30" src="//lib.baomitu.com/canvas-nest.js/2.0.4/canvas-nest.umd.js"></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
+<p><img src="/images/151214-opcache.png" alt></p>
+<p><img src="/images/151214-opcache2.png" alt></p>
+</div><div class="tags"><a href="/tags/折腾/">折腾</a><a href="/tags/WP/">WP</a></div><div class="post-nav"><a class="pre" href="/milk-coffee/">升級了兩個應用/牛奶咖啡</a><a class="next" href="/when-you-r-old/">當你老了，當你  老了</a></div><div id="container"></div><link rel="stylesheet" type="text/css" href="//unpkg.com/gitalk/dist/gitalk.css?v=0.0.0"><script type="text/javascript" src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js?v=0.0.0"></script><script type="text/javascript" src="//unpkg.com/gitalk/dist/gitalk.min.js?v=0.0.0"></script><script>var gitalk = new Gitalk({
+  clientID: '01ed4a49fecbbf37b647',
+  clientSecret: '48a91fee8ca434a06aa40e02f8fc1c8933163951',
+  repo: 'ferristale.github.io',
+  owner: 'ferristale',
+  admin: ['ferristale'],
+  id: md5(location.pathname),
+  distractionFreeMode: false
+})
+gitalk.render('container')
+</script></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="http://ferristale.com"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/分享/">分享</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂文/">杂文</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/瞎搞/">瞎搞</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/VPS/" style="font-size: 15px;">VPS</a> <a href="/tags/杂记/" style="font-size: 15px;">杂记</a> <a href="/tags/杂谈/" style="font-size: 15px;">杂谈</a> <a href="/tags/网站相关/" style="font-size: 15px;">网站相关</a> <a href="/tags/折腾/" style="font-size: 15px;">折腾</a> <a href="/tags/WP/" style="font-size: 15px;">WP</a> <a href="/tags/杂念/" style="font-size: 15px;">杂念</a> <a href="/tags/音乐/" style="font-size: 15px;">音乐</a> <a href="/tags/摄影/" style="font-size: 15px;">摄影</a> <a href="/tags/荐文/" style="font-size: 15px;">荐文</a> <a href="/tags/扇貝/" style="font-size: 15px;">扇貝</a> <a href="/tags/科学上网/" style="font-size: 15px;">科学上网</a> <a href="/tags/读书/" style="font-size: 15px;">读书</a> <a href="/tags/电影/" style="font-size: 15px;">电影</a> <a href="/tags/美剧/" style="font-size: 15px;">美剧</a> <a href="/tags/无题/" style="font-size: 15px;">无题</a> <a href="/tags/Linux/" style="font-size: 15px;">Linux</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Lyric-Ghost/" style="font-size: 15px;">Lyric-Ghost</a> <a href="/tags/Wifi/" style="font-size: 15px;">Wifi</a> <a href="/tags/读研/" style="font-size: 15px;">读研</a> <a href="/tags/扇贝/" style="font-size: 15px;">扇贝</a> <a href="/tags/科普/" style="font-size: 15px;">科普</a> <a href="/tags/看剧/" style="font-size: 15px;">看剧</a> <a href="/tags/回忆录/" style="font-size: 15px;">回忆录</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.iplaysoft.com/" title="异次元软件：不错的软件分享站" target="_blank">异次元软件：不错的软件分享站</a><ul></ul><a href="https://tinypng.com/" title="TinyPng：高质量在线图片压缩" target="_blank">TinyPng：高质量在线图片压缩</a><ul></ul><a href="https://smallpdf.com" title="Smallpdf：优秀的PDF在线工具" target="_blank">Smallpdf：优秀的PDF在线工具</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2019 <a href="/." rel="nofollow">九燈.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" color="0,0,0" opacity="0.5" zindex="-2" count="30" src="//lib.baomitu.com/canvas-nest.js/2.0.4/canvas-nest.umd.js"></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
