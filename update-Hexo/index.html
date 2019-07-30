@@ -9,32 +9,33 @@ ga('create','UA-113302990-1','auto');ga('send','pageview');
 <p>早上写完Aria2远程下载<br>下午写V2Ray部署<br>然后既然玩了一天了，想着把Hexo也更新了吧<br>但上次从2.X 更新到3.5，也不知道为什么，硬是重新安装了一遍才算完<br>于是这次想找能不能update一样的升级，结果网上教程看得我云里雾里</p>
 <p>先说一下，包和模块，我不太能区分，感觉就是，包相当于一个项目，有多个模块组成，下面提到的，嗯能理解就尽量理解吧~</p>
 <h2 id="相关命令的含义"><a href="#相关命令的含义" class="headerlink" title="相关命令的含义"></a>相关命令的含义</h2><p>首先搞明白输入的命令是干啥用的，别瞎输</p>
-<p><code>npm outdated</code>：自带，查看是否有新版本，及是否标记更新<br><code>npm-check</code>：一个包，检查是否有更新、错误以及不再使用的包，列出改动幅度<br><code>npm-check -u</code>：包命令，检查是否有新版本并选择是否升级（交互式）<br><code>npm-upgrade</code>：一个包，检查是否有新版本并是否写到package.json（注意，只是写json，不执行升级）<br><code>npm update</code>：自带，更新并改json（npm 5.0后）<br><code>npm install</code>：自带，有点复杂，<a href="https://juejin.im/post/5b71538ee51d45661d27c336" target="_blank" rel="noopener">看这里吧</a></p>
+<p><code>npm outdated</code>：自带，查看是否有新版本，及是否标记更新（改写package.json）<br><code>npm-check</code>：一个包，检查是否有更新、错误以及不再使用的包，列出改动幅度<br><code>npm-check -u</code>：包命令，检查是否有新版本并选择是否升级（交互式）<br><code>npm-upgrade</code>：一个包，检查是否有新版本并是否写到package.json（注意，只是写json，不执行升级）<br><code>npm update</code>：自带，小版本更新并改json（npm 5.0后）<br><code>npm install</code>：自带，强大也复杂，<a href="https://juejin.im/post/5b71538ee51d45661d27c336" target="_blank" rel="noopener">看这里吧</a></p>
 <h2 id="关于升级操作"><a href="#关于升级操作" class="headerlink" title="关于升级操作"></a>关于升级操作</h2><ul>
 <li>首先有<code>-g</code>和没有<code>-g</code>分别对应全局包和本地（目录内）包</li>
 <li><code>npm-check</code>并不会帮你更新包，需要搭配<code>-u</code></li>
+<li>但它会给你列出有变动的包，并以颜色区分变动幅度，简单讲就是大更新/小更新</li>
 </ul>
 <ul>
 <li><code>npm i</code>亦即<code>npm install</code>，一般来讲是安装操作，如果不加任何指令，默认是安装package.json里的所有模块及其依赖，用作升级的时候需要先使用<code>npm-upgrade</code>标记需要升级的包，然后<code>npm install</code>安装所有包，根据上文介绍，该命令会跳过已有的版本一致的包，故实现了更新</li>
 <li>也可以用<code>npm i &lt;name&gt;</code>一个一个升级，没毛病，此时不需要<code>npm-upgrade</code></li>
-<li><code>--save</code>的作用是写json，实际上用处不大，因为，一般都不知道怎么用。</li>
+<li><code>--save</code>的作用是写json，实际上用处不大，因为，你可能不知道怎么用。</li>
 </ul>
 <ul>
 <li>有一个包叫<code>npm-check-updates</code>，应该是集成了<code>check</code>和<code>upgrade</code>，但同样不会帮你升级，可搭配<code>-u</code>更新json文件</li>
 <li>标记过的包可以使用<code>npm outdated</code>查看（wanted）</li>
 </ul>
-<p>讲到这里，应该比较清晰了，一般而言，升级有三种方案</p>
+<p>讲到这里，应该比较清晰了，一般而言，升级有4种方案</p>
 <ol>
 <li><code>npm update</code>，自带， 更新现有的<code>node_modules</code>里的包，5.0后版本会写json。但不能选择性升级</li>
 <li><code>npm-upgrade &amp;&amp; npm i</code>，选择性写package.json然后根据json安装，包括所有依赖，但<code>npm-upgrade</code>没有<code>-g</code></li>
-<li><code>npm-check-updates -u &amp;&amp; npm i</code>，好像是有一套判断标准，自动标记需要更新的部分，写文件，更新。有<code>-g</code></li>
+<li><code>npm-check-updates -u &amp;&amp; npm i</code>，好像是有一套判断标准（我估计是不会引发冲突的程度），自动标记更新的部分，写文件，更新。有<code>-g</code></li>
 <li><code>npm-check -u</code>，列出可以更新的包，选择需要更新的包，自动调用<code>npm i</code> 安装模块及依赖并写json，有<code>-g</code></li>
 </ol>
 <p>说白了，<code>npm update</code>，<code>npm i</code>是自带命令，<code>i</code>的功能强一些，可以实现<code>update</code>的操作，但在使用<code>i</code>来<code>update</code>的时候需要配合<code>package.json</code><br>而<code>npm-check</code>, <code>npm-upgrade</code>这些，都是第三方的包，只是帮助你更好地管理其他的包或模块，比如更新json或自定义更新<br><code>npm-check</code>是个不错的包</p>
-<h2 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h2><p>方案一，使用自带命令一键更新</p>
+<h2 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h2><p>方案一，使用自带命令一键更新，但不会进行大版本更新</p>
 <figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> update -g &amp;&amp; <span class="built_in">npm</span> update</span><br></pre></td></tr></table></figure>
 
-<p>方案二，使用<code>npm-check</code>自定义更新</p>
+<p>方案二，使用<code>npm-check</code>自定义更新，可只选大版本更新，但出了什么问题自己担</p>
 <figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> i -g <span class="built_in">npm</span>-check</span><br><span class="line"><span class="built_in">npm</span>-check -g -u &amp;&amp; <span class="built_in">npm</span>-check -u</span><br></pre></td></tr></table></figure>
 
 <p>最好用PowerShell，据说用git bash会有点问题</p>
