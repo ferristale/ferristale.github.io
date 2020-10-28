@@ -1,15 +1,217 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="墨润生烟雨，剑舞破山河"><title>离线下载服务器一键搭建（Aria2 + AriaNG + Caddy） | 九燈</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-ga('create','UA-113302990-1','auto');ga('send','pageview');
-</script><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">离线下载服务器一键搭建（Aria2 + AriaNG + Caddy）</h1><a id="logo" href="/.">九燈</a><p class="description">朝蒸藜藿暮烹葵</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">离线下载服务器一键搭建（Aria2 + AriaNG + Caddy）</h1><div class="post-meta">2019-07-26<span> | </span><span class="category"><a href="/categories/瞎搞/">瞎搞</a></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Why-remote-download"><span class="toc-number">1.</span> <span class="toc-text">Why remote download</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#脚本选择"><span class="toc-number">2.</span> <span class="toc-text">脚本选择</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文件管理器"><span class="toc-number">3.</span> <span class="toc-text">文件管理器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网页服务器"><span class="toc-number">4.</span> <span class="toc-text">网页服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考"><span class="toc-number">5.</span> <span class="toc-text">参考</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后续管理"><span class="toc-number">6.</span> <span class="toc-text">后续管理</span></a></li></ol></div></div><div class="post-content"><p>for CentOS 7</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum -y install wget unzip curl</span><br><span class="line">wget https://github.com/helloxz/ccaa/archive/<span class="literal">master</span>.zip</span><br><span class="line">unzip <span class="literal">master</span>.zip &amp;&amp; cd ccaa-<span class="keyword">master</span> <span class="title">&amp;&amp; sh</span> ccaa.sh</span><br></pre></td></tr></table></figure>
+<!doctype html>
+<html lang="zh-CN">
+<head>
 
-<p>Enjoy it!</p>
-<a id="more"></a>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<h2 id="Why-remote-download"><a href="#Why-remote-download" class="headerlink" title="Why remote download"></a>Why remote download</h2><p>对我个人来说，打离线下载的主意是因为单位网络不能很好支持BT，总是跑不到满速，挺烦的。<br>然后在网络上看到别人写的<a href="https://yorkchou.com/aria2.html" target="_blank" rel="noopener">benefits</a>，觉得很有道理：</p>
+    <title>离线下载服务器一键搭建（Aria2 &#43; AriaNG &#43; Caddy） | 九燈</title>
+    <meta property="og:title" content="离线下载服务器一键搭建（Aria2 &#43; AriaNG &#43; Caddy） - 九燈">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2019-07-26T16:10:00&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2019-07-26T16:10:00&#43;08:00'>
+        
+    <meta name="Keywords" content="独立博客">
+    <meta name="description" content="离线下载服务器一键搭建（Aria2 &#43; AriaNG &#43; Caddy）">
+        
+    <meta name="author" content="九燈">
+    <meta property="og:url" content="https://ferristale.com/remote-download-server/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    
+    
+    
+    
+    
+        <link rel="stylesheet" href='/css/douban.css'>
+    
+        <link rel="stylesheet" href='/css/other.css'>
+    
+</head>
+
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://ferristale.com">
+                        九燈
+                    </a>
+                
+                <p class="description">朝蒸藜藿暮烹葵</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="https://ferristale.com">首页</a>
+                    
+                    <a  href="https://ferristale.com/archives/" title="归档">归档</a>
+                    
+                    <a  href="https://ferristale.com/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-remote-download">Why remote download</a></li>
+    <li><a href="#脚本选择">脚本选择</a></li>
+    <li><a href="#文件管理器">文件管理器</a></li>
+    <li><a href="#网页服务器">网页服务器</a></li>
+    <li><a href="#参考">参考</a></li>
+    <li><a href="#后续管理">后续管理</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">离线下载服务器一键搭建（Aria2 &#43; AriaNG &#43; Caddy）</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2019年7月26日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='https://ferristale.com/categories/%E7%9E%8E%E6%90%9E'>瞎搞</a></span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="clear" style="display: none">
+            <div class="toc-article">
+                <div class="toc-title">文章目录</div>
+            </div>
+        </div>
+        
+        <div class="post-content">
+            <p>for CentOS 7</p>
+<pre><code>yum -y install wget unzip curl
+wget https://github.com/helloxz/ccaa/archive/master.zip
+unzip master.zip &amp;&amp; cd ccaa-master &amp;&amp; sh ccaa.sh
+</code></pre><p>Enjoy it!</p>
+<h2 id="why-remote-download">Why remote download</h2>
+<p>对我个人来说，打离线下载的主意是因为单位网络不能很好支持BT，总是跑不到满速，挺烦的。<br>
+然后在网络上看到别人写的<a href="https://yorkchou.com/aria2.html">benefits</a>，觉得很有道理：</p>
 <blockquote>
 <ol>
 <li>资源下载速度大大提高。由于宽带运营商QOS限制、迅雷百度网盘的恶意限速（即便我都开了会员），所以尽管我目前使用的是200M电信光纤，但下载美剧等资源时速度依旧差强人意，而使用独服/VPS则几乎满速。</li>
@@ -18,7 +220,8 @@ ga('create','UA-113302990-1','auto');ga('send','pageview');
 </ol>
 </blockquote>
 <p>可能还要再加一条：如果你有IPV6，你的服务器恰好也有IPV6，那就恭喜了，免流是次要的，重点是快啊（至少在我这，IPV6的速度是V4的好几倍）</p>
-<h2 id="脚本选择"><a href="#脚本选择" class="headerlink" title="脚本选择"></a>脚本选择</h2><p>这个脚本的发现也是巧合，按照之前部署的经验，一般来说，我需要</p>
+<h2 id="脚本选择">脚本选择</h2>
+<p>这个脚本的发现也是巧合，按照之前部署的经验，一般来说，我需要</p>
 <ol>
 <li>安装nginx服务器</li>
 <li>安装Aria2后端（逗比脚本）</li>
@@ -26,36 +229,315 @@ ga('create','UA-113302990-1','auto');ga('send','pageview');
 <li>安装文件管理器（之前没有弄，我直接通过链接下载）</li>
 <li>配置nginx（还是挺麻烦的）</li>
 </ol>
-<p>而这次搜Aria2代码的时候，误打误撞看到一篇<a href="https://www.xiaoz.me/archives/11250" target="_blank" rel="noopener">一键安装的文章</a>，作为一个半白不白的懒小白，有自动绝不手动！</p>
+<p>而这次搜Aria2代码的时候，误打误撞看到一篇<a href="https://www.xiaoz.me/archives/11250">一键安装的文章</a>，作为一个半白不白的懒小白，有自动绝不手动！</p>
 <p>So，，代码在上面，主要解释一下代码构成：</p>
 <ul>
 <li>核心工具：Aria2</li>
 <li>Aria2网页管理前端：AriaNG（通过浏览器，使用图形界面管理Aria2）</li>
-<li>文件取回&amp;在线播放：<a href="https://filebrowser.xyz/" target="_blank" rel="noopener">File Browser</a></li>
+<li>文件取回&amp;在线播放：<a href="https://filebrowser.xyz/">File Browser</a></li>
 <li>网页服务器：Caddy</li>
 </ul>
-<h2 id="文件管理器"><a href="#文件管理器" class="headerlink" title="文件管理器"></a>文件管理器</h2><p>在遇到这个脚本前，我大致搜过，找到三种不同的文件取回方案</p>
+<h2 id="文件管理器">文件管理器</h2>
+<p>在遇到这个脚本前，我大致搜过，找到三种不同的文件取回方案</p>
 <ul>
-<li><a href="https://www.jianshu.com/p/5e42c1031fb5" target="_blank" rel="noopener">HTTP</a><br>不需要额外安装文件管理，不过也要配置一下，也不简单，至少不能说不复杂<br>文章介绍了Aria2网页前端</li>
-<li><a href="https://yorkchou.com/aria2.html" target="_blank" rel="noopener">Directory Lister</a><br>同意博主说法，界面很清爽，是我的备选方案<br>不巧在找Aria2脚本的时候发现了本文介绍的脚本，遂弃之</li>
-<li><a href="https://imtrq.com/archives/1374" target="_blank" rel="noopener">h5ai</a><br>其实我也就收藏一下，没想着要用它</li>
+<li><a href="https://www.jianshu.com/p/5e42c1031fb5">HTTP</a>
+不需要额外安装文件管理，不过也要配置一下，也不简单，至少不能说不复杂
+文章介绍了Aria2网页前端</li>
+<li><a href="https://yorkchou.com/aria2.html">Directory Lister</a>
+同意博主说法，界面很清爽，是我的备选方案
+不巧在找Aria2脚本的时候发现了本文介绍的脚本，遂弃之</li>
+<li><a href="https://imtrq.com/archives/1374">h5ai</a>
+其实我也就收藏一下，没想着要用它</li>
 </ul>
-<h2 id="网页服务器"><a href="#网页服务器" class="headerlink" title="网页服务器"></a>网页服务器</h2><p>之前并不知道有Caddy，是这个脚本带我进入Caddy的世界，就觉得，既然比nginx简单，又不需要配置，还能顺带帮我设个密码，那就用啊</p>
+<h2 id="网页服务器">网页服务器</h2>
+<p>之前并不知道有Caddy，是这个脚本带我进入Caddy的世界，就觉得，既然比nginx简单，又不需要配置，还能顺带帮我设个密码，那就用啊</p>
 <ul>
-<li><a href="https://www.golangnote.com/topic/216.html" target="_blank" rel="noopener">Caddy、 SSLDocker、Nginx 性能比较及使用体验</a></li>
-<li><a href="https://www.jianshu.com/p/8fd978f4732f" target="_blank" rel="noopener">用 Caddy 替代 Nginx 迈入 HTTPS 时代</a></li>
+<li><a href="https://www.golangnote.com/topic/216.html">Caddy、 SSLDocker、Nginx 性能比较及使用体验</a></li>
+<li><a href="https://www.jianshu.com/p/8fd978f4732f">用 Caddy 替代 Nginx 迈入 HTTPS 时代</a></li>
 </ul>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.xiaoz.me/archives/11250" target="_blank" rel="noopener">CentOS 7一键安装Caddy + Aria2 + AriaNg实现离线下载</a><br><a href="https://yorkchou.com/aria2.html" target="_blank" rel="noopener">aria2+AriaNg 打造自己的离线下载/云播平台</a><br><a href="https://www.jianshu.com/p/5e42c1031fb5" target="_blank" rel="noopener">使用aria2搭建离线下载服务器（校园网IPv6免流量）</a></p>
-<h2 id="后续管理"><a href="#后续管理" class="headerlink" title="后续管理"></a>后续管理</h2><p><code>cd ccaa-master</code><br><code>sh ccaa.sh</code></p>
-<p>&nbsp;</p>
-</div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>离线下载服务器一键搭建（Aria2 + AriaNG + Caddy）</p><p><span>文章作者：</span>九燈</p><p><span>发布时间：</span>2019-07-26</p><p><span>最后更新：</span>2019-07-29</p><p><span>原始链接：</span><a href="/remote-download-server/">https://ferristale.com/remote-download-server/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://ferristale.com/remote-download-server/"></i></span></p><p><span>版权声明：</span>本博客采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可，转载请注明链接</p></div><br><div class="tags"><a href="/tags/VPS/"><i class="fa fa-tag"></i>VPS</a></div><div class="post-nav"><a class="pre" href="/V2Ray/">Multi-V2Ray 一键部署</a><a class="next" href="/no-title-190304/">与软件的故事</a></div><div id="container"></div><link rel="stylesheet" type="text/css" href="//unpkg.com/gitalk/dist/gitalk.css?v=0.0.0"><script type="text/javascript" src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js?v=0.0.0"></script><script type="text/javascript" src="//unpkg.com/gitalk/dist/gitalk.min.js?v=0.0.0"></script><script>var gitalk = new Gitalk({
-  clientID: '01ed4a49fecbbf37b647',
-  clientSecret: '48a91fee8ca434a06aa40e02f8fc1c8933163951',
-  repo: 'ferristale.github.io',
-  owner: 'ferristale',
-  admin: ['ferristale'],
-  id: md5(location.pathname),
-  distractionFreeMode: false
-})
-gitalk.render('container')
-</script></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="https://ferristale.com"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/分享/">分享</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂文/">杂文</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/瞎搞/">瞎搞</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/VPS/" style="font-size: 15px;">VPS</a> <a href="/tags/杂记/" style="font-size: 15px;">杂记</a> <a href="/tags/杂谈/" style="font-size: 15px;">杂谈</a> <a href="/tags/网站相关/" style="font-size: 15px;">网站相关</a> <a href="/tags/折腾/" style="font-size: 15px;">折腾</a> <a href="/tags/WP/" style="font-size: 15px;">WP</a> <a href="/tags/杂念/" style="font-size: 15px;">杂念</a> <a href="/tags/音乐/" style="font-size: 15px;">音乐</a> <a href="/tags/摄影/" style="font-size: 15px;">摄影</a> <a href="/tags/荐文/" style="font-size: 15px;">荐文</a> <a href="/tags/扇貝/" style="font-size: 15px;">扇貝</a> <a href="/tags/科学上网/" style="font-size: 15px;">科学上网</a> <a href="/tags/读书/" style="font-size: 15px;">读书</a> <a href="/tags/电影/" style="font-size: 15px;">电影</a> <a href="/tags/美剧/" style="font-size: 15px;">美剧</a> <a href="/tags/无题/" style="font-size: 15px;">无题</a> <a href="/tags/Linux/" style="font-size: 15px;">Linux</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Lyric-Ghost/" style="font-size: 15px;">Lyric-Ghost</a> <a href="/tags/Wifi/" style="font-size: 15px;">Wifi</a> <a href="/tags/读研/" style="font-size: 15px;">读研</a> <a href="/tags/扇贝/" style="font-size: 15px;">扇贝</a> <a href="/tags/科普/" style="font-size: 15px;">科普</a> <a href="/tags/看剧/" style="font-size: 15px;">看剧</a> <a href="/tags/回忆录/" style="font-size: 15px;">回忆录</a> <a href="/tags/R/" style="font-size: 15px;">R</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.iplaysoft.com/" title="异次元软件：不错的软件分享站" target="_blank">异次元软件：不错的软件分享站</a><ul></ul><a href="https://tinypng.com/" title="TinyPng：高质量在线图片压缩" target="_blank">TinyPng：高质量在线图片压缩</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">九燈.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" color="0,0,0" opacity="0.5" zindex="-2" count="20" src="//lib.baomitu.com/canvas-nest.js/2.0.4/canvas-nest.umd.js"></script><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
+<h2 id="参考">参考</h2>
+<p><a href="https://www.xiaoz.me/archives/11250">CentOS 7一键安装Caddy + Aria2 + AriaNg实现离线下载</a>
+<a href="https://yorkchou.com/aria2.html">aria2+AriaNg 打造自己的离线下载/云播平台</a>
+<a href="https://www.jianshu.com/p/5e42c1031fb5">使用aria2搭建离线下载服务器（校园网IPv6免流量）</a></p>
+<h2 id="后续管理">后续管理</h2>
+<p><code>cd ccaa-master </code>
+<code>sh ccaa.sh</code></p>
+<p> </p>
+        </div>
+
+        
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>原文作者：</strong><a rel="author" href="https://ferristale.com">九燈</a></li>
+        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://ferristale.com/remote-download-server/">https://ferristale.com/remote-download-server/</a></li>
+        <li><strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li>
+    </ul>
+</div>
+<br/>
+
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/SSH-your-VPS/">SSH登录服务器</a></li>
+        
+        <li><a href="/shadowsocks-in-Ubuntu/">Ubuntu下配置Shadowsocks實戰攻略</a></li>
+        
+        <li><a href="/no-title-190304/">与软件的故事</a></li>
+        
+        <li><a href="/interpersonal-relationships-in-graduated-school/">读研的师徒体验</a></li>
+        
+        <li><a href="/first-time-shopping-oversea-online/">第一次海淘是买实验用品</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='https://ferristale.com/tags/VPS'>VPS</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "ferristale/ferristale.github.io"
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2020 <a href="https://ferristale.com">九燈 By 九燈</a>
+        
+    </div>
+    <br />
+    <div>
+        <div class="github-badge">
+            <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://www.flysnow.org/" target="_black"><span class="badge-subject">Design by</span><span class="badge-value bg-brightgreen">飞雪无情</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://github.com/flysnow-org/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
+        </div>
+    </div>
+</footer>
+
+
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-113302990-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+    <script src='/js/douban.js'></script>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='https://ferristale.com/search/' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://ferristale.com">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://ferristale.com/hello-hugo/" title="更换Hugo">更换Hugo</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/this-slow-netlify/" title="Netlify一点都没有更快">Netlify一点都没有更快</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/email-hosting/" title="邮箱托管">邮箱托管</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/look-back-into-the-past-while-graduating-on-master/" title="回顾考研路，于将毕业之时">回顾考研路，于将毕业之时</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/draw-two-or-more-exponential-regression-simultaneously-with-nlsLMggplot2/" title="nlsLM擬合多條指數函數並繪製于ggplot">nlsLM擬合多條指數函數並繪製于ggplot</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/buy-buy-buy-in-book-sales/" title="趁多抓鱼打折充实了一波书单">趁多抓鱼打折充实了一波书单</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/letter-for-someone/" title="盐醋薯片">盐醋薯片</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/reorganize-my-blog/" title="重新整理博客内容">重新整理博客内容</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/update-Hexo/" title="正儿八经更新Hexo">正儿八经更新Hexo</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/V2Ray/" title="Multi-V2Ray 一键部署">Multi-V2Ray 一键部署</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title"><a href="/categories">分类</a></h3>
+<ul class="widget-list">
+    
+    <li><a href="https://ferristale.com/categories/%E5%88%86%E4%BA%AB/">分享 (24)</a></li>
+    
+    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (73)</a></li>
+    
+    <li><a href="https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/">瞎搞 (39)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title"><a href="/tags">标签</a></h3>
+<div class="tagcloud">
+    
+    <a href="https://ferristale.com/tags/Hexo/">Hexo</a>
+    
+    <a href="https://ferristale.com/tags/Linux/">Linux</a>
+    
+    <a href="https://ferristale.com/tags/Lyric-Ghost/">Lyric-Ghost</a>
+    
+    <a href="https://ferristale.com/tags/R/">R</a>
+    
+    <a href="https://ferristale.com/tags/VPS/">VPS</a>
+    
+    <a href="https://ferristale.com/tags/WP/">WP</a>
+    
+    <a href="https://ferristale.com/tags/Wifi/">Wifi</a>
+    
+    <a href="https://ferristale.com/tags/%E5%9B%9E%E5%BF%86%E5%BD%95/">回忆录</a>
+    
+    <a href="https://ferristale.com/tags/%E6%89%87%E8%B2%9D/">扇貝</a>
+    
+    <a href="https://ferristale.com/tags/%E6%89%87%E8%B4%9D/">扇贝</a>
+    
+    <a href="https://ferristale.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>
+    
+    <a href="https://ferristale.com/tags/%E6%91%84%E5%BD%B1/">摄影</a>
+    
+    <a href="https://ferristale.com/tags/%E6%97%A0%E9%A2%98/">无题</a>
+    
+    <a href="https://ferristale.com/tags/%E6%9D%82%E5%BF%B5/">杂念</a>
+    
+    <a href="https://ferristale.com/tags/%E6%9D%82%E8%AE%B0/">杂记</a>
+    
+    <a href="https://ferristale.com/tags/%E6%9D%82%E8%B0%88/">杂谈</a>
+    
+    <a href="https://ferristale.com/tags/%E7%94%B5%E5%BD%B1/">电影</a>
+    
+    <a href="https://ferristale.com/tags/%E7%9C%8B%E5%89%A7/">看剧</a>
+    
+    <a href="https://ferristale.com/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">科学上网</a>
+    
+    <a href="https://ferristale.com/tags/%E7%A7%91%E6%99%AE/">科普</a>
+    
+    <a href="https://ferristale.com/tags/%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/">网站相关</a>
+    
+    <a href="https://ferristale.com/tags/%E7%BE%8E%E5%89%A7/">美剧</a>
+    
+    <a href="https://ferristale.com/tags/%E8%8D%90%E6%96%87/">荐文</a>
+    
+    <a href="https://ferristale.com/tags/%E8%AF%BB%E4%B9%A6/">读书</a>
+    
+    <a href="https://ferristale.com/tags/%E8%AF%BB%E7%A0%94/">读研</a>
+    
+    <a href="https://ferristale.com/tags/%E9%9F%B3%E4%B9%90/">音乐</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://www.iplaysoft.com/" title="异次元软件">不错的软件分享站</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://tinypng.com/" title="TinyPng">高质量在线图片压缩</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://ferristale.com/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

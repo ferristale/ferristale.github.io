@@ -1,28 +1,252 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="墨润生烟雨，剑舞破山河"><title>正儿八经更新Hexo | 九燈</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-ga('create','UA-113302990-1','auto');ga('send','pageview');
-</script><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">正儿八经更新Hexo</h1><a id="logo" href="/.">九燈</a><p class="description">朝蒸藜藿暮烹葵</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">正儿八经更新Hexo</h1><div class="post-meta">2019-07-28<span> | </span><span class="category"><a href="/categories/瞎搞/">瞎搞</a></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#相关命令的含义"><span class="toc-number">1.</span> <span class="toc-text">相关命令的含义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于升级操作"><span class="toc-number">2.</span> <span class="toc-text">关于升级操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#升级"><span class="toc-number">3.</span> <span class="toc-text">升级</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#package-json的作用"><span class="toc-number">4.</span> <span class="toc-text">package.json的作用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Win下npm的更新"><span class="toc-number">5.</span> <span class="toc-text">Win下npm的更新</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#重要参考文章"><span class="toc-number">6.</span> <span class="toc-text">重要参考文章</span></a></li></ol></div></div><div class="post-content"><p>网上的文章，我看了些，抄来抄去，质量不敢恭维<br>查了很多资料之后有了点眉目，这是正儿八经版的Hexo 更新指南</p>
-<a id="more"></a>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>正儿八经更新Hexo | 九燈</title>
+    <meta property="og:title" content="正儿八经更新Hexo - 九燈">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2019-07-28T22:30:58&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2019-07-28T22:30:58&#43;08:00'>
+        
+    <meta name="Keywords" content="独立博客">
+    <meta name="description" content="正儿八经更新Hexo">
+        
+    <meta name="author" content="九燈">
+    <meta property="og:url" content="https://ferristale.com/update-Hexo/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    
+    
+    
+    
+    
+        <link rel="stylesheet" href='/css/douban.css'>
+    
+        <link rel="stylesheet" href='/css/other.css'>
+    
+</head>
+
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://ferristale.com">
+                        九燈
+                    </a>
+                
+                <p class="description">朝蒸藜藿暮烹葵</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="https://ferristale.com">首页</a>
+                    
+                    <a  href="https://ferristale.com/archives/" title="归档">归档</a>
+                    
+                    <a  href="https://ferristale.com/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#相关命令的含义">相关命令的含义</a></li>
+    <li><a href="#关于升级操作">关于升级操作</a></li>
+    <li><a href="#升级">升级</a></li>
+    <li><a href="#packagejson的作用"><code>package.json</code>的作用</a></li>
+    <li><a href="#win下npm的更新">Win下npm的更新</a></li>
+    <li><a href="#重要参考文章">重要参考文章</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">正儿八经更新Hexo</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2019年7月28日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='https://ferristale.com/categories/%E7%9E%8E%E6%90%9E'>瞎搞</a></span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="clear" style="display: none">
+            <div class="toc-article">
+                <div class="toc-title">文章目录</div>
+            </div>
+        </div>
+        
+        <div class="post-content">
+            <p>网上的文章，我看了些，抄来抄去，质量不敢恭维
+查了很多资料之后有了点眉目，这是正儿八经版的Hexo 更新指南</p>
 <p>今日可是说是花了一天时间在服务器上</p>
-<p>早上写完Aria2远程下载<br>下午写V2Ray部署<br>然后既然玩了一天了，想着把Hexo也更新了吧<br>但上次从2.X 更新到3.5，也不知道为什么，硬是重新安装了一遍才算完<br>于是这次想找能不能update一样的升级，结果网上教程看得我云里雾里</p>
+<p>早上写完Aria2远程下载<br>
+下午写V2Ray部署
+然后既然玩了一天了，想着把Hexo也更新了吧
+但上次从2.X 更新到3.5，也不知道为什么，硬是重新安装了一遍才算完
+于是这次想找能不能update一样的升级，结果网上教程看得我云里雾里</p>
 <p>先说一下，包和模块，我不太能区分，感觉就是，包相当于一个项目，有多个模块组成，下面提到的，嗯能理解就尽量理解吧~</p>
-<h2 id="相关命令的含义"><a href="#相关命令的含义" class="headerlink" title="相关命令的含义"></a>相关命令的含义</h2><p>首先搞明白输入的命令是干啥用的，别瞎输</p>
-<p><code>npm outdated</code>：自带，查看是否有新版本，及是否标记更新（改写package.json）<br><code>npm-check</code>：一个包，检查是否有更新、错误以及不再使用的包，列出改动幅度<br><code>npm-check -u</code>：包命令，检查是否有新版本并选择是否升级（交互式）<br><code>npm-upgrade</code>：一个包，检查是否有新版本并是否写到package.json（注意，只是写json，不执行升级）<br><code>npm update</code>：自带，小版本更新并改json（npm 5.0后）<br><code>npm install</code>：自带，强大也复杂，<a href="https://juejin.im/post/5b71538ee51d45661d27c336" target="_blank" rel="noopener">看这里吧</a></p>
-<h2 id="关于升级操作"><a href="#关于升级操作" class="headerlink" title="关于升级操作"></a>关于升级操作</h2><ul>
-<li>首先有<code>-g</code>和没有<code>-g</code>分别对应全局包和本地（目录内）包</li>
-<li><code>npm-check</code>并不会帮你更新包，需要搭配<code>-u</code></li>
-<li>但它会给你列出有变动的包，并以颜色区分变动幅度，简单讲就是大更新/小更新</li>
-</ul>
+<h2 id="相关命令的含义">相关命令的含义</h2>
+<p>首先搞明白输入的命令是干啥用的，别瞎输</p>
+<p><code>npm outdated</code>：自带，查看是否有新版本，及是否标记更新（改写package.json）
+<code>npm-check</code>：一个包，检查是否有更新、错误以及不再使用的包，列出改动幅度
+<code>npm-check -u</code>：包命令，检查是否有新版本并选择是否升级（交互式）
+<code>npm-upgrade</code>：一个包，检查是否有新版本并是否写到package.json（注意，只是写json，不执行升级）
+<code>npm update</code>：自带，小版本更新并改json（npm 5.0后）
+<code>npm install</code>：自带，强大也复杂，<a href="https://juejin.im/post/5b71538ee51d45661d27c336">看这里吧</a></p>
+<h2 id="关于升级操作">关于升级操作</h2>
 <ul>
-<li><code>npm i</code>亦即<code>npm install</code>，一般来讲是安装操作，如果不加任何指令，默认是安装package.json里的所有模块及其依赖，用作升级的时候需要先使用<code>npm-upgrade</code>标记需要升级的包，然后<code>npm install</code>安装所有包，根据上文介绍，该命令会跳过已有的版本一致的包，故实现了更新</li>
-<li>也可以用<code>npm i &lt;name&gt;</code>一个一个升级，没毛病，此时不需要<code>npm-upgrade</code></li>
-<li><code>--save</code>的作用是写json，实际上用处不大，因为，你可能不知道怎么用。</li>
-</ul>
-<ul>
-<li>有一个包叫<code>npm-check-updates</code>，应该是集成了<code>check</code>和<code>upgrade</code>，但同样不会帮你升级，可搭配<code>-u</code>更新json文件</li>
-<li>标记过的包可以使用<code>npm outdated</code>查看（wanted）</li>
+<li>
+<p>首先有<code>-g</code>和没有<code>-g</code>分别对应全局包和本地（目录内）包</p>
+</li>
+<li>
+<p><code>npm-check</code>并不会帮你更新包，需要搭配<code>-u</code></p>
+</li>
+<li>
+<p>但它会给你列出有变动的包，并以颜色区分变动幅度，简单讲就是大更新/小更新</p>
+</li>
+<li>
+<p><code>npm i</code>亦即<code>npm install</code>，一般来讲是安装操作，如果不加任何指令，默认是安装package.json里的所有模块及其依赖，用作升级的时候需要先使用<code>npm-upgrade</code>标记需要升级的包，然后<code>npm install</code>安装所有包，根据上文介绍，该命令会跳过已有的版本一致的包，故实现了更新</p>
+</li>
+<li>
+<p>也可以用<code>npm i &lt;name&gt;</code>一个一个升级，没毛病，此时不需要<code>npm-upgrade</code></p>
+</li>
+<li>
+<p><code>--save</code>的作用是写json，实际上用处不大，因为，你可能不知道怎么用。</p>
+</li>
+<li>
+<p>有一个包叫<code>npm-check-updates</code>，应该是集成了<code>check</code>和<code>upgrade</code>，但同样不会帮你升级，可搭配<code>-u</code>更新json文件</p>
+</li>
+<li>
+<p>标记过的包可以使用<code>npm outdated</code>查看（wanted）</p>
+</li>
 </ul>
 <p>讲到这里，应该比较清晰了，一般而言，升级有4种方案</p>
 <ol>
@@ -31,29 +255,303 @@ ga('create','UA-113302990-1','auto');ga('send','pageview');
 <li><code>npm-check-updates -u &amp;&amp; npm i</code>，好像是有一套判断标准（我估计是不会引发冲突的程度），自动标记更新的部分，写文件，更新。有<code>-g</code></li>
 <li><code>npm-check -u</code>，列出可以更新的包，选择需要更新的包，自动调用<code>npm i</code> 安装模块及依赖并写json，有<code>-g</code></li>
 </ol>
-<p>说白了，<code>npm update</code>，<code>npm i</code>是自带命令，<code>i</code>的功能强一些，可以实现<code>update</code>的操作，但在使用<code>i</code>来<code>update</code>的时候需要配合<code>package.json</code><br>而<code>npm-check</code>, <code>npm-upgrade</code>这些，都是第三方的包，只是帮助你更好地管理其他的包或模块，比如更新json或自定义更新<br><code>npm-check</code>是个不错的包</p>
-<h2 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h2><p>方案一，使用自带命令一键更新，但不会进行大版本更新</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> update -g &amp;&amp; <span class="built_in">npm</span> update</span><br></pre></td></tr></table></figure>
-
-<p>方案二，使用<code>npm-check</code>自定义更新，可只选大版本更新，但出了什么问题自己担</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> i -g <span class="built_in">npm</span>-check</span><br><span class="line"><span class="built_in">npm</span>-check -g -u &amp;&amp; <span class="built_in">npm</span>-check -u</span><br></pre></td></tr></table></figure>
-
-<p>最好用PowerShell，据说用git bash会有点问题</p>
-<h2 id="package-json的作用"><a href="#package-json的作用" class="headerlink" title="package.json的作用"></a><code>package.json</code>的作用</h2><p>根据我这几个小时的研究，这是文件其实是整个项目需要的所有模块的记录<br>记下来了，当你在一个新的文件夹初始化的时候，可以直接根据这个文件，一键安装所有需要的模块</p>
-<p>即，我要重新安装Hexo<br>在没有这个文件的时候，我需要<code>npm i hexo --save</code>，这样我就有了hexo这个包所需的所有东西，并记录在案（但这个操作可能没啥用），然后再安装主题需要的模块，同样记录在案，etc<br>但如果我有这个文件，我只需要<code>npm i</code>，就可以得到所有东西。一键安装。我觉得我们很多人都走了弯路，其实根本不用麻烦，一个<code>package.json</code>就够</p>
+<p>说白了，<code>npm update</code>，<code>npm i</code>是自带命令，<code>i</code>的功能强一些，可以实现<code>update</code>的操作，但在使用<code>i</code>来<code>update</code>的时候需要配合<code>package.json</code>
+而<code>npm-check</code>, <code>npm-upgrade</code>这些，都是第三方的包，只是帮助你更好地管理其他的包或模块，比如更新json或自定义更新<br>
+<code>npm-check</code>是个不错的包</p>
+<h2 id="升级">升级</h2>
+<p>方案一，使用自带命令一键更新，但不会进行大版本更新</p>
+<pre><code>npm update -g &amp;&amp; npm update
+</code></pre><p>方案二，使用<code>npm-check</code>自定义更新，可只选大版本更新，但出了什么问题自己担</p>
+<pre><code>npm i -g npm-check
+npm-check -g -u &amp;&amp; npm-check -u
+</code></pre><p>最好用PowerShell，据说用git bash会有点问题</p>
+<h2 id="packagejson的作用"><code>package.json</code>的作用</h2>
+<p>根据我这几个小时的研究，这是文件其实是整个项目需要的所有模块的记录
+记下来了，当你在一个新的文件夹初始化的时候，可以直接根据这个文件，一键安装所有需要的模块</p>
+<p>即，我要重新安装Hexo
+在没有这个文件的时候，我需要<code>npm i hexo --save</code>，这样我就有了hexo这个包所需的所有东西，并记录在案（但这个操作可能没啥用），然后再安装主题需要的模块，同样记录在案，etc
+但如果我有这个文件，我只需要<code>npm i</code>，就可以得到所有东西。一键安装。我觉得我们很多人都走了弯路，其实根本不用麻烦，一个<code>package.json</code>就够</p>
 <p>然后还要提到<code>package-lock.json</code>这个文件，这是锁版本用的，相当于封装这样子吧，避免版本不兼容出问题，一般，可能，大概，也许，用不到。</p>
-<h2 id="Win下npm的更新"><a href="#Win下npm的更新" class="headerlink" title="Win下npm的更新"></a>Win下npm的更新</h2><p>用PowerShell执行，<a href="https://juejin.im/post/5ba1e8106fb9a05cf22fefd0#heading-10" target="_blank" rel="noopener">参见这里</a></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Set</span>-ExecutionPolicy Unrestricted -<span class="keyword">Scope</span> CurrentUser -Forcenpm <span class="keyword">install</span> -g npm-windows-upgradenpm-windows-<span class="keyword">upgrade</span></span><br></pre></td></tr></table></figure>
+<h2 id="win下npm的更新">Win下npm的更新</h2>
+<p>用PowerShell执行，<a href="https://juejin.im/post/5ba1e8106fb9a05cf22fefd0#heading-10">参见这里</a></p>
+<pre><code>Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Forcenpm install -g npm-windows-upgradenpm-windows-upgrade
+</code></pre><h2 id="重要参考文章">重要参考文章</h2>
+<p><a href="https://stackoverflow.com/questions/57069622/command-npm-update-vs-package-npm-check-updates">Command “npm update” vs package “npm-check-updates”</a></p>
+        </div>
 
-<h2 id="重要参考文章"><a href="#重要参考文章" class="headerlink" title="重要参考文章"></a>重要参考文章</h2><p> <a href="https://stackoverflow.com/questions/57069622/command-npm-update-vs-package-npm-check-updates" target="_blank" rel="noopener">Command “npm update” vs package “npm-check-updates”</a></p>
-</div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>正儿八经更新Hexo</p><p><span>文章作者：</span>九燈</p><p><span>发布时间：</span>2019-07-28</p><p><span>最后更新：</span>2019-07-30</p><p><span>原始链接：</span><a href="/update-Hexo/">https://ferristale.com/update-Hexo/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://ferristale.com/update-Hexo/"></i></span></p><p><span>版权声明：</span>本博客采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可，转载请注明链接</p></div><br><div class="tags"><a href="/tags/Hexo/"><i class="fa fa-tag"></i>Hexo</a></div><div class="post-nav"><a class="pre" href="/reorganize-my-blog/">重新整理博客内容</a><a class="next" href="/V2Ray/">Multi-V2Ray 一键部署</a></div><div id="container"></div><link rel="stylesheet" type="text/css" href="//unpkg.com/gitalk/dist/gitalk.css?v=0.0.0"><script type="text/javascript" src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js?v=0.0.0"></script><script type="text/javascript" src="//unpkg.com/gitalk/dist/gitalk.min.js?v=0.0.0"></script><script>var gitalk = new Gitalk({
-  clientID: '01ed4a49fecbbf37b647',
-  clientSecret: '48a91fee8ca434a06aa40e02f8fc1c8933163951',
-  repo: 'ferristale.github.io',
-  owner: 'ferristale',
-  admin: ['ferristale'],
-  id: md5(location.pathname),
-  distractionFreeMode: false
-})
-gitalk.render('container')
-</script></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="https://ferristale.com"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/分享/">分享</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂文/">杂文</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/瞎搞/">瞎搞</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/VPS/" style="font-size: 15px;">VPS</a> <a href="/tags/杂记/" style="font-size: 15px;">杂记</a> <a href="/tags/杂谈/" style="font-size: 15px;">杂谈</a> <a href="/tags/网站相关/" style="font-size: 15px;">网站相关</a> <a href="/tags/折腾/" style="font-size: 15px;">折腾</a> <a href="/tags/WP/" style="font-size: 15px;">WP</a> <a href="/tags/杂念/" style="font-size: 15px;">杂念</a> <a href="/tags/音乐/" style="font-size: 15px;">音乐</a> <a href="/tags/摄影/" style="font-size: 15px;">摄影</a> <a href="/tags/荐文/" style="font-size: 15px;">荐文</a> <a href="/tags/扇貝/" style="font-size: 15px;">扇貝</a> <a href="/tags/科学上网/" style="font-size: 15px;">科学上网</a> <a href="/tags/读书/" style="font-size: 15px;">读书</a> <a href="/tags/电影/" style="font-size: 15px;">电影</a> <a href="/tags/美剧/" style="font-size: 15px;">美剧</a> <a href="/tags/无题/" style="font-size: 15px;">无题</a> <a href="/tags/Linux/" style="font-size: 15px;">Linux</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Lyric-Ghost/" style="font-size: 15px;">Lyric-Ghost</a> <a href="/tags/Wifi/" style="font-size: 15px;">Wifi</a> <a href="/tags/读研/" style="font-size: 15px;">读研</a> <a href="/tags/扇贝/" style="font-size: 15px;">扇贝</a> <a href="/tags/科普/" style="font-size: 15px;">科普</a> <a href="/tags/看剧/" style="font-size: 15px;">看剧</a> <a href="/tags/回忆录/" style="font-size: 15px;">回忆录</a> <a href="/tags/R/" style="font-size: 15px;">R</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.iplaysoft.com/" title="异次元软件：不错的软件分享站" target="_blank">异次元软件：不错的软件分享站</a><ul></ul><a href="https://tinypng.com/" title="TinyPng：高质量在线图片压缩" target="_blank">TinyPng：高质量在线图片压缩</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">九燈.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" color="0,0,0" opacity="0.5" zindex="-2" count="20" src="//lib.baomitu.com/canvas-nest.js/2.0.4/canvas-nest.umd.js"></script><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
+        
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>原文作者：</strong><a rel="author" href="https://ferristale.com">九燈</a></li>
+        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://ferristale.com/update-Hexo/">https://ferristale.com/update-Hexo/</a></li>
+        <li><strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li>
+    </ul>
+</div>
+<br/>
+
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/how-about-Hugo/">要不要转移到Hugo呢</a></li>
+        
+        <li><a href="/SSH-your-VPS/">SSH登录服务器</a></li>
+        
+        <li><a href="/maupassant/">更換maupassant主題</a></li>
+        
+        <li><a href="/hello-Hexo-hello-MarkDown/">終於用上了Hexo</a></li>
+        
+        <li><a href="/install-hexo-again/">再次部署Hexo</a></li>
+        
+    </ul>
+</div>
+
+
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='https://ferristale.com/tags/Hexo'>Hexo</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
+    
+
+    
+    
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "ferristale/ferristale.github.io"
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+    
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2020 <a href="https://ferristale.com">九燈 By 九燈</a>
+        
+    </div>
+    <br />
+    <div>
+        <div class="github-badge">
+            <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://www.flysnow.org/" target="_black"><span class="badge-subject">Design by</span><span class="badge-value bg-brightgreen">飞雪无情</span></a>
+        </div>
+        <div class="github-badge">
+            <a href="https://github.com/flysnow-org/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
+        </div>
+    </div>
+</footer>
+
+
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-113302990-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+    <script src='/js/douban.js'></script>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='https://ferristale.com/search/' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://ferristale.com">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://ferristale.com/hello-hugo/" title="更换Hugo">更换Hugo</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/this-slow-netlify/" title="Netlify一点都没有更快">Netlify一点都没有更快</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/email-hosting/" title="邮箱托管">邮箱托管</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/look-back-into-the-past-while-graduating-on-master/" title="回顾考研路，于将毕业之时">回顾考研路，于将毕业之时</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/draw-two-or-more-exponential-regression-simultaneously-with-nlsLMggplot2/" title="nlsLM擬合多條指數函數並繪製于ggplot">nlsLM擬合多條指數函數並繪製于ggplot</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/buy-buy-buy-in-book-sales/" title="趁多抓鱼打折充实了一波书单">趁多抓鱼打折充实了一波书单</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/letter-for-someone/" title="盐醋薯片">盐醋薯片</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/reorganize-my-blog/" title="重新整理博客内容">重新整理博客内容</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/update-Hexo/" title="正儿八经更新Hexo">正儿八经更新Hexo</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/V2Ray/" title="Multi-V2Ray 一键部署">Multi-V2Ray 一键部署</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title"><a href="/categories">分类</a></h3>
+<ul class="widget-list">
+    
+    <li><a href="https://ferristale.com/categories/%E5%88%86%E4%BA%AB/">分享 (24)</a></li>
+    
+    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (73)</a></li>
+    
+    <li><a href="https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/">瞎搞 (39)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title"><a href="/tags">标签</a></h3>
+<div class="tagcloud">
+    
+    <a href="https://ferristale.com/tags/Hexo/">Hexo</a>
+    
+    <a href="https://ferristale.com/tags/Linux/">Linux</a>
+    
+    <a href="https://ferristale.com/tags/Lyric-Ghost/">Lyric-Ghost</a>
+    
+    <a href="https://ferristale.com/tags/R/">R</a>
+    
+    <a href="https://ferristale.com/tags/VPS/">VPS</a>
+    
+    <a href="https://ferristale.com/tags/WP/">WP</a>
+    
+    <a href="https://ferristale.com/tags/Wifi/">Wifi</a>
+    
+    <a href="https://ferristale.com/tags/%E5%9B%9E%E5%BF%86%E5%BD%95/">回忆录</a>
+    
+    <a href="https://ferristale.com/tags/%E6%89%87%E8%B2%9D/">扇貝</a>
+    
+    <a href="https://ferristale.com/tags/%E6%89%87%E8%B4%9D/">扇贝</a>
+    
+    <a href="https://ferristale.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>
+    
+    <a href="https://ferristale.com/tags/%E6%91%84%E5%BD%B1/">摄影</a>
+    
+    <a href="https://ferristale.com/tags/%E6%97%A0%E9%A2%98/">无题</a>
+    
+    <a href="https://ferristale.com/tags/%E6%9D%82%E5%BF%B5/">杂念</a>
+    
+    <a href="https://ferristale.com/tags/%E6%9D%82%E8%AE%B0/">杂记</a>
+    
+    <a href="https://ferristale.com/tags/%E6%9D%82%E8%B0%88/">杂谈</a>
+    
+    <a href="https://ferristale.com/tags/%E7%94%B5%E5%BD%B1/">电影</a>
+    
+    <a href="https://ferristale.com/tags/%E7%9C%8B%E5%89%A7/">看剧</a>
+    
+    <a href="https://ferristale.com/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">科学上网</a>
+    
+    <a href="https://ferristale.com/tags/%E7%A7%91%E6%99%AE/">科普</a>
+    
+    <a href="https://ferristale.com/tags/%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/">网站相关</a>
+    
+    <a href="https://ferristale.com/tags/%E7%BE%8E%E5%89%A7/">美剧</a>
+    
+    <a href="https://ferristale.com/tags/%E8%8D%90%E6%96%87/">荐文</a>
+    
+    <a href="https://ferristale.com/tags/%E8%AF%BB%E4%B9%A6/">读书</a>
+    
+    <a href="https://ferristale.com/tags/%E8%AF%BB%E7%A0%94/">读研</a>
+    
+    <a href="https://ferristale.com/tags/%E9%9F%B3%E4%B9%90/">音乐</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://www.iplaysoft.com/" title="异次元软件">不错的软件分享站</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://tinypng.com/" title="TinyPng">高质量在线图片压缩</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://ferristale.com/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
