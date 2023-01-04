@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 九把燈</title>
+    <title>Posts on 九盞燈</title>
     <link>https://ferristale.com/post/</link>
-    <description>Recent content in Posts on 九把燈</description>
+    <description>Recent content in Posts on 九盞燈</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 22 Aug 2021 21:22:08 +0800</lastBuildDate><atom:link href="https://ferristale.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Jan 2023 08:00:00 +0800</lastBuildDate><atom:link href="https://ferristale.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clash for Windows 归属地更改 &amp; Scholar规则</title>
+      <link>https://ferristale.com/anti-ip-and-scholar-rules-for-clash/</link>
+      <pubDate>Wed, 04 Jan 2023 08:00:00 +0800</pubDate>
+      
+      <guid>https://ferristale.com/anti-ip-and-scholar-rules-for-clash/</guid>
+      <description>&lt;p&gt;Parse脚本，可适配所有订阅&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>新年快乐</title>
+      <link>https://ferristale.com/Hello2023/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://ferristale.com/Hello2023/</guid>
+      <description>&lt;p&gt;保持开心，多吃点好吃的，有闲钱就看看演出&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>香气</title>
       <link>https://ferristale.com/perfume/</link>
@@ -18,10 +36,10 @@
     
     <item>
       <title>剧本记录</title>
-      <link>https://ferristale.com/my-LARP-list/</link>
+      <link>https://ferristale.com/LARP-records/</link>
       <pubDate>Sun, 08 Aug 2021 23:24:12 +0800</pubDate>
       
-      <guid>https://ferristale.com/my-LARP-list/</guid>
+      <guid>https://ferristale.com/LARP-records/</guid>
       <description>&lt;p&gt;记录打过的本&lt;/p&gt;</description>
     </item>
     
@@ -72,15 +90,6 @@
     </item>
     
     <item>
-      <title>回顾考研路，于将毕业之时</title>
-      <link>https://ferristale.com/look-back-into-the-past-while-graduating-on-master/</link>
-      <pubDate>Sat, 11 Apr 2020 23:26:39 +0000</pubDate>
-      
-      <guid>https://ferristale.com/look-back-into-the-past-while-graduating-on-master/</guid>
-      <description>&lt;p&gt;我覺得我可以把題目改爲：我是如何在四個月内考上研究生的&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>nlsLM擬合多條指數函數並繪製于ggplot</title>
       <link>https://ferristale.com/draw-two-or-more-exponential-regression-simultaneously-with-nlsLMggplot2/</link>
       <pubDate>Sat, 04 Apr 2020 22:44:25 +0000</pubDate>
@@ -103,15 +112,6 @@ $$&lt;/p&gt;</description>
 &lt;li&gt;昨天多抓鱼发文说搞促销了，点进去看了下，忍不住搞了一波&lt;/li&gt;
 &lt;li&gt;记一次囤书之旅&lt;/li&gt;
 &lt;/ol&gt;</description>
-    </item>
-    
-    <item>
-      <title>盐醋薯片</title>
-      <link>https://ferristale.com/letter-for-someone/</link>
-      <pubDate>Thu, 01 Aug 2019 21:25:01 +0000</pubDate>
-      
-      <guid>https://ferristale.com/letter-for-someone/</guid>
-      <description>&lt;p&gt;Hi 盐醋薯片&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -168,19 +168,6 @@ unzip master.zip &amp;amp;&amp;amp; cd ccaa-master &amp;amp;&amp;amp; sh ccaa.sh
       <description>&lt;p&gt;看到荔枝数码的招聘，感兴趣点进去看看，发现了能应的职位&lt;/p&gt;
 &lt;p&gt;让后在特别鸣谢里看到一些名字，回忆涌来&lt;/p&gt;
 &lt;p&gt;那么，故事从哪里说起呢&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>读研的师徒体验</title>
-      <link>https://ferristale.com/interpersonal-relationships-in-graduated-school/</link>
-      <pubDate>Fri, 14 Dec 2018 20:33:58 +0000</pubDate>
-      
-      <guid>https://ferristale.com/interpersonal-relationships-in-graduated-school/</guid>
-      <description>&lt;p&gt;读研其实也是工作的一种，研究所可以看作大学到社会的中转站&lt;/p&gt;
-&lt;p&gt;在这里你以学习的名义工作，付出与收入不成比例的劳动&lt;/p&gt;
-&lt;p&gt;但至少这里没有太多的尔虞我诈，没有太多的功名利益（并不是没有）&lt;/p&gt;
-&lt;p&gt;你还是可以该吃吃，该喝喝，该玩玩，该睡睡&lt;/p&gt;
-&lt;p&gt;这些都不是我要谈的内容，我想谈的是，大学时无法体会的同门情&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -359,16 +346,6 @@ unzip master.zip &amp;amp;&amp;amp; cd ccaa-master &amp;amp;&amp;amp; sh ccaa.sh
     </item>
     
     <item>
-      <title>生活应该怎么度过</title>
-      <link>https://ferristale.com/how-to-live-our-life/</link>
-      <pubDate>Mon, 14 May 2018 22:41:48 +0000</pubDate>
-      
-      <guid>https://ferristale.com/how-to-live-our-life/</guid>
-      <description>&lt;p&gt;夜深人静
-是时候写一波长文了&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>新版的坚果云和旧版的网易云</title>
       <link>https://ferristale.com/new-nutstore-and-old-netease-music/</link>
       <pubDate>Mon, 14 May 2018 19:07:22 +0000</pubDate>
@@ -394,24 +371,6 @@ unzip master.zip &amp;amp;&amp;amp; cd ccaa-master &amp;amp;&amp;amp; sh ccaa.sh
       <guid>https://ferristale.com/how-about-Hugo/</guid>
       <description>&lt;p&gt;意外发现了名为Hugo的静态博客框架
 仿佛，更有效率？&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>最近糟心的事情太多了</title>
-      <link>https://ferristale.com/black-days/</link>
-      <pubDate>Tue, 17 Apr 2018 11:48:48 +0000</pubDate>
-      
-      <guid>https://ferristale.com/black-days/</guid>
-      <description>&lt;p&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>国科大的讨论课哟</title>
-      <link>https://ferristale.com/what-the-fuck-r-u-doing-all-the-day/</link>
-      <pubDate>Mon, 16 Apr 2018 21:40:06 +0000</pubDate>
-      
-      <guid>https://ferristale.com/what-the-fuck-r-u-doing-all-the-day/</guid>
-      <description>&lt;p&gt;本文纯属吐槽，没有代表性&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -501,15 +460,6 @@ unzip master.zip &amp;amp;&amp;amp; cd ccaa-master &amp;amp;&amp;amp; sh ccaa.sh
     </item>
     
     <item>
-      <title>雕栏玉砌应犹在</title>
-      <link>https://ferristale.com/you-are-getting-older/</link>
-      <pubDate>Tue, 13 Feb 2018 14:06:26 +0000</pubDate>
-      
-      <guid>https://ferristale.com/you-are-getting-older/</guid>
-      <description>&lt;p&gt;只是朱颜改&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>北上半年</title>
       <link>https://ferristale.com/half-a-year-in-BeiJing/</link>
       <pubDate>Tue, 13 Feb 2018 14:04:52 +0000</pubDate>
@@ -554,53 +504,12 @@ electronic微信
     </item>
     
     <item>
-      <title>写在下一个初试成绩出来之前</title>
-      <link>https://ferristale.com/one-year-after-NEEP/</link>
-      <pubDate>Tue, 16 Jan 2018 13:44:42 +0000</pubDate>
-      
-      <guid>https://ferristale.com/one-year-after-NEEP/</guid>
-      <description>&lt;p&gt;再次见到师姐，不禁想起复试之后师姐加我的情景
-我从所里回去第二天一早就收到了添加消息，调皮的一行字：我是XXX，叫师姐！
-那时候的师姐，很是活泼呢
-而我现在，第二次见师姐，再过几个月，新的师弟/师妹就要产生了（如果有）
-那时的我会是怎样的心情
-当时的师姐是怎样的心情&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>《人类简史》之史上最大的谎言</title>
       <link>https://ferristale.com/the-biggest-lie-in-the-history/</link>
       <pubDate>Sat, 22 Apr 2017 19:50:42 +0000</pubDate>
       
       <guid>https://ferristale.com/the-biggest-lie-in-the-history/</guid>
       <description>&lt;p&gt;《人类简史》第五章读后有感&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>没有啊，我要考研啊</title>
-      <link>https://ferristale.com/thank-you-for-standing-there/</link>
-      <pubDate>Fri, 17 Mar 2017 21:50:42 +0000</pubDate>
-      
-      <guid>https://ferristale.com/thank-you-for-standing-there/</guid>
-      <description>&lt;p&gt;你是我早起学习的理由&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>复试准备进程中</title>
-      <link>https://ferristale.com/preparing-for-the-NEEP/</link>
-      <pubDate>Mon, 13 Mar 2017 21:50:42 +0000</pubDate>
-      
-      <guid>https://ferristale.com/preparing-for-the-NEEP/</guid>
-      <description>&lt;p&gt;我一定是论文看多了&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>跆协新生寄语</title>
-      <link>https://ferristale.com/words-to-freshman/</link>
-      <pubDate>Fri, 23 Sep 2016 21:50:42 +0000</pubDate>
-      
-      <guid>https://ferristale.com/words-to-freshman/</guid>
-      <description>&lt;p&gt;一篇草稿&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -619,16 +528,6 @@ electronic微信
       
       <guid>https://ferristale.com/change-IP-and-email-hosting/</guid>
       <description>&lt;p&gt;好久不見&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>要考六級了</title>
-      <link>https://ferristale.com/SET-6/</link>
-      <pubDate>Fri, 17 Jun 2016 23:42:39 +0000</pubDate>
-      
-      <guid>https://ferristale.com/SET-6/</guid>
-      <description>&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;而不知不覺間我的扇貝已經連續三個多月不間斷打卡&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -659,15 +558,6 @@ electronic微信
       <description>&lt;p&gt;虽然是咬过一口的
 Ps：我真不是故意黑坚果
 PPs：你们都说热，然而我在图书馆好冷{(&amp;gt;_&amp;lt;)}&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>做个勤奋学习的学生不容易啊</title>
-      <link>https://ferristale.com/not-easy-to-good-good-study/</link>
-      <pubDate>Mon, 30 May 2016 22:00:43 +0000</pubDate>
-      
-      <guid>https://ferristale.com/not-easy-to-good-good-study/</guid>
-      <description>&lt;p&gt;沒有摘要了&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -742,15 +632,6 @@ PPs：你们都说热，然而我在图书馆好冷{(&amp;gt;_&amp;lt;)}&lt;/p&g
     </item>
     
     <item>
-      <title>摔了一跤，只好回來寫博</title>
-      <link>https://ferristale.com/falldown-from-the-bicycle/</link>
-      <pubDate>Sun, 08 May 2016 18:21:36 +0000</pubDate>
-      
-      <guid>https://ferristale.com/falldown-from-the-bicycle/</guid>
-      <description>&lt;p&gt;騎得好好的，偏要裝逼，這不。摔了半身&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Sth. about Wifi</title>
       <link>https://ferristale.com/post/2016-5-7-sth-about-Wifi/</link>
       <pubDate>Sat, 07 May 2016 23:19:55 +0000</pubDate>
@@ -794,15 +675,6 @@ PPs：你们都说热，然而我在图书馆好冷{(&amp;gt;_&amp;lt;)}&lt;/p&g
 &lt;li&gt;VPS直接上一鍵安裝包+WP&lt;/li&gt;
 &lt;li&gt;Nginx+Hexo&lt;/li&gt;
 &lt;/ol&gt;</description>
-    </item>
-    
-    <item>
-      <title>无题</title>
-      <link>https://ferristale.com/notitle-160425/</link>
-      <pubDate>Mon, 25 Apr 2016 19:49:06 +0000</pubDate>
-      
-      <guid>https://ferristale.com/notitle-160425/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -864,39 +736,6 @@ PPs：你们都说热，然而我在图书馆好冷{(&amp;gt;_&amp;lt;)}&lt;/p&g
     </item>
     
     <item>
-      <title>集訓完結</title>
-      <link>https://ferristale.com/post/2016-2-1-end-of-a-period-of-tkd/</link>
-      <pubDate>Mon, 01 Feb 2016 00:26:10 +0000</pubDate>
-      
-      <guid>https://ferristale.com/post/2016-2-1-end-of-a-period-of-tkd/</guid>
-      <description>&lt;p&gt;兩個星期的集訓結束了&lt;/p&gt;
-&lt;p&gt;今天9點到12點多，集訓的幾十號人考帶&lt;/p&gt;
-&lt;p&gt;當然不是每個。藍綠的有三個&lt;/p&gt;
-&lt;p&gt;我鎮偉和鎮豪&lt;/p&gt;
-&lt;p&gt;昨晚模擬的時候還可以的&lt;/p&gt;
-&lt;p&gt;今天上場就緊張了&lt;/p&gt;
-&lt;p&gt;後踢和章法都錯了&lt;/p&gt;
-&lt;p&gt;柔韌性不行，最後破板失敗&lt;/p&gt;
-&lt;p&gt;看來跳帶無緣了  好吧又一次跳不了帶&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>集训一周</title>
-      <link>https://ferristale.com/a-week-of-training/</link>
-      <pubDate>Sun, 24 Jan 2016 20:40:53 +0000</pubDate>
-      
-      <guid>https://ferristale.com/a-week-of-training/</guid>
-      <description>&lt;p&gt;从18号开始&lt;/p&gt;
-&lt;p&gt;不知不觉间集训已经进行了一周&lt;/p&gt;
-&lt;p&gt;(其实是5天啦)&lt;/p&gt;
-&lt;p&gt;周日休息，周五因为消防检查停训&lt;/p&gt;
-&lt;p&gt;然后周四又一堆乱七八糟的事情，早上有宣传办的人来宣传急救知识（顺便卖广告）&lt;/p&gt;
-&lt;p&gt;下午我们学校的社联去拍社团风采&lt;/p&gt;
-&lt;p&gt;不过整个过程还是相当累的&lt;/p&gt;
-&lt;p&gt;小腿都快抽筋了&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>从Ubuntu 12.04到16.04</title>
       <link>https://ferristale.com/from-ubuntu-1204-to-1604/</link>
       <pubDate>Fri, 15 Jan 2016 22:18:49 +0000</pubDate>
@@ -907,31 +746,6 @@ PPs：你们都说热，然而我在图书馆好冷{(&amp;gt;_&amp;lt;)}&lt;/p&g
 &lt;p&gt;后来用上了14.04。（其实现在还在用）&lt;/p&gt;
 &lt;p&gt;还以为很新的版本，今天意外看到16.04beta&lt;/p&gt;
 &lt;p&gt;才惊觉原来已经两年了&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>无题</title>
-      <link>https://ferristale.com/notitle-160110/</link>
-      <pubDate>Sun, 10 Jan 2016 22:18:10 +0000</pubDate>
-      
-      <guid>https://ferristale.com/notitle-160110/</guid>
-      <description>&lt;p&gt;在肯德基半年多了，原本的踌躇满志，现在什么都不剩&lt;/p&gt;
-&lt;p&gt;老板问，现在还有远行的计划吗&lt;/p&gt;
-&lt;p&gt;我说，有，只是原计划的时间冲突，要延后了&lt;/p&gt;
-&lt;p&gt;我说的是实话，确实有冲突，确实要延后&lt;/p&gt;
-&lt;p&gt;只是这个延后，遥遥无期&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>集训</title>
-      <link>https://ferristale.com/160110/</link>
-      <pubDate>Sun, 10 Jan 2016 19:58:16 +0000</pubDate>
-      
-      <guid>https://ferristale.com/160110/</guid>
-      <description>&lt;p&gt;好像每次考试前都会更新。。&lt;/p&gt;
-&lt;p&gt;今天本来不想更的，但是接到老爸电话&lt;/p&gt;
-&lt;p&gt;关于集训的事情，虽然骂骂咧咧，但没有反对&lt;/p&gt;
-&lt;p&gt;只是心里也不好受&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -975,17 +789,6 @@ PPs：你们都说热，然而我在图书馆好冷{(&amp;gt;_&amp;lt;)}&lt;/p&g
     </item>
     
     <item>
-      <title>願下個學期還能看見你們</title>
-      <link>https://ferristale.com/post/2015-12-18-see-you-next-term/</link>
-      <pubDate>Fri, 18 Dec 2015 16:11:55 +0000</pubDate>
-      
-      <guid>https://ferristale.com/post/2015-12-18-see-you-next-term/</guid>
-      <description>&lt;p&gt;大家都好煽情，我也冒个泡，混个脸熟，说一些他们不会说的东西&lt;/p&gt;
-&lt;p&gt;又到了结训的时候，看到那么多人。真的一时不知道怎么形容。&lt;/p&gt;
-&lt;p&gt;你们或多或少都对协会的过去有一些了解，这是三年，甚至四年来人数最多的一年&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>升級了兩個應用/牛奶咖啡</title>
       <link>https://ferristale.com/milk-coffee/</link>
       <pubDate>Fri, 18 Dec 2015 13:09:36 +0000</pubDate>
@@ -1021,15 +824,6 @@ PPs：你们都说热，然而我在图书馆好冷{(&amp;gt;_&amp;lt;)}&lt;/p&g
       <guid>https://ferristale.com/post/2015-12-13-when-you-r-old/</guid>
       <description>&lt;p&gt; &lt;/p&gt;
 &lt;p&gt;以前存的草稿，也發出來吧&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>洗剪吹88</title>
-      <link>https://ferristale.com/expensive-haricut/</link>
-      <pubDate>Sun, 13 Dec 2015 13:53:35 +0000</pubDate>
-      
-      <guid>https://ferristale.com/expensive-haricut/</guid>
-      <description>&lt;p&gt;看看就好了吧&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1091,23 +885,6 @@ PPs：你们都说热，然而我在图书馆好冷{(&amp;gt;_&amp;lt;)}&lt;/p&g
     </item>
     
     <item>
-      <title>未來</title>
-      <link>https://ferristale.com/post/2015-06-24-the-future/</link>
-      <pubDate>Wed, 24 Jun 2015 12:58:33 +0000</pubDate>
-      
-      <guid>https://ferristale.com/post/2015-06-24-the-future/</guid>
-      <description>&lt;p&gt;下午考試。冒着掛科的風險&lt;/p&gt;
-&lt;p&gt;寫個短篇&lt;/p&gt;
-&lt;p&gt;昨晚問了一下兼職的工資&lt;/p&gt;
-&lt;p&gt;說最高可以拿到2200&lt;/p&gt;
-&lt;p&gt;跟我預想的有差距&lt;/p&gt;
-&lt;p&gt;這樣的話開學前可以籌到5k&lt;/p&gt;
-&lt;p&gt;剩下十個月，還差5k&lt;/p&gt;
-&lt;p&gt;平均一個月500&lt;/p&gt;
-&lt;p&gt;怎麼都有點懸&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Ubuntu下配置Shadowsocks實戰攻略</title>
       <link>https://ferristale.com/shadowsocks-in-Ubuntu/</link>
       <pubDate>Tue, 23 Jun 2015 20:59:55 +0000</pubDate>
@@ -1141,15 +918,6 @@ PPs：你们都说热，然而我在图书馆好冷{(&amp;gt;_&amp;lt;)}&lt;/p&g
     </item>
     
     <item>
-      <title>三行</title>
-      <link>https://ferristale.com/post/2015-06-05-three-lines/</link>
-      <pubDate>Fri, 05 Jun 2015 10:38:35 +0000</pubDate>
-      
-      <guid>https://ferristale.com/post/2015-06-05-three-lines/</guid>
-      <description>在一起三年 分開三年 過去三年</description>
-    </item>
-    
-    <item>
       <title>221</title>
       <link>https://ferristale.com/post/221/</link>
       <pubDate>Mon, 01 Jun 2015 23:44:46 +0000</pubDate>
@@ -1178,91 +946,6 @@ PPs：你们都说热，然而我在图书馆好冷{(&amp;gt;_&amp;lt;)}&lt;/p&g
       
       <guid>https://ferristale.com/post/2015-05-25-lr-detail-panel/</guid>
       <description>明亮度：减少亮度噪点的数量 细节： 控制阀值</description>
-    </item>
-    
-    <item>
-      <title>關於魅族和小米的討論</title>
-      <link>https://ferristale.com/merzu-or-xiaomi/</link>
-      <pubDate>Mon, 25 May 2015 17:26:30 +0000</pubDate>
-      
-      <guid>https://ferristale.com/merzu-or-xiaomi/</guid>
-      <description>&lt;p&gt;今天和舍友聊了一下魅族和小米的選擇問題&lt;/p&gt;
-&lt;p&gt;宿舍4個人，兩個用小米，兩個用魅族。&lt;/p&gt;
-&lt;p&gt;其中一個米粉，一個魅粉，一個未表態，還有一個自己粉&lt;/p&gt;
-&lt;p&gt;緣起是未表態兄說手機慢， 然後剛買了米四的米兄說改換了！&lt;/p&gt;
-&lt;p&gt;然後說着說着就到了用戶粘性上了&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>花点时间写一下这两天</title>
-      <link>https://ferristale.com/150524/</link>
-      <pubDate>Sun, 24 May 2015 23:27:54 +0000</pubDate>
-      
-      <guid>https://ferristale.com/150524/</guid>
-      <description>昨天去听了个旅行摄影的讲座 挺多东西 最重要</description>
-    </item>
-    
-    <item>
-      <title>國際義工：終於踏出了第一步</title>
-      <link>https://ferristale.com/first-step-to-international-voluntourism/</link>
-      <pubDate>Sat, 23 May 2015 09:05:06 +0000</pubDate>
-      
-      <guid>https://ferristale.com/first-step-to-international-voluntourism/</guid>
-      <description>&lt;h3 id=&#34;招募一年之後暑假肯尼亞組隊的舉手&#34;&gt;招募：一年之後，暑假，肯尼亞，組隊的舉手！&lt;/h3&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;昨天，度過了比較緊張的一天&lt;/p&gt;
-&lt;p&gt;早上上完課，中午開會，開完會直奔校外，面試&lt;/p&gt;
-&lt;p&gt;然後回來，直奔真維斯，座談。。&lt;/p&gt;
-&lt;p&gt;好的重點就是，校外面試&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>520</title>
-      <link>https://ferristale.com/post/520/</link>
-      <pubDate>Wed, 20 May 2015 23:21:37 +0000</pubDate>
-      
-      <guid>https://ferristale.com/post/520/</guid>
-      <description>&lt;p&gt;太多的话&lt;/p&gt;
-&lt;p&gt;不知道从何说起&lt;/p&gt;
-&lt;p&gt;最近状态很差， 感觉一股压力，压着&lt;/p&gt;
-&lt;p&gt;考试，6级，换届，还有一些琐碎&lt;/p&gt;
-&lt;p&gt;换届的事现在是不想考虑了，我不行&lt;/p&gt;
-&lt;p&gt;只是到现在还没有办法开始找工作，也是很急&lt;/p&gt;
-&lt;p&gt;考试来了，6级快了，每天还有各种任务&lt;/p&gt;
-&lt;p&gt;还有被各种虐。活着就得接受各种环境的影响&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>跆协十周年庆：自己的总结</title>
-      <link>https://ferristale.com/anniversary-and-reflect/</link>
-      <pubDate>Mon, 18 May 2015 00:34:12 +0000</pubDate>
-      
-      <guid>https://ferristale.com/anniversary-and-reflect/</guid>
-      <description>&lt;p&gt;[hermit auto=&amp;ldquo;0&amp;rdquo; loop=&amp;ldquo;1&amp;rdquo; unexpand=&amp;ldquo;1&amp;rdquo;]netease_songs#:212007[/hermit]&lt;/p&gt;
-&lt;p&gt;离上一篇似乎有些日子了吧&lt;/p&gt;
-&lt;p&gt;这段时间都忙忙的&lt;/p&gt;
-&lt;p&gt;每天都有点东西想说，每天都没时间写，每天都不能按时入睡，每天都要失眠&lt;/p&gt;
-&lt;p&gt;这似乎就是上星期的情况&lt;/p&gt;
-&lt;p&gt;从上上周六日开始周年庆进入最后一周&lt;/p&gt;
-&lt;p&gt;那两天每天排练两次&lt;/p&gt;
-&lt;p&gt;早上，下午，早上，晚上&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>又是一年白兰开</title>
-      <link>https://ferristale.com/post/2015-05-10-graduated/</link>
-      <pubDate>Sun, 10 May 2015 14:04:37 +0000</pubDate>
-      
-      <guid>https://ferristale.com/post/2015-05-10-graduated/</guid>
-      <description>&lt;p&gt;又到一年毕业时&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;毕业总是一个充满伤怀的词语&lt;/p&gt;
-&lt;p&gt;几周前就陆陆续续开始各种毕业照&lt;/p&gt;
-&lt;p&gt;那是还没感觉&lt;/p&gt;
-&lt;p&gt;毕竟是别人的毕业&lt;/p&gt;
-&lt;p&gt;可是骑过校道，闻着阵阵兰花香&lt;/p&gt;
-&lt;p&gt;我就想，好香，这是&amp;hellip;&amp;hellip;.&lt;/p&gt;
-&lt;p&gt;白兰&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1412,17 +1095,6 @@ PPs：你们都说热，然而我在图书馆好冷{(&amp;gt;_&amp;lt;)}&lt;/p&g
       
       <guid>https://ferristale.com/post/118/</guid>
       <description>本來想聊聊高瑜，這時間還是算了 BB一下 加</description>
-    </item>
-    
-    <item>
-      <title>今天推薦兩個活動</title>
-      <link>https://ferristale.com/two-activities/</link>
-      <pubDate>Wed, 22 Apr 2015 01:56:15 +0000</pubDate>
-      
-      <guid>https://ferristale.com/two-activities/</guid>
-      <description>&lt;p&gt;師妹發短信來，讓我給他找暑假工&lt;/p&gt;
-&lt;p&gt;這個要求讓我不得不感慨，轉瞬就是兩年&lt;/p&gt;
-&lt;p&gt;狗一樣的青春&lt;/p&gt;</description>
     </item>
     
     <item>

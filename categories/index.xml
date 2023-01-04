@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on 九把燈</title>
+    <title>Categories on 九盞燈</title>
     <link>https://ferristale.com/categories/</link>
-    <description>Recent content in Categories on 九把燈</description>
+    <description>Recent content in Categories on 九盞燈</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 22 Aug 2021 21:22:08 +0800</lastBuildDate><atom:link href="https://ferristale.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Jan 2023 08:00:00 +0800</lastBuildDate><atom:link href="https://ferristale.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>杂文</title>
-      <link>https://ferristale.com/categories/%E6%9D%82%E6%96%87/</link>
-      <pubDate>Sun, 22 Aug 2021 21:22:08 +0800</pubDate>
+      <title>瞎搞</title>
+      <link>https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/</link>
+      <pubDate>Wed, 04 Jan 2023 08:00:00 +0800</pubDate>
       
-      <guid>https://ferristale.com/categories/%E6%9D%82%E6%96%87/</guid>
+      <guid>https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>瞎搞</title>
-      <link>https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/</link>
-      <pubDate>Tue, 27 Oct 2020 22:51:39 +0800</pubDate>
+      <title>杂文</title>
+      <link>https://ferristale.com/categories/%E6%9D%82%E6%96%87/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0800</pubDate>
       
-      <guid>https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/</guid>
+      <guid>https://ferristale.com/categories/%E6%9D%82%E6%96%87/</guid>
       <description></description>
     </item>
     
