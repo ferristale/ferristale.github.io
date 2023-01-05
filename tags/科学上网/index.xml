@@ -37,10 +37,8 @@
       <guid>https://ferristale.com/post/2016-03-04-hosts/</guid>
       <description>&lt;p&gt; &lt;/p&gt;
 &lt;p&gt;
-    
-    
-        &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://cdn.jsdelivr.net/gh/ferristale/ferristale.github.io/google.png&#34;&gt;
-            &lt;img class=&#34;mx-auto&#34; alt=&#34;Google&#34; src=&#34;https://cdn.jsdelivr.net/gh/ferristale/ferristale.github.io/google.png&#34; /&gt;
+        &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://ferristale.com/google.png&#34;&gt;
+            &lt;img class=&#34;mx-auto&#34; alt=&#34;Google&#34; src=&#34;https://ferristale.com/google.png&#34; /&gt;
         &lt;/a&gt;
     &lt;/p&gt;</description>
     </item>
