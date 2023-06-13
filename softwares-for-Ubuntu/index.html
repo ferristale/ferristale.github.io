@@ -232,7 +232,7 @@ electronic微信
 开机挂载ntfs分区</p>
 <h2 id="开启chacha20">开启chacha20</h2>
 <p>chacha20要额外加装libsodium</p>
-<pre><code>wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz
+<pre tabindex="0"><code>wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz
 tar xzvf LATEST.tar.gz
 cd libsodium*
 ./configure
@@ -251,9 +251,9 @@ ldconfig
 <p>tips：可以进安装目录，把配置文件一个一个放进去
 一个文件一个服务器，文件名就是[server]</p>
 <p>Install</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">npm install -g nssr
-</code></pre></div><p>Usage</p>
-<pre><code>  Usage: nssr [options] [command]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install -g nssr
+</span></span></code></pre></div><p>Usage</p>
+<pre tabindex="0"><code>  Usage: nssr [options] [command]
 
 
   Options:
@@ -275,25 +275,25 @@ ldconfig
 </code></pre><p><a href="https://github.com/kokororin/nssr">Github地址</a></p>
 <h3 id="ssr一键脚本">ssr一键脚本</h3>
 <p>另一人做的集成脚本，估计本质是一样的</p>
-<pre><code>wget https://github.com/the0demiurge/CharlesScripts/blob/master/charles/bin/ssr
+<pre tabindex="0"><code>wget https://github.com/the0demiurge/CharlesScripts/blob/master/charles/bin/ssr
 sudo mv ssr /usr/local/bin
 sudo chmod 766 /usr/local/bin/ssr
 </code></pre><p>使用方法：</p>
-<pre><code>    echo -e &quot;\t&quot; &quot;ssr install      install shadowsocksr client&quot;
-    echo -e &quot;\t&quot; &quot;ssr uninstall    uninstall shadowsocksr client&quot;
+<pre tabindex="0"><code>    echo -e &#34;\t&#34; &#34;ssr install      install shadowsocksr client&#34;
+    echo -e &#34;\t&#34; &#34;ssr uninstall    uninstall shadowsocksr client&#34;
 
-    echo -e &quot;\t&quot; &quot;ssr update       update subscription from $WEBSITE&quot;
-    echo -e &quot;\t&quot; &quot;ssr config       edit config.json&quot;
-    echo -e &quot;\t&quot; &quot;ssr xclip        paste configs from clipboard to config.json&quot;
+    echo -e &#34;\t&#34; &#34;ssr update       update subscription from $WEBSITE&#34;
+    echo -e &#34;\t&#34; &#34;ssr config       edit config.json&#34;
+    echo -e &#34;\t&#34; &#34;ssr xclip        paste configs from clipboard to config.json&#34;
 
-    echo -e &quot;\t&quot; &quot;ssr start        start the shadowsocks service&quot;
-    echo -e &quot;\t&quot; &quot;ssr stop         stop the shadowsocks service&quot;
-    echo -e &quot;\t&quot; &quot;ssr restart      restart the shadowsocks service&quot;
+    echo -e &#34;\t&#34; &#34;ssr start        start the shadowsocks service&#34;
+    echo -e &#34;\t&#34; &#34;ssr stop         stop the shadowsocks service&#34;
+    echo -e &#34;\t&#34; &#34;ssr restart      restart the shadowsocks service&#34;
 
-    echo -e &quot;\t&quot; &quot;ssr test         get ip from cip.cc using socks5 proxy&quot;
-    echo -e &quot;\t&quot; &quot;ssr log          cat the log of shadowsocks&quot;
-    echo -e &quot;\t&quot; &quot;ssr shell        cd into ssr installation dir&quot;
-    echo -e &quot;\t&quot; &quot;ssr clean        clean ssr configuration backups&quot;
+    echo -e &#34;\t&#34; &#34;ssr test         get ip from cip.cc using socks5 proxy&#34;
+    echo -e &#34;\t&#34; &#34;ssr log          cat the log of shadowsocks&#34;
+    echo -e &#34;\t&#34; &#34;ssr shell        cd into ssr installation dir&#34;
+    echo -e &#34;\t&#34; &#34;ssr clean        clean ssr configuration backups&#34;
 </code></pre><h2 id="微信">微信</h2>
 <h3 id="先设定淘宝镜像">先设定淘宝镜像</h3>
 <p>身在国内，不要侥幸
@@ -305,21 +305,20 @@ sudo chmod 766 /usr/local/bin/ssr
 <p><code>alias cnpm=&quot;npm --registry=https://registry.npm.taobao.org \ --cache=$HOME/.npm/.cache/cnpm \ --disturl=https://npm.taobao.org/dist \ --userconfig=$HOME/.cnpmrc&quot;</code></p>
 <h4 id="全局方法">全局方法</h4>
 <p>法二 一次性的，法一不知道，一劳永逸可以三</p>
-<pre><code>npm config set registry https://registry.npm.taobao.org
+<pre tabindex="0"><code>npm config set registry https://registry.npm.taobao.org
 registry=https://registry.npm.taobao.org
 sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
 phantomjs_cdnurl=http://npm.taobao.org/mirrors/phantomjs
 electron_mirror=http://npm.taobao.org/mirrors/electron/```
-
 </code></pre><p>npm install -g electron```</p>
 <h3 id="electronic微信">electronic微信</h3>
-<pre><code>git clone https://github.com/geeeeeeeeek/electronic-wechat.git
+<pre tabindex="0"><code>git clone https://github.com/geeeeeeeeek/electronic-wechat.git
 cd electronic-wechat
 npm install &amp;&amp; npm start
 npm run build:linux
 </code></pre><p>完成后，会生成一个很大的单文件，文件夹可以删掉了</p>
 <h2 id="开机挂载">开机挂载</h2>
-<pre><code>    sudo mkdir /data
+<pre tabindex="0"><code>    sudo mkdir /data
     sudo blkid
     sudo nano /etc/fstab
 
@@ -331,7 +330,7 @@ npm run build:linux
 <p><a href="http://ugetdm.com/downloads-ubuntu">参考</a>
 <a href="https://slgobinath.github.io/uget-chrome-wrapper/#installation">参考</a>
 <a href="https://chrome.google.com/webstore/detail/uget-integration/efjgjleilhflffpbnkaofpmdnajdpepi?hl=zh-CN">chrome扩展中心</a></p>
-<pre><code>sudo add-apt-repository ppa:plushuang-tw/uget-stable
+<pre tabindex="0"><code>sudo add-apt-repository ppa:plushuang-tw/uget-stable
 sudo add-apt-repository ppa:slgobinath/uget-chrome-wrapper
 sudo apt-get update
 sudo apt-get install uget
@@ -549,6 +548,14 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
 <ul class="widget-list">
     
     <li>
+        <a href="https://ferristale.com/fragments-in-hainan/" title="海南碎片" target="_blank">海南碎片</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/haikou-midi/" title="海口迷笛" target="_blank">海口迷笛</a>
+    </li>
+    
+    <li>
         <a href="https://ferristale.com/recent-changes-230107/" title="近期博客变动" target="_blank">近期博客变动</a>
     </li>
     
@@ -580,26 +587,18 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
         <a href="https://ferristale.com/hello-hugo/" title="更换Hugo" target="_blank">更换Hugo</a>
     </li>
     
-    <li>
-        <a href="https://ferristale.com/this-slow-netlify/" title="Netlify一点都没有更快" target="_blank">Netlify一点都没有更快</a>
-    </li>
-    
-    <li>
-        <a href="https://ferristale.com/email-hosting/" title="邮箱托管" target="_blank">邮箱托管</a>
-    </li>
-    
 </ul>
     </section>
 
     
 
     <section class="widget">
-        <h3 class="widget-title"><a href='/categories/'>categories</a></h3>
+        <h3 class="widget-title"><a href='/categories/'>分類</a></h3>
 <ul class="widget-list">
     
     <li><a href="https://ferristale.com/categories/%E5%88%86%E4%BA%AB/">分享 (25)</a></li>
     
-    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (45)</a></li>
+    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (47)</a></li>
     
     <li><a href="https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/">瞎搞 (40)</a></li>
     
@@ -607,7 +606,7 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
     </section>
 
     <section class="widget">
-        <h3 class="widget-title"><a href='/tags/'>tags</a></h3>
+        <h3 class="widget-title"><a href='/tags/'>標籤</a></h3>
 <div class="tagcloud">
     
     <a href="https://ferristale.com/tags/Hexo/">Hexo</a>

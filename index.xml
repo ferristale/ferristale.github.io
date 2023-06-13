@@ -6,7 +6,27 @@
     <description>Recent content on 九盞燈</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hant</language>
-    <lastBuildDate>Sat, 07 Jan 2023 15:04:06 +0800</lastBuildDate><atom:link href="https://ferristale.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Jun 2023 01:37:01 +0800</lastBuildDate><atom:link href="https://ferristale.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>海南碎片</title>
+      <link>https://ferristale.com/fragments-in-hainan/</link>
+      <pubDate>Wed, 14 Jun 2023 01:37:01 +0800</pubDate>
+      
+      <guid>https://ferristale.com/fragments-in-hainan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>海口迷笛</title>
+      <link>https://ferristale.com/haikou-midi/</link>
+      <pubDate>Thu, 30 Mar 2023 01:37:01 +0800</pubDate>
+      
+      <guid>https://ferristale.com/haikou-midi/</guid>
+      <description>&lt;p&gt;我们乐此不疲追随日月星辰&lt;/p&gt;
+&lt;p&gt;但我们从不追赶时间&lt;/p&gt;
+&lt;p&gt;所以我们永远年轻&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>近期博客变动</title>
       <link>https://ferristale.com/recent-changes-230107/</link>
@@ -100,10 +120,10 @@
     
     <item>
       <title>nlsLM擬合多條指數函數並繪製于ggplot</title>
-      <link>https://ferristale.com/draw-two-or-more-exponential-regression-simultaneously-with-nlsLMggplot2/</link>
+      <link>https://ferristale.com/draw-two-or-more-exponential-regression-simultaneously-with-nlsLM&amp;ggplot2/</link>
       <pubDate>Sat, 04 Apr 2020 22:44:25 +0000</pubDate>
       
-      <guid>https://ferristale.com/draw-two-or-more-exponential-regression-simultaneously-with-nlsLMggplot2/</guid>
+      <guid>https://ferristale.com/draw-two-or-more-exponential-regression-simultaneously-with-nlsLM&amp;ggplot2/</guid>
       <description>&lt;p&gt;折騰了我兩天的&lt;/p&gt;
 &lt;p&gt;$$
 y = c + (1 - a*e^{-bx})
@@ -149,9 +169,9 @@ $$&lt;/p&gt;</description>
       
       <guid>https://ferristale.com/V2Ray/</guid>
       <description>&lt;p&gt;安装&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;source &amp;lt;(curl -sL https://git.io/fNgqx) --zh
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;source &amp;lt;(curl -sL https://git.io/fNgqx) --zh
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;脚本更新&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;source &amp;lt;(curl -sL https://git.io/fNgqx) -k
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;source &amp;lt;(curl -sL https://git.io/fNgqx) -k
 &lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
@@ -162,7 +182,7 @@ $$&lt;/p&gt;</description>
       
       <guid>https://ferristale.com/remote-download-server/</guid>
       <description>&lt;p&gt;for CentOS 7&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;yum -y install wget unzip curl
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yum -y install wget unzip curl
 wget https://github.com/helloxz/ccaa/archive/master.zip
 unzip master.zip &amp;amp;&amp;amp; cd ccaa-master &amp;amp;&amp;amp; sh ccaa.sh
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Enjoy it!&lt;/p&gt;</description>
@@ -1143,12 +1163,30 @@ PPs：你们都说热，然而我在图书馆好冷{(&amp;gt;_&amp;lt;)}&lt;/p&g
     </item>
     
     <item>
+      <title>文献管理软件的选择</title>
+      <link>https://ferristale.com/bibliography-managing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ferristale.com/bibliography-managing/</guid>
+      <description>&lt;p&gt;endnote/mendeley/Citavi/zotero&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>以史为镜，可以知兴替</title>
       <link>https://ferristale.com/A-Brief-History-of-Mankind/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ferristale.com/A-Brief-History-of-Mankind/</guid>
       <description>&lt;p&gt;——读《人类简史》&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>归档</title>
+      <link>https://ferristale.com/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ferristale.com/archives/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -1164,30 +1202,12 @@ PPs：你们都说热，然而我在图书馆好冷{(&amp;gt;_&amp;lt;)}&lt;/p&g
     </item>
     
     <item>
-      <title>归档</title>
-      <link>https://ferristale.com/archives/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ferristale.com/archives/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>搜索</title>
       <link>https://ferristale.com/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ferristale.com/search/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>文献管理软件的选择</title>
-      <link>https://ferristale.com/bibliography-managing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ferristale.com/bibliography-managing/</guid>
-      <description>&lt;p&gt;endnote/mendeley/Citavi/zotero&lt;/p&gt;</description>
     </item>
     
     <item>

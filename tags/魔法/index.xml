@@ -23,9 +23,9 @@
       
       <guid>https://ferristale.com/V2Ray/</guid>
       <description>&lt;p&gt;安装&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;source &amp;lt;(curl -sL https://git.io/fNgqx) --zh
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;source &amp;lt;(curl -sL https://git.io/fNgqx) --zh
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;脚本更新&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;source &amp;lt;(curl -sL https://git.io/fNgqx) -k
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;source &amp;lt;(curl -sL https://git.io/fNgqx) -k
 &lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     

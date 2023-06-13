@@ -220,25 +220,24 @@
 <p>終於無痛升級PHP7.0</p>
 <p> </p>
 <h3 id="修改etcyumreposdremi-php70repo">修改/etc/yum.repos.d/remi-php70.repo</h3>
-<pre><code>cd /etc/yum.repos.d/
+<pre tabindex="0"><code>cd /etc/yum.repos.d/
 vi remi-php70.repo
 </code></pre><p>把<code>[remi-php70]</code>下的<code>enabled=0</code></p>
 <p>改為<code>enabled=1</code></p>
 <p>如果沒有這個文件，那你可能要更新一下</p>
-<pre><code>yum install epel-release
+<pre tabindex="0"><code>yum install epel-release
 yum install http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
 </code></pre><p>如果要安裝5.5或5.6，就修改<code>remi.repo</code>文件的相應數值</p>
 <p>即：</p>
-<pre><code>cd /etc/yum.repos.d/
+<pre tabindex="0"><code>cd /etc/yum.repos.d/
 vi remi.repo
 </code></pre><p>vi编辑器的一些命令<code>：i</code> 是编辑；ESC 键是退出编辑；<code>:wq!+回车</code>是保存并退出；<code>:q!</code> 是不做修改直接退出</p>
 <h3 id="開始升級">開始升級</h3>
 <p>執行命令</p>
-<pre><code>yum update php --enablerepo=remi -y
-
+<pre tabindex="0"><code>yum update php --enablerepo=remi -y
 </code></pre><p>完成之後會有Complete的字樣</p>
 <h3 id="重啟服務器">重啟服務器</h3>
-<pre><code>service nginx restart
+<pre tabindex="0"><code>service nginx restart
 service vesta restart
 </code></pre><h3 id="enjoy-it-">Enjoy it !</h3>
 <p><code>PHP 7.0.0 (cli) (built: Dec  5 2015 07:17:51) ( NTS )</code>
@@ -465,6 +464,14 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
 <ul class="widget-list">
     
     <li>
+        <a href="https://ferristale.com/fragments-in-hainan/" title="海南碎片" target="_blank">海南碎片</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/haikou-midi/" title="海口迷笛" target="_blank">海口迷笛</a>
+    </li>
+    
+    <li>
         <a href="https://ferristale.com/recent-changes-230107/" title="近期博客变动" target="_blank">近期博客变动</a>
     </li>
     
@@ -496,26 +503,18 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
         <a href="https://ferristale.com/hello-hugo/" title="更换Hugo" target="_blank">更换Hugo</a>
     </li>
     
-    <li>
-        <a href="https://ferristale.com/this-slow-netlify/" title="Netlify一点都没有更快" target="_blank">Netlify一点都没有更快</a>
-    </li>
-    
-    <li>
-        <a href="https://ferristale.com/email-hosting/" title="邮箱托管" target="_blank">邮箱托管</a>
-    </li>
-    
 </ul>
     </section>
 
     
 
     <section class="widget">
-        <h3 class="widget-title"><a href='/categories/'>categories</a></h3>
+        <h3 class="widget-title"><a href='/categories/'>分類</a></h3>
 <ul class="widget-list">
     
     <li><a href="https://ferristale.com/categories/%E5%88%86%E4%BA%AB/">分享 (25)</a></li>
     
-    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (45)</a></li>
+    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (47)</a></li>
     
     <li><a href="https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/">瞎搞 (40)</a></li>
     
@@ -523,7 +522,7 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
     </section>
 
     <section class="widget">
-        <h3 class="widget-title"><a href='/tags/'>tags</a></h3>
+        <h3 class="widget-title"><a href='/tags/'>標籤</a></h3>
 <div class="tagcloud">
     
     <a href="https://ferristale.com/tags/Hexo/">Hexo</a>

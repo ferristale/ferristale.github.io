@@ -106,32 +106,32 @@
 <p><strong>注</strong>：对所有订阅生效，如需针对单独订阅，请将<code>- reg: ^.*$</code>改为<code>- url: &lt;订阅地址&gt;</code></p>
 <h3 id="归属地更改httpsgithubcomlwd-tempanti-ip-attribution"><a href="https://github.com/lwd-temp/anti-ip-attribution">归属地更改</a></h3>
 <p>针对部分网站显示IP归属地的流量分流规则</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">parsers</span>:
-- <span style="color:#f92672">reg</span>: <span style="color:#ae81ff">^.*$     ## 匹配所有订阅</span>
-  <span style="color:#f92672">yaml</span>:
-    <span style="color:#f92672">prepend-proxy-groups</span>:
-    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">🚩IP归属地</span>
-      <span style="color:#f92672">type</span>: <span style="color:#ae81ff">select</span>
-    <span style="color:#f92672">commands</span>:
-      - <span style="color:#ae81ff">proxy-groups.0.proxies=[]groupNames|^((?!IP).)*$</span>
-    <span style="color:#f92672">prepend-rules</span>:
-      - <span style="color:#ae81ff">RULE-SET,anti-ip,🚩IP归属地</span>
-      
-    <span style="color:#f92672">mix-rule-providers</span>:
-       <span style="color:#f92672">anti-ip</span>: {<span style="color:#f92672">type: http, behavior: classical, url</span>: <span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/gh/ferristale/anti-ip-attribution/generated/rule-provider.yaml&#34;</span><span style="color:#f92672">, path: ./Ruleset/anti-ip.yaml, interval</span>: <span style="color:#ae81ff">86400</span>}   
-
-   
-</code></pre></div><h3 id="scholar规则httpsgithubcomferristaleclash_rules_for_scholar"><a href="https://github.com/ferristale/clash_rules_for_scholar">Scholar规则</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">parsers</span>:
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">reg</span>: <span style="color:#ae81ff">^.*$    </span> <span style="color:#75715e">## 匹配所有订阅</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">yaml</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">prepend-proxy-groups</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">🚩IP归属地</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">type</span>: <span style="color:#ae81ff">select</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">commands</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">proxy-groups.0.proxies=[]groupNames|^((?!IP).)*$</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">prepend-rules</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">RULE-SET,anti-ip,🚩IP归属地</span>
+</span></span><span style="display:flex;"><span>      
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">mix-rule-providers</span>:
+</span></span><span style="display:flex;"><span>       <span style="color:#f92672">anti-ip</span>: {<span style="color:#f92672">type: http, behavior: classical, url</span>: <span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/gh/ferristale/anti-ip-attribution/generated/rule-provider.yaml&#34;</span><span style="color:#f92672">, path: ./Ruleset/anti-ip.yaml, interval</span>: <span style="color:#ae81ff">86400</span>}   
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   
+</span></span></code></pre></div><h3 id="scholar规则httpsgithubcomferristaleclash_rules_for_scholar"><a href="https://github.com/ferristale/clash_rules_for_scholar">Scholar规则</a></h3>
 <p>学术网站不走代理</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">parsers</span>:
-- <span style="color:#f92672">reg</span>: <span style="color:#ae81ff">^.*$     ## 匹配所有订阅</span>
-  <span style="color:#f92672">yaml</span>:
-    <span style="color:#f92672">prepend-rules</span>:
-      - <span style="color:#ae81ff">RULE-SET,scholar,DIRECT</span>
-    <span style="color:#f92672">mix-rule-providers</span>:
-        <span style="color:#f92672">scholar</span>: {<span style="color:#f92672">type: http, behavior: classical, url</span>: <span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/gh/ferristale/clash_rules_for_scholar/rules/scholar.yaml&#34;</span><span style="color:#f92672">, path: ./Ruleset/scholar.yaml, interval</span>: <span style="color:#ae81ff">86400</span>}
-   
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">parsers</span>:
+</span></span><span style="display:flex;"><span>- <span style="color:#f92672">reg</span>: <span style="color:#ae81ff">^.*$    </span> <span style="color:#75715e">## 匹配所有订阅</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">yaml</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">prepend-rules</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">RULE-SET,scholar,DIRECT</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">mix-rule-providers</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">scholar</span>: {<span style="color:#f92672">type: http, behavior: classical, url</span>: <span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/gh/ferristale/clash_rules_for_scholar/rules/scholar.yaml&#34;</span><span style="color:#f92672">, path: ./Ruleset/scholar.yaml, interval</span>: <span style="color:#ae81ff">86400</span>}
+</span></span><span style="display:flex;"><span>   
+</span></span></code></pre></div>
         </div>
 
         
@@ -341,6 +341,14 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
 <ul class="widget-list">
     
     <li>
+        <a href="https://ferristale.com/fragments-in-hainan/" title="海南碎片" target="_blank">海南碎片</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/haikou-midi/" title="海口迷笛" target="_blank">海口迷笛</a>
+    </li>
+    
+    <li>
         <a href="https://ferristale.com/recent-changes-230107/" title="近期博客变动" target="_blank">近期博客变动</a>
     </li>
     
@@ -372,26 +380,18 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
         <a href="https://ferristale.com/hello-hugo/" title="更换Hugo" target="_blank">更换Hugo</a>
     </li>
     
-    <li>
-        <a href="https://ferristale.com/this-slow-netlify/" title="Netlify一点都没有更快" target="_blank">Netlify一点都没有更快</a>
-    </li>
-    
-    <li>
-        <a href="https://ferristale.com/email-hosting/" title="邮箱托管" target="_blank">邮箱托管</a>
-    </li>
-    
 </ul>
     </section>
 
     
 
     <section class="widget">
-        <h3 class="widget-title"><a href='/categories/'>categories</a></h3>
+        <h3 class="widget-title"><a href='/categories/'>分類</a></h3>
 <ul class="widget-list">
     
     <li><a href="https://ferristale.com/categories/%E5%88%86%E4%BA%AB/">分享 (25)</a></li>
     
-    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (45)</a></li>
+    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (47)</a></li>
     
     <li><a href="https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/">瞎搞 (40)</a></li>
     
@@ -399,7 +399,7 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
     </section>
 
     <section class="widget">
-        <h3 class="widget-title"><a href='/tags/'>tags</a></h3>
+        <h3 class="widget-title"><a href='/tags/'>標籤</a></h3>
 <div class="tagcloud">
     
     <a href="https://ferristale.com/tags/Hexo/">Hexo</a>

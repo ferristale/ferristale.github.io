@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 04 Apr 2020 22:44:25 +0000</lastBuildDate><atom:link href="https://ferristale.com/tags/R/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>nlsLM擬合多條指數函數並繪製于ggplot</title>
-      <link>https://ferristale.com/draw-two-or-more-exponential-regression-simultaneously-with-nlsLMggplot2/</link>
+      <link>https://ferristale.com/draw-two-or-more-exponential-regression-simultaneously-with-nlsLM&amp;ggplot2/</link>
       <pubDate>Sat, 04 Apr 2020 22:44:25 +0000</pubDate>
       
-      <guid>https://ferristale.com/draw-two-or-more-exponential-regression-simultaneously-with-nlsLMggplot2/</guid>
+      <guid>https://ferristale.com/draw-two-or-more-exponential-regression-simultaneously-with-nlsLM&amp;ggplot2/</guid>
       <description>&lt;p&gt;折騰了我兩天的&lt;/p&gt;
 &lt;p&gt;$$
 y = c + (1 - a*e^{-bx})

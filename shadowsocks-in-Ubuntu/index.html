@@ -113,37 +113,37 @@
 <li></li>
 </ol>
 <p>執行命令,安裝ss環境</p>
-<pre><code>apt-get install python-pip
+<pre tabindex="0"><code>apt-get install python-pip
 pip install shadowsocks
 </code></pre><ol start="2">
 <li></li>
 </ol>
 <p>連接的方法， 有兩種</p>
 <p>一，直接在终端用命令：</p>
-<pre><code>sslocal -s 服務器地址 -p 服務器端口  -k 密碼 -t 600 -m aes-256-cfb
+<pre tabindex="0"><code>sslocal -s 服務器地址 -p 服務器端口  -k 密碼 -t 600 -m aes-256-cfb
 </code></pre><p>也可以把ss启动命令写成shell脚本</p>
 <p>二，用配置文件启动：
 在/etc新建一個文件，文件名隨意，後綴.json，比如我的是ss.json</p>
 <p>添加以下內容</p>
-<pre><code>{
-&quot;server&quot; : &quot;服務器地址&quot;,
-&quot;server_port&quot; : 服務器端口,
-&quot;local_port&quot; : 本地端口,
-&quot;password&quot; : &quot;密碼&quot;,
-&quot;timeout&quot; : 600,
-&quot;method&quot; : &quot;加密方式&quot;
+<pre tabindex="0"><code>{
+&#34;server&#34; : &#34;服務器地址&#34;,
+&#34;server_port&#34; : 服務器端口,
+&#34;local_port&#34; : 本地端口,
+&#34;password&#34; : &#34;密碼&#34;,
+&#34;timeout&#34; : 600,
+&#34;method&#34; : &#34;加密方式&#34;
 }
 </code></pre><p>启动时使用命令：</p>
-<pre><code>sslocal -c /etc/ss.json
+<pre tabindex="0"><code>sslocal -c /etc/ss.json
 </code></pre><p>以上是前臺運行</p>
 <p>後臺運行：</p>
-<pre><code>sudo sslocal -s servername -p 443 -k password -t 600 -m rc4-md5 --user 你的用戶名 -d start
+<pre tabindex="0"><code>sudo sslocal -s servername -p 443 -k password -t 600 -m rc4-md5 --user 你的用戶名 -d start
 </code></pre><p>使用設定檔的話就是</p>
-<pre><code>sudo sslocal -c /etc/ss.json --user Fooooo -d start
+<pre tabindex="0"><code>sudo sslocal -c /etc/ss.json --user Fooooo -d start
 </code></pre><p>然後關閉的時候把start改成stop就可以了</p>
 <p>也可以不用關閉，你不用的話十分鐘自動給你退出</p>
 <p>检查日志：</p>
-<pre><code>sudo less /var/log/shadowsocks.log
+<pre tabindex="0"><code>sudo less /var/log/shadowsocks.log
 </code></pre><p>到這裏ss就設置好了，接下來只要設置一下瀏覽器代理就好，這裏先賣一下關子</p>
 <p> </p>
 <p>輸入sslocal,可以看到以下參數
@@ -242,9 +242,9 @@ pip install shadowsocks
 <p>如果需要開機啓動，知乎裏有一條命令，我沒試過，不包成功</p>
 <p>在/etc/rc.local中添加启动命令。
 例如:</p>
-<pre><code>sudo vi /etc/rc.local
+<pre tabindex="0"><code>sudo vi /etc/rc.local
 </code></pre><p>在exit 0前添加(这里假设你已经在第2步写好shell脚本，并命名为ss_start.sh)</p>
-<pre><code>sudo sh /path/to/sslocal/ss_start.sh
+<pre tabindex="0"><code>sudo sh /path/to/sslocal/ss_start.sh
 </code></pre><p>如果路径和权限都没问题，在下次开机时就会启动ss了。</p>
 <p> </p>
 <p> </p>
@@ -458,6 +458,14 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
 <ul class="widget-list">
     
     <li>
+        <a href="https://ferristale.com/fragments-in-hainan/" title="海南碎片" target="_blank">海南碎片</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/haikou-midi/" title="海口迷笛" target="_blank">海口迷笛</a>
+    </li>
+    
+    <li>
         <a href="https://ferristale.com/recent-changes-230107/" title="近期博客变动" target="_blank">近期博客变动</a>
     </li>
     
@@ -489,26 +497,18 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
         <a href="https://ferristale.com/hello-hugo/" title="更换Hugo" target="_blank">更换Hugo</a>
     </li>
     
-    <li>
-        <a href="https://ferristale.com/this-slow-netlify/" title="Netlify一点都没有更快" target="_blank">Netlify一点都没有更快</a>
-    </li>
-    
-    <li>
-        <a href="https://ferristale.com/email-hosting/" title="邮箱托管" target="_blank">邮箱托管</a>
-    </li>
-    
 </ul>
     </section>
 
     
 
     <section class="widget">
-        <h3 class="widget-title"><a href='/categories/'>categories</a></h3>
+        <h3 class="widget-title"><a href='/categories/'>分類</a></h3>
 <ul class="widget-list">
     
     <li><a href="https://ferristale.com/categories/%E5%88%86%E4%BA%AB/">分享 (25)</a></li>
     
-    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (45)</a></li>
+    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (47)</a></li>
     
     <li><a href="https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/">瞎搞 (40)</a></li>
     
@@ -516,7 +516,7 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
     </section>
 
     <section class="widget">
-        <h3 class="widget-title"><a href='/tags/'>tags</a></h3>
+        <h3 class="widget-title"><a href='/tags/'>標籤</a></h3>
 <div class="tagcloud">
     
     <a href="https://ferristale.com/tags/Hexo/">Hexo</a>
