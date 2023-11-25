@@ -6,7 +6,18 @@
     <description>Recent content in Posts on 九盞燈</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hant</language>
-    <lastBuildDate>Wed, 22 Nov 2023 22:11:51 +0800</lastBuildDate><atom:link href="https://ferristale.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Nov 2023 22:11:51 +0800</lastBuildDate><atom:link href="https://ferristale.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows时间同步脚本</title>
+      <link>https://ferristale.com/time-sync-for-windows/</link>
+      <pubDate>Fri, 24 Nov 2023 22:11:51 +0800</pubDate>
+      
+      <guid>https://ferristale.com/time-sync-for-windows/</guid>
+      <description>&lt;p&gt;开机检查网络&lt;/p&gt;
+&lt;p&gt;网络连通后开始同步时间&lt;/p&gt;
+&lt;p&gt;用于解决PC断电后时间重置问题&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>流浪记3：再游拉萨</title>
       <link>https://ferristale.com/post/2023-11-22-%E6%B5%81%E6%B5%AA%E8%AE%B03%E5%86%8D%E6%B8%B8%E6%8B%89%E8%90%A8/</link>
@@ -117,6 +128,15 @@
       
       <guid>https://ferristale.com/relic-restorer-1/</guid>
       <description>&lt;p&gt;惨就一个字，记第一次破防&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>北京克我</title>
+      <link>https://ferristale.com/a-trip-in-beijing/</link>
+      <pubDate>Fri, 07 May 2021 19:30:51 +0800</pubDate>
+      
+      <guid>https://ferristale.com/a-trip-in-beijing/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -487,12 +507,30 @@ unzip master.zip &amp;amp;&amp;amp; cd ccaa-master &amp;amp;&amp;amp; sh ccaa.sh
     </item>
     
     <item>
+      <title>文献管理软件的选择</title>
+      <link>https://ferristale.com/bibliography-managing/</link>
+      <pubDate>Thu, 15 Mar 2018 15:50:42 +0000</pubDate>
+      
+      <guid>https://ferristale.com/bibliography-managing/</guid>
+      <description>&lt;p&gt;endnote/mendeley/Citavi/zotero&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>长大后当科学家，？</title>
       <link>https://ferristale.com/what-is-your-dream/</link>
       <pubDate>Wed, 07 Mar 2018 23:09:04 +0000</pubDate>
       
       <guid>https://ferristale.com/what-is-your-dream/</guid>
       <description>&lt;p&gt;幼儿园毕业的时候，有一本纪念册，里面有一项是，长大后想做什么？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>新年的烟火</title>
+      <link>https://ferristale.com/fireworks/</link>
+      <pubDate>Fri, 16 Feb 2018 20:52:08 +0000</pubDate>
+      
+      <guid>https://ferristale.com/fireworks/</guid>
+      <description>&lt;p&gt;很久，没有见过真实的烟花了&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -525,6 +563,18 @@ unzip master.zip &amp;amp;&amp;amp; cd ccaa-master &amp;amp;&amp;amp; sh ccaa.sh
     </item>
     
     <item>
+      <title>再次部署Hexo</title>
+      <link>https://ferristale.com/install-hexo-again/</link>
+      <pubDate>Fri, 26 Jan 2018 13:01:42 +0000</pubDate>
+      
+      <guid>https://ferristale.com/install-hexo-again/</guid>
+      <description>&lt;p&gt;参照网上教程，融合了我遇到的问题写就此文
+基本上，把nginx装好
+把git弄好
+就差不多了&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>新装Ubuntu的一些软件-2018</title>
       <link>https://ferristale.com/softwares-for-Ubuntu/</link>
       <pubDate>Mon, 22 Jan 2018 19:50:42 +0000</pubDate>
@@ -548,6 +598,15 @@ electronic微信
 &lt;p&gt;很多高分&lt;/p&gt;
 &lt;p&gt;神秘巨星、奇迹男孩和无问西东&lt;/p&gt;
 &lt;p&gt;遂定了一个小目标，要在回家前把他们看完&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>以史为镜，可以知兴替</title>
+      <link>https://ferristale.com/A-Brief-History-of-Mankind/</link>
+      <pubDate>Fri, 05 May 2017 19:50:42 +0000</pubDate>
+      
+      <guid>https://ferristale.com/A-Brief-History-of-Mankind/</guid>
+      <description>&lt;p&gt;——读《人类简史》&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1180,45 +1239,6 @@ PPs：你们都说热，然而我在图书馆好冷{(&amp;gt;_&amp;lt;)}&lt;/p&g
 &lt;p&gt;&lt;!-- raw HTML omitted --&gt;卻一直拖到現在才開始第一篇文章&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;p&gt;&lt;!-- raw HTML omitted --&gt;期間有太多事情&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;p&gt;&lt;!-- raw HTML omitted --&gt;頭兩天大量閱讀英文網頁 看的單詞絕對比我一年看得都要多&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>文献管理软件的选择</title>
-      <link>https://ferristale.com/bibliography-managing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ferristale.com/bibliography-managing/</guid>
-      <description>&lt;p&gt;endnote/mendeley/Citavi/zotero&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>以史为镜，可以知兴替</title>
-      <link>https://ferristale.com/A-Brief-History-of-Mankind/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ferristale.com/A-Brief-History-of-Mankind/</guid>
-      <description>&lt;p&gt;——读《人类简史》&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>再次部署Hexo</title>
-      <link>https://ferristale.com/install-hexo-again/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ferristale.com/install-hexo-again/</guid>
-      <description>&lt;p&gt;参照网上教程，融合了我遇到的问题写就此文
-基本上，把nginx装好
-把git弄好
-就差不多了&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>新年的烟火</title>
-      <link>https://ferristale.com/fireworks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ferristale.com/fireworks/</guid>
-      <description>&lt;p&gt;很久，没有见过真实的烟花了&lt;/p&gt;</description>
     </item>
     
   </channel>

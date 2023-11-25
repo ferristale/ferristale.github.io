@@ -37,6 +37,18 @@
     </item>
     
     <item>
+      <title>再次部署Hexo</title>
+      <link>https://ferristale.com/install-hexo-again/</link>
+      <pubDate>Fri, 26 Jan 2018 13:01:42 +0000</pubDate>
+      
+      <guid>https://ferristale.com/install-hexo-again/</guid>
+      <description>&lt;p&gt;参照网上教程，融合了我遇到的问题写就此文
+基本上，把nginx装好
+把git弄好
+就差不多了&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>更換maupassant主題</title>
       <link>https://ferristale.com/maupassant/</link>
       <pubDate>Sat, 21 May 2016 23:10:27 +0000</pubDate>
@@ -61,18 +73,6 @@
 &lt;li&gt;VPS直接上一鍵安裝包+WP&lt;/li&gt;
 &lt;li&gt;Nginx+Hexo&lt;/li&gt;
 &lt;/ol&gt;</description>
-    </item>
-    
-    <item>
-      <title>再次部署Hexo</title>
-      <link>https://ferristale.com/install-hexo-again/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ferristale.com/install-hexo-again/</guid>
-      <description>&lt;p&gt;参照网上教程，融合了我遇到的问题写就此文
-基本上，把nginx装好
-把git弄好
-就差不多了&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -3,15 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ferristale.com/categories/</loc>
-    <lastmod>2023-11-22T22:11:51+08:00</lastmod>
+    <lastmod>2023-11-24T22:11:51+08:00</lastmod>
   </url><url>
     <loc>https://ferristale.com/post/</loc>
-    <lastmod>2023-11-22T22:11:51+08:00</lastmod>
+    <lastmod>2023-11-24T22:11:51+08:00</lastmod>
   </url><url>
-    <loc>https://ferristale.com/tags/</loc>
-    <lastmod>2023-11-22T22:11:51+08:00</lastmod>
+    <loc>https://ferristale.com/time-sync-for-windows/</loc>
+    <lastmod>2023-11-24T22:11:51+08:00</lastmod>
   </url><url>
     <loc>https://ferristale.com/</loc>
+    <lastmod>2023-11-24T22:11:51+08:00</lastmod>
+  </url><url>
+    <loc>https://ferristale.com/categories/%E6%8A%98%E8%85%BE/</loc>
+    <lastmod>2023-11-24T22:11:51+08:00</lastmod>
+  </url><url>
+    <loc>https://ferristale.com/tags/</loc>
     <lastmod>2023-11-22T22:11:51+08:00</lastmod>
   </url><url>
     <loc>https://ferristale.com/categories/%E6%9D%82%E6%96%87/</loc>
@@ -76,6 +82,9 @@
   </url><url>
     <loc>https://ferristale.com/relic-restorer-1/</loc>
     <lastmod>2021-08-01T23:29:26+08:00</lastmod>
+  </url><url>
+    <loc>https://ferristale.com/a-trip-in-beijing/</loc>
+    <lastmod>2021-05-07T19:30:51+08:00</lastmod>
   </url><url>
     <loc>https://ferristale.com/hello-hugo/</loc>
     <lastmod>2020-10-27T22:51:39+08:00</lastmod>
@@ -221,8 +230,14 @@
     <loc>https://ferristale.com/goodbye-Ubuntu/</loc>
     <lastmod>2018-03-16T15:51:46+00:00</lastmod>
   </url><url>
+    <loc>https://ferristale.com/bibliography-managing/</loc>
+    <lastmod>2018-03-15T15:50:42+00:00</lastmod>
+  </url><url>
     <loc>https://ferristale.com/what-is-your-dream/</loc>
     <lastmod>2018-03-07T23:09:04+00:00</lastmod>
+  </url><url>
+    <loc>https://ferristale.com/fireworks/</loc>
+    <lastmod>2018-02-16T20:52:08+00:00</lastmod>
   </url><url>
     <loc>https://ferristale.com/under-a-same-sky/</loc>
     <lastmod>2018-02-13T14:07:09+00:00</lastmod>
@@ -233,6 +248,9 @@
     <loc>https://ferristale.com/SSH-your-VPS/</loc>
     <lastmod>2018-01-28T15:50:42+00:00</lastmod>
   </url><url>
+    <loc>https://ferristale.com/install-hexo-again/</loc>
+    <lastmod>2018-01-26T13:01:42+00:00</lastmod>
+  </url><url>
     <loc>https://ferristale.com/tags/Linux/</loc>
     <lastmod>2018-01-22T19:50:42+00:00</lastmod>
   </url><url>
@@ -241,6 +259,9 @@
   </url><url>
     <loc>https://ferristale.com/wonder/</loc>
     <lastmod>2018-01-21T15:20:42+00:00</lastmod>
+  </url><url>
+    <loc>https://ferristale.com/A-Brief-History-of-Mankind/</loc>
+    <lastmod>2017-05-05T19:50:42+00:00</lastmod>
   </url><url>
     <loc>https://ferristale.com/the-biggest-lie-in-the-history/</loc>
     <lastmod>2017-04-22T19:50:42+00:00</lastmod>
@@ -422,16 +443,8 @@
     <loc>https://ferristale.com/hello-world/</loc>
     <lastmod>2015-04-17T01:14:54+00:00</lastmod>
   </url><url>
-    <loc>https://ferristale.com/bibliography-managing/</loc>
-  </url><url>
-    <loc>https://ferristale.com/A-Brief-History-of-Mankind/</loc>
-  </url><url>
     <loc>https://ferristale.com/archives/</loc>
   </url><url>
-    <loc>https://ferristale.com/install-hexo-again/</loc>
-  </url><url>
     <loc>https://ferristale.com/search/</loc>
-  </url><url>
-    <loc>https://ferristale.com/fireworks/</loc>
   </url>
 </urlset>

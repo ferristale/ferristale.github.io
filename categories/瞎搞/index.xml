@@ -155,12 +155,33 @@ unzip master.zip &amp;amp;&amp;amp; cd ccaa-master &amp;amp;&amp;amp; sh ccaa.sh
     </item>
     
     <item>
+      <title>文献管理软件的选择</title>
+      <link>https://ferristale.com/bibliography-managing/</link>
+      <pubDate>Thu, 15 Mar 2018 15:50:42 +0000</pubDate>
+      
+      <guid>https://ferristale.com/bibliography-managing/</guid>
+      <description>&lt;p&gt;endnote/mendeley/Citavi/zotero&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>SSH登录服务器</title>
       <link>https://ferristale.com/SSH-your-VPS/</link>
       <pubDate>Sun, 28 Jan 2018 15:50:42 +0000</pubDate>
       
       <guid>https://ferristale.com/SSH-your-VPS/</guid>
       <description>&lt;p&gt;无论是使用HEXO还是维护服务器，SSH都是一大利器呢&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>再次部署Hexo</title>
+      <link>https://ferristale.com/install-hexo-again/</link>
+      <pubDate>Fri, 26 Jan 2018 13:01:42 +0000</pubDate>
+      
+      <guid>https://ferristale.com/install-hexo-again/</guid>
+      <description>&lt;p&gt;参照网上教程，融合了我遇到的问题写就此文
+基本上，把nginx装好
+把git弄好
+就差不多了&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -435,27 +456,6 @@ electronic微信
 &lt;p&gt;&lt;!-- raw HTML omitted --&gt;卻一直拖到現在才開始第一篇文章&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;p&gt;&lt;!-- raw HTML omitted --&gt;期間有太多事情&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;p&gt;&lt;!-- raw HTML omitted --&gt;頭兩天大量閱讀英文網頁 看的單詞絕對比我一年看得都要多&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>文献管理软件的选择</title>
-      <link>https://ferristale.com/bibliography-managing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ferristale.com/bibliography-managing/</guid>
-      <description>&lt;p&gt;endnote/mendeley/Citavi/zotero&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>再次部署Hexo</title>
-      <link>https://ferristale.com/install-hexo-again/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ferristale.com/install-hexo-again/</guid>
-      <description>&lt;p&gt;参照网上教程，融合了我遇到的问题写就此文
-基本上，把nginx装好
-把git弄好
-就差不多了&lt;/p&gt;</description>
     </item>
     
   </channel>
