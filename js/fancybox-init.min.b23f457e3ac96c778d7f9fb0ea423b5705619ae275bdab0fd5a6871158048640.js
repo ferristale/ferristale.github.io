@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{typeof Fancybox!="undefined"&&Fancybox.bind("[data-fancybox]",{compact:!0,contentClick:"toggleZoom",backdropClick:"close",Toolbar:{display:["zoom","slideshow","fullscreen","close"]},Thumbs:{type:"classic"}})})

@@ -1,14 +1,28 @@
 <!doctype html>
 <html lang="zh-Hant">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <title>文章分享：说说胶片摄影 | 九盞燈</title>
-    <meta property="og:title" content="文章分享：说说胶片摄影 - 九盞燈">
+    <title>文章分享：说说胶片摄影 | 燈燈</title>
+    <meta property="og:title" content="文章分享：说说胶片摄影 - 燈燈">
     <meta property="og:type" content="article">
         
     <meta property="article:published_time" content='2015-04-29T00:56:12&#43;08:00'>
@@ -19,21 +33,30 @@
     <meta name="Keywords" content="博客">
     <meta name="description" content="文章分享：说说胶片摄影">
         
-    <meta name="author" content="燈燈">
-    <meta property="og:url" content="https://ferristale.com/film-photography/">
-    <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
-
-    <link rel="stylesheet" href='/css/normalize.css'>
-    <link rel="stylesheet" href='/css/style.css'>
-    <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta name="author" content="">
+    <meta property="og:url" content="http://localhost:1313/film-photography/">
+    <link rel="shortcut icon" href='/favicon.ico' type="image/x-icon">
+    <link rel="icon" href='/favicon.png' type="image/png">
+    <link rel="alternate icon" href='/favicon.png' type="image/svg+xml">
 
     
     
     
-        <link href="https://cdn.bootcdn.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
     
     
     
+    
+        
+        
+        
+    
+    
+    
+    <link rel="stylesheet" href="/css/bundle.min.8dcfe8fafbc5e6ccd4dd929d16f4f6f34ac69ddb8cbf40d9d79dc7fe20c62447.css" integrity="sha256-jc/o&#43;vvF5szU3ZKdFvT280rGnduMv0DZ153H/iDGJEc=" crossorigin="anonymous">
+    
+    
+    <script type="text/javascript" src="/js/theme-switch.min.de8bc0d1cb93afaeb42be9fa37c6740be5f8dbf5fd92988d05200eed943672d1.js" defer></script>
+
     
 </head>
 
@@ -43,19 +66,19 @@
         <div class="col-group">
             <div class="site-name ">
                 
-                    <a id="logo" href="https://ferristale.com">
-                        九盞燈
+                    <a id="logo" href="http://localhost:1313/">
+                        燈燈
                     </a>
                 
                 <p class="description">朝蒸藜藿暮烹葵</p>
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="current" href="https://ferristale.com">首頁</a>
+                    <a class="current" href="http://localhost:1313/">首頁</a>
                     
-                    <a  href="https://ferristale.com/archives/" title="歸檔">歸檔</a>
+                    <a  href="http://localhost:1313/archives/" title="歸檔">歸檔</a>
                     
-                    <a  href="https://ferristale.com/about" title="關於">關於</a>
+                    <a  href="http://localhost:1313/about" title="關於">關於</a>
                     
                 </nav>
             </div>
@@ -127,8 +150,7 @@
 <p>质感是黑白胶片与彩色胶片共有的特质，那彩色胶片又多了色彩这一项，而不同的彩色胶卷又经过不同的色彩设计，当你在扫描仪软件中进行白平衡之后就会得到截然不容的色谱图，柯达160vc的红色与柯达160nc的红色可能就会有细微差别，与富士160NS可能会有较大区别，当色彩多了，这些差别也就多了，所以展示给你的是不同的底片效果，而数码照片当你进行统一的白平衡后得到的应该是同样的色彩，不应该么？</p>
 <p>目前国内冲扫行业存在两类扫描设备，一种是专业类扫描仪（代表机型：Epson v700、IMACON），一种是冲印类扫描仪（代表机型：富士Frontier系统魔术手、诺日士），前者从便宜的几百元的135底片扫描仪到十几万的虚拟滚筒都有，后者则多为上百万的冲印系统自带的扫描仪，这两者的最大区别在于扫描的自定义上，专业扫描仪一般应用于个人创作或者是专业工作室的图像输出上，而冲印类扫描仪则为传统的冲洗照片提供服务，我们小时候去店里洗照片，就是这种扫描仪扫出来再冲印的，而并不是那种古老的暗房传统放大。那既然区别在扫描的自定义上，结果也自然不同，专业扫描仪提供个性化的工具，让你对胶片进行个人后期创作，而冲印类扫描仪则由设备工程师设定预定色彩进行统一的色彩校正以及美化，所以后者扫描出来的照片具有相似的色彩和影调。前者的优点是可以自己校正底片色彩，缺点是最好由自己操作而且需熟练掌握扫描软件；后者的优点是可以美化一些品质较差的胶片的色彩，缺点是千篇一律，当然也可以算作是一种风格，这种风格也为很多摄影师所喜用。</p>
 <p>说到最后，我们发现胶片后期与数码后期最大的区别就在于多了扫描这一步，也确实是这一步决定了结果。那么回到前面朋友问我的那件事上，他举例的是黑白胶片，无论我们后期怎样调节，胶片的质地纹理肌理都是存在的，所以给你的感觉始终是一张黑白胶片作品，只是用不同的黑白卷可能得到不同的质感，有些厚重一些，有些单薄一些，有些颗粒大，有些颗粒小。彩色胶片也是如此，往往你在Flickr上看到的国外摄影师用Reala拍出的作品色调与你用Reala拍出的色调是不同的，并不一定说谁的更像Reala，但肯定不会像Ektar，而且一眼便能看出是胶片拍的。</p>
-<p><!-- raw HTML omitted -->OK, ENJOY IT.
-<!-- raw HTML omitted --></p>
+<p><strong>OK, ENJOY IT.</strong></p>
 <p>原文鏈接<a href="http://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-3027676390.12.HsLgXz&amp;id=12835898714">http://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-3027676390.12.HsLgXz&amp;id=12835898714</a></p>
 <p><a href="http://item.taobao.com/item.htm?spm=2013.1.20141003.4.z2HhSr&amp;scm=1007.10011.6100.0&amp;id=14621805227">http://item.taobao.com/item.htm?spm=2013.1.20141003.4.z2HhSr&amp;scm=1007.10011.6100.0&amp;id=14621805227&amp;</a></p>
 <p>是的你沒看錯就是淘寶鏈接</p>
@@ -138,8 +160,8 @@
         
 <div class="post-archive">
     <ul class="post-copyright">
-        <li><strong>原文作者：</strong><a rel="author" href="https://ferristale.com">燈燈</a></li>
-        <li style="word-break:break-all"><strong>原文鏈接：</strong><a href="https://ferristale.com/film-photography/">https://ferristale.com/film-photography/</a></li>
+        <li><strong>原文作者：</strong><a rel="author" href="http://localhost:1313/">燈燈</a></li>
+        <li style="word-break:break-all"><strong>原文鏈接：</strong><a href="http://localhost:1313/film-photography/">http://localhost:1313/film-photography/</a></li>
         <li><strong>原文鏈接：</strong>本作品採用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>. 進行許可，非商業轉載請註明出處（作者，原文鏈接），商業轉載請聯繫作者獲得授權。</li>
     </ul>
 </div>
@@ -154,14 +176,6 @@
     <ul class="listing">
         
         <li><a href="/art-exam-gaoyu/">薦文：艺考是一种怎样的体验 &amp; 高瑜</a></li>
-        
-        <li><a href="/amper2/">《安珀志：阿瓦隆之槍》</a></li>
-        
-        <li><a href="/international-voluntourism/">國際義工，陳粒</a></li>
-        
-        <li><a href="/AIESEC/">AIESEC華農活动：口袋市集</a></li>
-        
-        <li><a href="/amper1-3/">《安珀志：安珀九王子》3</a></li>
         
     </ul>
 </div>
@@ -192,6 +206,57 @@
             crossorigin="anonymous"
             async>
       </script>
+      <script>
+        
+        function updateUtterancesTheme() {
+          const currentTheme = document.documentElement.getAttribute('data-theme');
+          const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          
+          
+          const shouldUseDarkTheme = currentTheme === 'dark' || 
+                                   (currentTheme !== 'light' && systemPrefersDark);
+          
+          const utterancesTheme = shouldUseDarkTheme ? 'github-dark' : 'github-light';
+          
+          
+          const utterancesFrame = document.querySelector('.utterances-frame');
+          if (utterancesFrame) {
+            const message = {
+              type: 'set-theme',
+              theme: utterancesTheme
+            };
+            utterancesFrame.contentWindow.postMessage(message, 'https://utteranc.es');
+          }
+        }
+        
+        
+        document.addEventListener('DOMContentLoaded', function() {
+          
+          setTimeout(updateUtterancesTheme, 1000);
+          
+          
+          setTimeout(updateUtterancesTheme, 3000);
+        });
+        
+        
+        const observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+              setTimeout(updateUtterancesTheme, 100);
+            }
+          });
+        });
+        
+        observer.observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ['data-theme']
+        });
+        
+        
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+          setTimeout(updateUtterancesTheme, 100);
+        });
+      </script>
     </div>
     
     
@@ -201,7 +266,7 @@
 
                     <footer id="footer">
     <div>
-        &copy; 2025 <a href="https://ferristale.com">九盞燈 By 燈燈</a>
+        &copy; 2025 <a href="http://localhost:1313/">燈燈</a>
         
     </div>
     <br />
@@ -209,11 +274,9 @@
         <div class="github-badge">
             <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
         </div>
+
         <div class="github-badge">
-            <a href="https://www.flysnow.org/" target="_black"><span class="badge-subject">Design by</span><span class="badge-value bg-brightgreen">飞雪无情</span></a>
-        </div>
-        <div class="github-badge">
-            <a href="https://github.com/flysnow-org/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
+            <a href="https://github.com/ferristale/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
         </div>
     </div>
 </footer>
@@ -221,28 +284,53 @@
 
     
     
+    
+    
+    
+    
+    
+    
+    
+    
     <script type="text/javascript">
         window.MathJax = {
             tex2jax: {
                 inlineMath: [['$', '$']],
                 processEscapes: true
-                }
-            };
+            }
+        };
     </script>
-    <script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script><script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    
+    
+    
+        
+        <script type="text/javascript" src="/fancybox.umd.min_10213516633759641856.min.72e06ae243a983f24c1186e9c5bb23c46a43c87e6bd536ef112b1786d713d904.js" integrity="sha256-cuBq4kOpg/JMEYbpxbsjxGpDyH5r1TbvESsXhtcT2QQ=" crossorigin="anonymous" defer></script>
+        
+        <script type="text/javascript" src="/js/fancybox-init.min.b23f457e3ac96c778d7f9fb0ea423b5705619ae275bdab0fd5a6871158048640.js" integrity="sha256-sj9FfjrJbHeNf5&#43;w6kI7VwVhmuJ1vasP1aaHEVgEhkA=" crossorigin="anonymous" defer></script>
+    
+
 
 <a id="rocket" href="#top"></a>
-<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZEJD14J6L"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-2ZEJD14J6L', { 'anonymize_ip': false });
-}
-</script>
+
+<script type="text/javascript" src="/js/totop.min.js" async></script>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZEJD14J6L"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2ZEJD14J6L');
+        }
+      </script>
+
 
 <style type="text/css">
 div.highlight {
@@ -327,10 +415,10 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
 
                 <div id="secondary">
     <section class="widget">
-        <form id="search" action='https://ferristale.com/search' method="get" accept-charset="utf-8"  _lpchecked="1">
+        <form id="search" action='http://localhost:1313/search' method="get" accept-charset="utf-8"  _lpchecked="1">
       
       <input type="text" name="q" maxlength="20" placeholder="Search">
-      <input type="hidden" name="sitesearch" value="https://ferristale.com">
+      <input type="hidden" name="sitesearch" value="http://localhost:1313/">
       <button type="submit" class="submit icon-search"></button>
 </form>
     </section>
@@ -340,43 +428,43 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
 <ul class="widget-list">
     
     <li>
-        <a href="https://ferristale.com/2023/" title="一則訪談" >一則訪談</a>
+        <a href="http://localhost:1313/2023/" title="一則訪談" >一則訪談</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/so-im-here-in-oz/" title="就到了澳洲" >就到了澳洲</a>
+        <a href="http://localhost:1313/so-im-here-in-oz/" title="就到了澳洲" >就到了澳洲</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/Sudden-Nostalgia/" title="再打开就是别人的青春啦" >再打开就是别人的青春啦</a>
+        <a href="http://localhost:1313/Sudden-Nostalgia/" title="再打开就是别人的青春啦" >再打开就是别人的青春啦</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/time-sync-script-for-windows/" title="Windows时间同步脚本" >Windows时间同步脚本</a>
+        <a href="http://localhost:1313/time-sync-script-for-windows/" title="Windows时间同步脚本" >Windows时间同步脚本</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/wandering-2-visit-lasha-again/" title="流浪记3：再游拉萨" >流浪记3：再游拉萨</a>
+        <a href="http://localhost:1313/wandering-2-visit-lasha-again/" title="流浪记3：再游拉萨" >流浪记3：再游拉萨</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/notitle-231121/" title="无题" >无题</a>
+        <a href="http://localhost:1313/notitle-231121/" title="无题" >无题</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/wandering-2-collecting-garbage-on-the-Plateau/" title="流浪记2：我在青藏高原捡垃圾（58P）" >流浪记2：我在青藏高原捡垃圾（58P）</a>
+        <a href="http://localhost:1313/wandering-2-collecting-garbage-on-the-Plateau/" title="流浪记2：我在青藏高原捡垃圾（58P）" >流浪记2：我在青藏高原捡垃圾（58P）</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/fragments-in-hainan/" title="海南碎片" >海南碎片</a>
+        <a href="http://localhost:1313/fragments-in-hainan/" title="海南碎片" >海南碎片</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/wandering-1-hainan/" title="流浪记1：海南游" >流浪记1：海南游</a>
+        <a href="http://localhost:1313/wandering-1-hainan/" title="流浪记1：海南游" >流浪记1：海南游</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/recent-changes-230107/" title="近期博客变动" >近期博客变动</a>
+        <a href="http://localhost:1313/recent-changes-230107/" title="近期博客变动" >近期博客变动</a>
     </li>
     
 </ul>
@@ -388,11 +476,11 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
         <h3 class="widget-title"><a href='/categories/'>分類</a></h3>
 <ul class="widget-list">
     
-    <li><a href="https://ferristale.com/categories/%E5%88%86%E4%BA%AB/">分享 (25)</a></li>
+    <li><a href="http://localhost:1313/categories/%E5%88%86%E4%BA%AB/">分享 (25)</a></li>
     
-    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (54)</a></li>
+    <li><a href="http://localhost:1313/categories/%E6%9D%82%E6%96%87/">杂文 (54)</a></li>
     
-    <li><a href="https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/">瞎搞 (41)</a></li>
+    <li><a href="http://localhost:1313/categories/%E7%9E%8E%E6%90%9E/">瞎搞 (41)</a></li>
     
 </ul>
     </section>
@@ -401,47 +489,47 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
         <h3 class="widget-title"><a href='/tags/'>標籤</a></h3>
 <div class="tagcloud">
     
-    <a href="https://ferristale.com/tags/Hexo/">Hexo</a>
+    <a href="http://localhost:1313/tags/Hexo/">Hexo</a>
     
-    <a href="https://ferristale.com/tags/Linux/">Linux</a>
+    <a href="http://localhost:1313/tags/Linux/">Linux</a>
     
-    <a href="https://ferristale.com/tags/LyricGhost/">LyricGhost</a>
+    <a href="http://localhost:1313/tags/LyricGhost/">LyricGhost</a>
     
-    <a href="https://ferristale.com/tags/Pets/">Pets</a>
+    <a href="http://localhost:1313/tags/Pets/">Pets</a>
     
-    <a href="https://ferristale.com/tags/R/">R</a>
+    <a href="http://localhost:1313/tags/R/">R</a>
     
-    <a href="https://ferristale.com/tags/VPS/">VPS</a>
+    <a href="http://localhost:1313/tags/VPS/">VPS</a>
     
-    <a href="https://ferristale.com/tags/WP/">WP</a>
+    <a href="http://localhost:1313/tags/WP/">WP</a>
     
-    <a href="https://ferristale.com/tags/%E5%89%A7%E6%9C%AC%E6%9D%80/">剧本杀</a>
+    <a href="http://localhost:1313/tags/%E5%89%A7%E6%9C%AC%E6%9D%80/">剧本杀</a>
     
-    <a href="https://ferristale.com/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+    <a href="http://localhost:1313/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
     
-    <a href="https://ferristale.com/tags/%E5%BD%B1%E8%A7%86/">影视</a>
+    <a href="http://localhost:1313/tags/%E5%BD%B1%E8%A7%86/">影视</a>
     
-    <a href="https://ferristale.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>
+    <a href="http://localhost:1313/tags/%E6%8A%98%E8%85%BE/">折腾</a>
     
-    <a href="https://ferristale.com/tags/%E6%91%84%E5%BD%B1/">摄影</a>
+    <a href="http://localhost:1313/tags/%E6%91%84%E5%BD%B1/">摄影</a>
     
-    <a href="https://ferristale.com/tags/%E6%9D%82%E5%BF%B5/">杂念</a>
+    <a href="http://localhost:1313/tags/%E6%9D%82%E5%BF%B5/">杂念</a>
     
-    <a href="https://ferristale.com/tags/%E6%9D%82%E8%AE%B0/">杂记</a>
+    <a href="http://localhost:1313/tags/%E6%9D%82%E8%AE%B0/">杂记</a>
     
-    <a href="https://ferristale.com/tags/%E6%9D%82%E8%B0%88/">杂谈</a>
+    <a href="http://localhost:1313/tags/%E6%9D%82%E8%B0%88/">杂谈</a>
     
-    <a href="https://ferristale.com/tags/%E7%A7%91%E6%99%AE/">科普</a>
+    <a href="http://localhost:1313/tags/%E7%A7%91%E6%99%AE/">科普</a>
     
-    <a href="https://ferristale.com/tags/%E7%BD%91%E7%AB%99/">网站</a>
+    <a href="http://localhost:1313/tags/%E7%BD%91%E7%AB%99/">网站</a>
     
-    <a href="https://ferristale.com/tags/%E8%8D%90%E6%96%87/">荐文</a>
+    <a href="http://localhost:1313/tags/%E8%8D%90%E6%96%87/">荐文</a>
     
-    <a href="https://ferristale.com/tags/%E8%AF%BB%E4%B9%A6/">读书</a>
+    <a href="http://localhost:1313/tags/%E8%AF%BB%E4%B9%A6/">读书</a>
     
-    <a href="https://ferristale.com/tags/%E9%9F%B3%E4%B9%90/">音乐</a>
+    <a href="http://localhost:1313/tags/%E9%9F%B3%E4%B9%90/">音乐</a>
     
-    <a href="https://ferristale.com/tags/%E9%AD%94%E6%B3%95/">魔法</a>
+    <a href="http://localhost:1313/tags/%E9%AD%94%E6%B3%95/">魔法</a>
     
 </div>
     </section>
@@ -466,7 +554,7 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
     <section class="widget">
         <h3 class="widget-title">其它</h3>
         <ul class="widget-list">
-            <li><a href="https://ferristale.com/index.xml">文章 RSS</a></li>
+            <li><a href="http://localhost:1313/index.xml">文章 RSS</a></li>
         </ul>
     </section>
 </div>

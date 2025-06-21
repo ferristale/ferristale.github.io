@@ -1,0 +1,4 @@
+document.addEventListener("DOMContentLoaded",function(){"use strict";const e="theme",t="dark",s="light";function n(t){document.documentElement.setAttribute("data-theme",t),localStorage.setItem(e,t);const n=document.body;n.style.display="none",n.offsetHeight,n.style.display=""}function i(){const e=document.documentElement.getAttribute("data-theme"),o=e===t?s:t;n(o)}function a(){if(window.matchMedia){const o=window.matchMedia("(prefers-color-scheme: dark)");o.addEventListener&&o.addEventListener("change",function(o){localStorage.getItem(e)||n(o.matches?t:s)})}}function r(){const e=document.createElement("button");return e.className="theme-toggle",e.setAttribute("aria-label","Toggle theme"),e.innerHTML=`
+            <span class="icon-sun">☀️</span>
+            <span class="icon-moon">🌙</span>
+        `,e.addEventListener("click",i),document.body.appendChild(e),e}r(),a();const o=localStorage.getItem(e);o&&n(o)})

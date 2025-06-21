@@ -1,55 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>影视 on 九盞燈</title>
-    <link>https://ferristale.com/tags/%E5%BD%B1%E8%A7%86/</link>
-    <description>Recent content in 影视 on 九盞燈</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>影视 on 燈燈</title>
+    <link>http://localhost:1313/tags/%E5%BD%B1%E8%A7%86/</link>
+    <description>Recent content in 影视 on 燈燈</description>
+    <generator>Hugo</generator>
     <language>zh-Hant</language>
-    <lastBuildDate>Sun, 24 Jun 2018 16:31:40 +0000</lastBuildDate><atom:link href="https://ferristale.com/tags/%E5%BD%B1%E8%A7%86/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Jun 2018 16:31:40 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E5%BD%B1%E8%A7%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>刺客伍六七</title>
-      <link>https://ferristale.com/Mr-Five/</link>
+      <link>http://localhost:1313/Mr-Five/</link>
       <pubDate>Sun, 24 Jun 2018 16:31:40 +0000</pubDate>
-      
-      <guid>https://ferristale.com/Mr-Five/</guid>
+      <guid>http://localhost:1313/Mr-Five/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>奇迹男孩</title>
-      <link>https://ferristale.com/wonder/</link>
+      <link>http://localhost:1313/wonder/</link>
       <pubDate>Sun, 21 Jan 2018 15:20:42 +0000</pubDate>
-      
-      <guid>https://ferristale.com/wonder/</guid>
-      <description>&lt;p&gt;回广州一周，昨晚突然得知凭电话号码就可以使用会员卡&lt;/p&gt;
-&lt;p&gt;查了一下最近的电影&lt;/p&gt;
-&lt;p&gt;很多高分&lt;/p&gt;
-&lt;p&gt;神秘巨星、奇迹男孩和无问西东&lt;/p&gt;
-&lt;p&gt;遂定了一个小目标，要在回家前把他们看完&lt;/p&gt;</description>
+      <guid>http://localhost:1313/wonder/</guid>
+      <description>&lt;p&gt;回广州一周，昨晚突然得知凭电话号码就可以使用会员卡&lt;/p&gt;&#xA;&lt;p&gt;查了一下最近的电影&lt;/p&gt;&#xA;&lt;p&gt;很多高分&lt;/p&gt;&#xA;&lt;p&gt;神秘巨星、奇迹男孩和无问西东&lt;/p&gt;&#xA;&lt;p&gt;遂定了一个小目标，要在回家前把他们看完&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>【美劇】權力的遊戲 S01-05 1080P Bluray/WEB-DL torrent</title>
-      <link>https://ferristale.com/game-of-thrones/</link>
+      <link>http://localhost:1313/game-of-thrones/</link>
       <pubDate>Sun, 20 Mar 2016 22:13:39 +0000</pubDate>
-      
-      <guid>https://ferristale.com/game-of-thrones/</guid>
+      <guid>http://localhost:1313/game-of-thrones/</guid>
       <description>&lt;p&gt;人人的畫質真的不能忍，一般的劇就算了，這麽一部史詩劇，怎麽可以將就！&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>美人魚</title>
-      <link>https://ferristale.com/Mermaid/</link>
+      <link>http://localhost:1313/Mermaid/</link>
       <pubDate>Mon, 29 Feb 2016 09:52:51 +0000</pubDate>
-      
-      <guid>https://ferristale.com/Mermaid/</guid>
-      <description>&lt;p&gt;昨天去看了久聞大名的美人魚&lt;/p&gt;
-&lt;p&gt;看完之後，可以用唏噓不已吧&lt;/p&gt;
-&lt;p&gt;本來以為是喜劇片&lt;/p&gt;
-&lt;p&gt;也确有喜劇的成分不過喜劇只是點綴&lt;/p&gt;
-&lt;p&gt;更多的是思考&lt;/p&gt;</description>
+      <guid>http://localhost:1313/Mermaid/</guid>
+      <description>&lt;p&gt;昨天去看了久聞大名的美人魚&lt;/p&gt;&#xA;&lt;p&gt;看完之後，可以用唏噓不已吧&lt;/p&gt;&#xA;&lt;p&gt;本來以為是喜劇片&lt;/p&gt;&#xA;&lt;p&gt;也确有喜劇的成分不過喜劇只是點綴&lt;/p&gt;&#xA;&lt;p&gt;更多的是思考&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

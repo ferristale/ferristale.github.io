@@ -1,200 +1,159 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 九盞燈</title>
-    <link>https://ferristale.com/tags/</link>
-    <description>Recent content in Tags on 九盞燈</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Tags on 燈燈</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on 燈燈</description>
+    <generator>Hugo</generator>
     <language>zh-Hant</language>
-    <lastBuildDate>Fri, 10 May 2024 20:27:43 +0930</lastBuildDate><atom:link href="https://ferristale.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 May 2024 20:27:43 +0930</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>杂记</title>
-      <link>https://ferristale.com/tags/%E6%9D%82%E8%AE%B0/</link>
+      <link>http://localhost:1313/tags/%E6%9D%82%E8%AE%B0/</link>
       <pubDate>Fri, 10 May 2024 20:27:43 +0930</pubDate>
-      
-      <guid>https://ferristale.com/tags/%E6%9D%82%E8%AE%B0/</guid>
+      <guid>http://localhost:1313/tags/%E6%9D%82%E8%AE%B0/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>杂念</title>
-      <link>https://ferristale.com/tags/%E6%9D%82%E5%BF%B5/</link>
+      <link>http://localhost:1313/tags/%E6%9D%82%E5%BF%B5/</link>
       <pubDate>Wed, 20 Mar 2024 20:57:51 +1030</pubDate>
-      
-      <guid>https://ferristale.com/tags/%E6%9D%82%E5%BF%B5/</guid>
+      <guid>http://localhost:1313/tags/%E6%9D%82%E5%BF%B5/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>摄影</title>
-      <link>https://ferristale.com/tags/%E6%91%84%E5%BD%B1/</link>
+      <link>http://localhost:1313/tags/%E6%91%84%E5%BD%B1/</link>
       <pubDate>Fri, 18 Aug 2023 17:45:51 +0800</pubDate>
-      
-      <guid>https://ferristale.com/tags/%E6%91%84%E5%BD%B1/</guid>
+      <guid>http://localhost:1313/tags/%E6%91%84%E5%BD%B1/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>网站</title>
-      <link>https://ferristale.com/tags/%E7%BD%91%E7%AB%99/</link>
+      <link>http://localhost:1313/tags/%E7%BD%91%E7%AB%99/</link>
       <pubDate>Sat, 07 Jan 2023 15:04:06 +0800</pubDate>
-      
-      <guid>https://ferristale.com/tags/%E7%BD%91%E7%AB%99/</guid>
+      <guid>http://localhost:1313/tags/%E7%BD%91%E7%AB%99/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>折腾</title>
-      <link>https://ferristale.com/tags/%E6%8A%98%E8%85%BE/</link>
+      <link>http://localhost:1313/tags/%E6%8A%98%E8%85%BE/</link>
       <pubDate>Wed, 04 Jan 2023 08:00:00 +0800</pubDate>
-      
-      <guid>https://ferristale.com/tags/%E6%8A%98%E8%85%BE/</guid>
+      <guid>http://localhost:1313/tags/%E6%8A%98%E8%85%BE/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>魔法</title>
-      <link>https://ferristale.com/tags/%E9%AD%94%E6%B3%95/</link>
+      <link>http://localhost:1313/tags/%E9%AD%94%E6%B3%95/</link>
       <pubDate>Wed, 04 Jan 2023 08:00:00 +0800</pubDate>
-      
-      <guid>https://ferristale.com/tags/%E9%AD%94%E6%B3%95/</guid>
+      <guid>http://localhost:1313/tags/%E9%AD%94%E6%B3%95/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>剧本杀</title>
-      <link>https://ferristale.com/tags/%E5%89%A7%E6%9C%AC%E6%9D%80/</link>
+      <link>http://localhost:1313/tags/%E5%89%A7%E6%9C%AC%E6%9D%80/</link>
       <pubDate>Sun, 08 Aug 2021 23:24:12 +0800</pubDate>
-      
-      <guid>https://ferristale.com/tags/%E5%89%A7%E6%9C%AC%E6%9D%80/</guid>
+      <guid>http://localhost:1313/tags/%E5%89%A7%E6%9C%AC%E6%9D%80/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>R</title>
-      <link>https://ferristale.com/tags/R/</link>
+      <link>http://localhost:1313/tags/R/</link>
       <pubDate>Sat, 04 Apr 2020 22:44:25 +0000</pubDate>
-      
-      <guid>https://ferristale.com/tags/R/</guid>
+      <guid>http://localhost:1313/tags/R/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>读书</title>
-      <link>https://ferristale.com/tags/%E8%AF%BB%E4%B9%A6/</link>
+      <link>http://localhost:1313/tags/%E8%AF%BB%E4%B9%A6/</link>
       <pubDate>Thu, 02 Apr 2020 18:27:21 +0000</pubDate>
-      
-      <guid>https://ferristale.com/tags/%E8%AF%BB%E4%B9%A6/</guid>
+      <guid>http://localhost:1313/tags/%E8%AF%BB%E4%B9%A6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Hexo</title>
-      <link>https://ferristale.com/tags/Hexo/</link>
+      <link>http://localhost:1313/tags/Hexo/</link>
       <pubDate>Sun, 28 Jul 2019 22:30:58 +0000</pubDate>
-      
-      <guid>https://ferristale.com/tags/Hexo/</guid>
+      <guid>http://localhost:1313/tags/Hexo/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>VPS</title>
-      <link>https://ferristale.com/tags/VPS/</link>
+      <link>http://localhost:1313/tags/VPS/</link>
       <pubDate>Sun, 28 Jul 2019 16:35:44 +0000</pubDate>
-      
-      <guid>https://ferristale.com/tags/VPS/</guid>
+      <guid>http://localhost:1313/tags/VPS/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>杂谈</title>
-      <link>https://ferristale.com/tags/%E6%9D%82%E8%B0%88/</link>
+      <link>http://localhost:1313/tags/%E6%9D%82%E8%B0%88/</link>
       <pubDate>Sun, 24 Jun 2018 16:31:40 +0000</pubDate>
-      
-      <guid>https://ferristale.com/tags/%E6%9D%82%E8%B0%88/</guid>
+      <guid>http://localhost:1313/tags/%E6%9D%82%E8%B0%88/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>影视</title>
-      <link>https://ferristale.com/tags/%E5%BD%B1%E8%A7%86/</link>
+      <link>http://localhost:1313/tags/%E5%BD%B1%E8%A7%86/</link>
       <pubDate>Sun, 24 Jun 2018 16:31:40 +0000</pubDate>
-      
-      <guid>https://ferristale.com/tags/%E5%BD%B1%E8%A7%86/</guid>
+      <guid>http://localhost:1313/tags/%E5%BD%B1%E8%A7%86/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>科普</title>
-      <link>https://ferristale.com/tags/%E7%A7%91%E6%99%AE/</link>
+      <link>http://localhost:1313/tags/%E7%A7%91%E6%99%AE/</link>
       <pubDate>Mon, 18 Jun 2018 19:10:44 +0000</pubDate>
-      
-      <guid>https://ferristale.com/tags/%E7%A7%91%E6%99%AE/</guid>
+      <guid>http://localhost:1313/tags/%E7%A7%91%E6%99%AE/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>音乐</title>
-      <link>https://ferristale.com/tags/%E9%9F%B3%E4%B9%90/</link>
+      <link>http://localhost:1313/tags/%E9%9F%B3%E4%B9%90/</link>
       <pubDate>Sun, 03 Jun 2018 23:38:03 +0000</pubDate>
-      
-      <guid>https://ferristale.com/tags/%E9%9F%B3%E4%B9%90/</guid>
+      <guid>http://localhost:1313/tags/%E9%9F%B3%E4%B9%90/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>学习</title>
-      <link>https://ferristale.com/tags/%E5%AD%A6%E4%B9%A0/</link>
+      <link>http://localhost:1313/tags/%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Mon, 21 May 2018 16:26:18 +0000</pubDate>
-      
-      <guid>https://ferristale.com/tags/%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>http://localhost:1313/tags/%E5%AD%A6%E4%B9%A0/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Linux</title>
-      <link>https://ferristale.com/tags/Linux/</link>
+      <link>http://localhost:1313/tags/Linux/</link>
       <pubDate>Mon, 22 Jan 2018 19:50:42 +0000</pubDate>
-      
-      <guid>https://ferristale.com/tags/Linux/</guid>
+      <guid>http://localhost:1313/tags/Linux/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>LyricGhost</title>
-      <link>https://ferristale.com/tags/LyricGhost/</link>
+      <link>http://localhost:1313/tags/LyricGhost/</link>
       <pubDate>Mon, 16 May 2016 22:28:04 +0000</pubDate>
-      
-      <guid>https://ferristale.com/tags/LyricGhost/</guid>
+      <guid>http://localhost:1313/tags/LyricGhost/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Pets</title>
-      <link>https://ferristale.com/tags/Pets/</link>
+      <link>http://localhost:1313/tags/Pets/</link>
       <pubDate>Sat, 07 May 2016 23:19:55 +0000</pubDate>
-      
-      <guid>https://ferristale.com/tags/Pets/</guid>
+      <guid>http://localhost:1313/tags/Pets/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>WP</title>
-      <link>https://ferristale.com/tags/WP/</link>
+      <link>http://localhost:1313/tags/WP/</link>
       <pubDate>Tue, 05 Jan 2016 14:50:44 +0000</pubDate>
-      
-      <guid>https://ferristale.com/tags/WP/</guid>
+      <guid>http://localhost:1313/tags/WP/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>荐文</title>
-      <link>https://ferristale.com/tags/%E8%8D%90%E6%96%87/</link>
+      <link>http://localhost:1313/tags/%E8%8D%90%E6%96%87/</link>
       <pubDate>Sun, 13 Dec 2015 14:01:54 +0000</pubDate>
-      
-      <guid>https://ferristale.com/tags/%E8%8D%90%E6%96%87/</guid>
+      <guid>http://localhost:1313/tags/%E8%8D%90%E6%96%87/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
