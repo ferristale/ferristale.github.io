@@ -2,297 +2,297 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>瞎搞 on 燈燈</title>
-    <link>https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/</link>
+    <link>http://localhost:1313/categories/%E7%9E%8E%E6%90%9E/</link>
     <description>Recent content in 瞎搞 on 燈燈</description>
     <generator>Hugo</generator>
     <language>zh-Hant</language>
     <lastBuildDate>Fri, 24 Nov 2023 22:11:51 +0800</lastBuildDate>
-    <atom:link href="https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/%E7%9E%8E%E6%90%9E/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows时间同步脚本</title>
-      <link>https://ferristale.com/time-sync-script-for-windows/</link>
+      <link>http://localhost:1313/time-sync-script-for-windows/</link>
       <pubDate>Fri, 24 Nov 2023 22:11:51 +0800</pubDate>
-      <guid>https://ferristale.com/time-sync-script-for-windows/</guid>
+      <guid>http://localhost:1313/time-sync-script-for-windows/</guid>
       <description>&lt;p&gt;开机检查网络&lt;/p&gt;&#xA;&lt;p&gt;网络连通后开始同步时间&lt;/p&gt;&#xA;&lt;p&gt;用于解决PC断电后时间重置问题&lt;/p&gt;</description>
     </item>
     <item>
       <title>近期博客变动</title>
-      <link>https://ferristale.com/recent-changes-230107/</link>
+      <link>http://localhost:1313/recent-changes-230107/</link>
       <pubDate>Sat, 07 Jan 2023 15:04:06 +0800</pubDate>
-      <guid>https://ferristale.com/recent-changes-230107/</guid>
+      <guid>http://localhost:1313/recent-changes-230107/</guid>
       <description></description>
     </item>
     <item>
       <title>Clash for Windows 归属地更改 &amp; Scholar规则</title>
-      <link>https://ferristale.com/anti-ip-and-scholar-rules-for-clash/</link>
+      <link>http://localhost:1313/anti-ip-and-scholar-rules-for-clash/</link>
       <pubDate>Wed, 04 Jan 2023 08:00:00 +0800</pubDate>
-      <guid>https://ferristale.com/anti-ip-and-scholar-rules-for-clash/</guid>
+      <guid>http://localhost:1313/anti-ip-and-scholar-rules-for-clash/</guid>
       <description>&lt;p&gt;Parse脚本，可适配所有订阅&lt;/p&gt;</description>
     </item>
     <item>
       <title>更换Hugo</title>
-      <link>https://ferristale.com/hello-hugo/</link>
+      <link>http://localhost:1313/hello-hugo/</link>
       <pubDate>Tue, 27 Oct 2020 22:51:39 +0800</pubDate>
-      <guid>https://ferristale.com/hello-hugo/</guid>
+      <guid>http://localhost:1313/hello-hugo/</guid>
       <description>&lt;p&gt;犹豫了那么久，终于换过来了&lt;/p&gt;</description>
     </item>
     <item>
       <title>Netlify一点都没有更快</title>
-      <link>https://ferristale.com/this-slow-netlify/</link>
+      <link>http://localhost:1313/this-slow-netlify/</link>
       <pubDate>Fri, 25 Sep 2020 19:35:07 +0800</pubDate>
-      <guid>https://ferristale.com/this-slow-netlify/</guid>
+      <guid>http://localhost:1313/this-slow-netlify/</guid>
       <description>&lt;p&gt;这玩意儿真慢&lt;/p&gt;</description>
     </item>
     <item>
       <title>邮箱托管</title>
-      <link>https://ferristale.com/email-hosting/</link>
+      <link>http://localhost:1313/email-hosting/</link>
       <pubDate>Fri, 25 Sep 2020 00:26:29 +0800</pubDate>
-      <guid>https://ferristale.com/email-hosting/</guid>
+      <guid>http://localhost:1313/email-hosting/</guid>
       <description>&lt;p&gt;偶然上Migadu的后台，发现多了一个试用到期的条条（黑人问号？？？）&#xA;最后在开发日志里看到，Migadu已经取消免费账号，原有的账号变成试用账号，马上到期&lt;/p&gt;</description>
     </item>
     <item>
       <title>重新整理博客内容</title>
-      <link>https://ferristale.com/reorganize-my-blog/</link>
+      <link>http://localhost:1313/reorganize-my-blog/</link>
       <pubDate>Mon, 29 Jul 2019 22:44:28 +0000</pubDate>
-      <guid>https://ferristale.com/reorganize-my-blog/</guid>
+      <guid>http://localhost:1313/reorganize-my-blog/</guid>
       <description>&lt;p&gt;没有简介&lt;/p&gt;</description>
     </item>
     <item>
       <title>正儿八经更新Hexo</title>
-      <link>https://ferristale.com/update-Hexo/</link>
+      <link>http://localhost:1313/update-Hexo/</link>
       <pubDate>Sun, 28 Jul 2019 22:30:58 +0000</pubDate>
-      <guid>https://ferristale.com/update-Hexo/</guid>
+      <guid>http://localhost:1313/update-Hexo/</guid>
       <description>&lt;p&gt;网上的文章，我看了些，抄来抄去，质量不敢恭维&#xA;查了很多资料之后有了点眉目，这是正儿八经版的Hexo 更新指南&lt;/p&gt;</description>
     </item>
     <item>
       <title>Multi-V2Ray 一键部署</title>
-      <link>https://ferristale.com/V2Ray/</link>
+      <link>http://localhost:1313/V2Ray/</link>
       <pubDate>Sun, 28 Jul 2019 16:35:44 +0000</pubDate>
-      <guid>https://ferristale.com/V2Ray/</guid>
+      <guid>http://localhost:1313/V2Ray/</guid>
       <description>&lt;p&gt;安装&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;source &amp;lt;(curl -sL https://git.io/fNgqx) --zh&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;脚本更新&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;source &amp;lt;(curl -sL https://git.io/fNgqx) -k&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>离线下载服务器一键搭建（Aria2 &#43; AriaNG &#43; Caddy）</title>
-      <link>https://ferristale.com/remote-download-server/</link>
+      <link>http://localhost:1313/remote-download-server/</link>
       <pubDate>Fri, 26 Jul 2019 16:10:00 +0000</pubDate>
-      <guid>https://ferristale.com/remote-download-server/</guid>
+      <guid>http://localhost:1313/remote-download-server/</guid>
       <description>&lt;p&gt;for CentOS 7&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yum -y install wget unzip curl&#xA;wget https://github.com/helloxz/ccaa/archive/master.zip&#xA;unzip master.zip &amp;amp;&amp;amp; cd ccaa-master &amp;amp;&amp;amp; sh ccaa.sh&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Enjoy it!&lt;/p&gt;</description>
     </item>
     <item>
       <title>将根域名绑定至Github Page</title>
-      <link>https://ferristale.com/rederect-apex-domain-to-Github-Page/</link>
+      <link>http://localhost:1313/rederect-apex-domain-to-Github-Page/</link>
       <pubDate>Tue, 06 Nov 2018 10:58:01 +0000</pubDate>
-      <guid>https://ferristale.com/rederect-apex-domain-to-Github-Page/</guid>
+      <guid>http://localhost:1313/rederect-apex-domain-to-Github-Page/</guid>
       <description>&lt;p&gt;Github牌免费网站空间和CDN服务了解一下？&lt;/p&gt;</description>
     </item>
     <item>
       <title>从网络访问角度讲讲网站建设</title>
-      <link>https://ferristale.com/what-happen-when-you-click-into-a-website/</link>
+      <link>http://localhost:1313/what-happen-when-you-click-into-a-website/</link>
       <pubDate>Mon, 18 Jun 2018 19:10:44 +0000</pubDate>
-      <guid>https://ferristale.com/what-happen-when-you-click-into-a-website/</guid>
+      <guid>http://localhost:1313/what-happen-when-you-click-into-a-website/</guid>
       <description>&lt;p&gt;当你上网的时候，你在上什么&lt;/p&gt;</description>
     </item>
     <item>
       <title>入正IDM及MS 2016</title>
-      <link>https://ferristale.com/supporting-genuine/</link>
+      <link>http://localhost:1313/supporting-genuine/</link>
       <pubDate>Fri, 18 May 2018 20:59:24 +0000</pubDate>
-      <guid>https://ferristale.com/supporting-genuine/</guid>
+      <guid>http://localhost:1313/supporting-genuine/</guid>
       <description>&lt;p&gt;用了这么久的盗版，终于补了一波船票&lt;/p&gt;</description>
     </item>
     <item>
       <title>新版的坚果云和旧版的网易云</title>
-      <link>https://ferristale.com/new-nutstore-and-old-netease-music/</link>
+      <link>http://localhost:1313/new-nutstore-and-old-netease-music/</link>
       <pubDate>Mon, 14 May 2018 19:07:22 +0000</pubDate>
-      <guid>https://ferristale.com/new-nutstore-and-old-netease-music/</guid>
+      <guid>http://localhost:1313/new-nutstore-and-old-netease-music/</guid>
       <description>&lt;p&gt;蛋疼&lt;/p&gt;</description>
     </item>
     <item>
       <title>要不要转移到Hugo呢</title>
-      <link>https://ferristale.com/how-about-Hugo/</link>
+      <link>http://localhost:1313/how-about-Hugo/</link>
       <pubDate>Tue, 17 Apr 2018 19:32:57 +0000</pubDate>
-      <guid>https://ferristale.com/how-about-Hugo/</guid>
+      <guid>http://localhost:1313/how-about-Hugo/</guid>
       <description>&lt;p&gt;意外发现了名为Hugo的静态博客框架&#xA;仿佛，更有效率？&lt;/p&gt;</description>
     </item>
     <item>
       <title>放弃&amp;卸载Ubuntu</title>
-      <link>https://ferristale.com/goodbye-Ubuntu/</link>
+      <link>http://localhost:1313/goodbye-Ubuntu/</link>
       <pubDate>Fri, 16 Mar 2018 15:51:46 +0000</pubDate>
-      <guid>https://ferristale.com/goodbye-Ubuntu/</guid>
+      <guid>http://localhost:1313/goodbye-Ubuntu/</guid>
       <description>&lt;p&gt;.&#xA;然后我发现，卸载Ubuntu竟如此轻松&lt;/p&gt;</description>
     </item>
     <item>
       <title>文献管理软件的选择</title>
-      <link>https://ferristale.com/bibliography-managing/</link>
+      <link>http://localhost:1313/bibliography-managing/</link>
       <pubDate>Thu, 15 Mar 2018 15:50:42 +0000</pubDate>
-      <guid>https://ferristale.com/bibliography-managing/</guid>
+      <guid>http://localhost:1313/bibliography-managing/</guid>
       <description>&lt;p&gt;endnote/mendeley/Citavi/zotero&lt;/p&gt;</description>
     </item>
     <item>
       <title>SSH登录服务器</title>
-      <link>https://ferristale.com/SSH-your-VPS/</link>
+      <link>http://localhost:1313/SSH-your-VPS/</link>
       <pubDate>Sun, 28 Jan 2018 15:50:42 +0000</pubDate>
-      <guid>https://ferristale.com/SSH-your-VPS/</guid>
+      <guid>http://localhost:1313/SSH-your-VPS/</guid>
       <description>&lt;p&gt;无论是使用HEXO还是维护服务器，SSH都是一大利器呢&lt;/p&gt;</description>
     </item>
     <item>
       <title>再次部署Hexo</title>
-      <link>https://ferristale.com/install-hexo-again/</link>
+      <link>http://localhost:1313/install-hexo-again/</link>
       <pubDate>Fri, 26 Jan 2018 13:01:42 +0000</pubDate>
-      <guid>https://ferristale.com/install-hexo-again/</guid>
+      <guid>http://localhost:1313/install-hexo-again/</guid>
       <description>&lt;p&gt;参照网上教程，融合了我遇到的问题写就此文&#xA;基本上，把nginx装好&#xA;把git弄好&#xA;就差不多了&lt;/p&gt;</description>
     </item>
     <item>
       <title>新装Ubuntu的一些软件-2018</title>
-      <link>https://ferristale.com/softwares-for-Ubuntu/</link>
+      <link>http://localhost:1313/softwares-for-Ubuntu/</link>
       <pubDate>Mon, 22 Jan 2018 19:50:42 +0000</pubDate>
-      <guid>https://ferristale.com/softwares-for-Ubuntu/</guid>
+      <guid>http://localhost:1313/softwares-for-Ubuntu/</guid>
       <description>&lt;p&gt;ssr-client&#xA;chacha20&#xA;uGet+aria2&#xA;electronic微信&#xA;开机挂载ntfs分区&lt;/p&gt;</description>
     </item>
     <item>
       <title>好久不更，後院出問題了</title>
-      <link>https://ferristale.com/my-blog-refused-to-work/</link>
+      <link>http://localhost:1313/my-blog-refused-to-work/</link>
       <pubDate>Fri, 08 Jul 2016 19:53:23 +0000</pubDate>
-      <guid>https://ferristale.com/my-blog-refused-to-work/</guid>
+      <guid>http://localhost:1313/my-blog-refused-to-work/</guid>
       <description>&lt;p&gt;一言不合&lt;/p&gt;</description>
     </item>
     <item>
       <title>更換IP和郵箱託管</title>
-      <link>https://ferristale.com/change-IP-and-email-hosting/</link>
+      <link>http://localhost:1313/change-IP-and-email-hosting/</link>
       <pubDate>Fri, 08 Jul 2016 18:48:33 +0000</pubDate>
-      <guid>https://ferristale.com/change-IP-and-email-hosting/</guid>
+      <guid>http://localhost:1313/change-IP-and-email-hosting/</guid>
       <description>&lt;p&gt;好久不見&lt;/p&gt;</description>
     </item>
     <item>
       <title>作死更新Ubuntu 16.04（顯示器不工作）</title>
-      <link>https://ferristale.com/upgrade-to-ubuntu-16-04/</link>
+      <link>http://localhost:1313/upgrade-to-ubuntu-16-04/</link>
       <pubDate>Wed, 04 May 2016 00:02:58 +0000</pubDate>
-      <guid>https://ferristale.com/upgrade-to-ubuntu-16-04/</guid>
+      <guid>http://localhost:1313/upgrade-to-ubuntu-16-04/</guid>
       <description>&lt;p&gt;其實這都是國慶前的事了，國慶回家鍵盤不好用，懶得打==&lt;/p&gt;</description>
     </item>
     <item>
       <title>終於用上了Hexo</title>
-      <link>https://ferristale.com/hello-Hexo-hello-MarkDown/</link>
+      <link>http://localhost:1313/hello-Hexo-hello-MarkDown/</link>
       <pubDate>Wed, 27 Apr 2016 20:50:42 +0000</pubDate>
-      <guid>https://ferristale.com/hello-Hexo-hello-MarkDown/</guid>
+      <guid>http://localhost:1313/hello-Hexo-hello-MarkDown/</guid>
       <description>&lt;p&gt;如果你有看我的&amp;quot;關於&amp;quot;頁面就會知道，前不久我才換了一個新主題，這麼快就連框架也換了&lt;/p&gt;&#xA;&lt;p&gt;是的沒錯不僅框架換了，事實上服務器也“翻新”了：P&lt;/p&gt;&#xA;&lt;p&gt;選來選去選了這個，Hexo&lt;/p&gt;&#xA;&lt;p&gt;到現在，博客也算經歷了幾大更迭&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Namecheap的廉價主機自帶的WP&lt;/li&gt;&#xA;&lt;li&gt;搬瓦工VPS加VESTACP&lt;/li&gt;&#xA;&lt;li&gt;VPS直接上一鍵安裝包+WP&lt;/li&gt;&#xA;&lt;li&gt;Nginx+Hexo&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>一些去廣告和谷歌 Hosts源</title>
-      <link>https://ferristale.com/hosts/</link>
+      <link>http://localhost:1313/hosts/</link>
       <pubDate>Fri, 04 Mar 2016 12:32:12 +0000</pubDate>
-      <guid>https://ferristale.com/hosts/</guid>
-      <description>&lt;p&gt; &lt;/p&gt;&#xA;&lt;p&gt;&#xA;        &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://ferristale.com/google.png&#34;&gt;&#xA;            &lt;img loading=&#34;lazy&#34; class=&#34;mx-auto&#34; alt=&#34;Google&#34; src=&#34;https://ferristale.com/google.png&#34; /&gt;&#xA;        &lt;/a&gt;&#xA;    &lt;/p&gt;</description>
+      <guid>http://localhost:1313/hosts/</guid>
+      <description>&lt;p&gt; &lt;/p&gt;&#xA;&lt;p&gt;&#xA;        &lt;a data-fancybox=&#34;gallery&#34; href=&#34;http://localhost:1313/google.png&#34;&gt;&#xA;            &lt;img loading=&#34;lazy&#34; class=&#34;mx-auto&#34; alt=&#34;Google&#34; src=&#34;http://localhost:1313/google.png&#34; /&gt;&#xA;        &lt;/a&gt;&#xA;    &lt;/p&gt;</description>
     </item>
     <item>
       <title>从Ubuntu 12.04到16.04</title>
-      <link>https://ferristale.com/from-ubuntu-1204-to-1604/</link>
+      <link>http://localhost:1313/from-ubuntu-1204-to-1604/</link>
       <pubDate>Fri, 15 Jan 2016 22:18:49 +0000</pubDate>
-      <guid>https://ferristale.com/from-ubuntu-1204-to-1604/</guid>
+      <guid>http://localhost:1313/from-ubuntu-1204-to-1604/</guid>
       <description>&lt;p&gt;已经不记得刚接触ubuntu是什么时候了，反正那时用的是12.04&lt;/p&gt;&#xA;&lt;p&gt;也就是说至少也是12年&lt;/p&gt;&#xA;&lt;p&gt;后来用上了14.04。（其实现在还在用）&lt;/p&gt;&#xA;&lt;p&gt;还以为很新的版本，今天意外看到16.04beta&lt;/p&gt;&#xA;&lt;p&gt;才惊觉原来已经两年了&lt;/p&gt;</description>
     </item>
     <item>
       <title>前段时间给网站申请了免费ssl</title>
-      <link>https://ferristale.com/ssl/</link>
+      <link>http://localhost:1313/ssl/</link>
       <pubDate>Tue, 05 Jan 2016 16:12:53 +0000</pubDate>
-      <guid>https://ferristale.com/ssl/</guid>
+      <guid>http://localhost:1313/ssl/</guid>
       <description>&lt;p&gt;应该是30号。看到有free ssl这东西&lt;/p&gt;&#xA;&lt;p&gt;一时激动试了一下&lt;/p&gt;</description>
     </item>
     <item>
       <title>〖可能〗是世界上最安全的邮箱</title>
-      <link>https://ferristale.com/maybe-the-most-safety-mail/</link>
+      <link>http://localhost:1313/maybe-the-most-safety-mail/</link>
       <pubDate>Tue, 05 Jan 2016 14:53:54 +0000</pubDate>
-      <guid>https://ferristale.com/maybe-the-most-safety-mail/</guid>
+      <guid>http://localhost:1313/maybe-the-most-safety-mail/</guid>
       <description>&lt;p&gt;丢失的文章里的图&lt;/p&gt;&#xA;&lt;p&gt;看图说话&lt;/p&gt;</description>
     </item>
     <item>
       <title>数据库挂了，不见了一星期的数据</title>
-      <link>https://ferristale.com/lost-two-post/</link>
+      <link>http://localhost:1313/lost-two-post/</link>
       <pubDate>Tue, 05 Jan 2016 14:50:44 +0000</pubDate>
-      <guid>https://ferristale.com/lost-two-post/</guid>
+      <guid>http://localhost:1313/lost-two-post/</guid>
       <description>&lt;p&gt;元旦回来发现数据库挂了&lt;/p&gt;&#xA;&lt;p&gt;帖子在论坛挂了两天没人鸟&lt;/p&gt;</description>
     </item>
     <item>
       <title>記博客更新</title>
-      <link>https://ferristale.com/bolg-changelog/</link>
+      <link>http://localhost:1313/bolg-changelog/</link>
       <pubDate>Sun, 27 Dec 2015 20:51:06 +0000</pubDate>
-      <guid>https://ferristale.com/bolg-changelog/</guid>
+      <guid>http://localhost:1313/bolg-changelog/</guid>
       <description>&lt;p&gt;明天考試了&lt;/p&gt;&#xA;&lt;p&gt;但我還是作死地弄了一天的博客&lt;/p&gt;&#xA;&lt;p&gt;更新了主題，修改了一下其他東西&lt;/p&gt;&#xA;&lt;p&gt;事情要從EZ主題說起&lt;/p&gt;</description>
     </item>
     <item>
       <title>升級了兩個應用/牛奶咖啡</title>
-      <link>https://ferristale.com/milk-coffee/</link>
+      <link>http://localhost:1313/milk-coffee/</link>
       <pubDate>Fri, 18 Dec 2015 13:09:36 +0000</pubDate>
-      <guid>https://ferristale.com/milk-coffee/</guid>
+      <guid>http://localhost:1313/milk-coffee/</guid>
       <description>&lt;p&gt; &lt;/p&gt;&#xA;&lt;p&gt;SOS升級了2.5.0a2&lt;/p&gt;&#xA;&lt;p&gt;然後&amp;hellip;.&lt;/p&gt;&#xA;&lt;p&gt;支付寶不能用了&lt;/p&gt;&#xA;&lt;p&gt;剛好飯卡沒錢，我心裡那個萬馬奔騰。&lt;/p&gt;&#xA;&lt;p&gt;今天上網找了一下&lt;/p&gt;&#xA;&lt;p&gt;才發現我那個原來是8.1的版本了&lt;/p&gt;</description>
     </item>
     <item>
       <title>VESTA面板升級PHP7.0</title>
-      <link>https://ferristale.com/vesta-php7/</link>
+      <link>http://localhost:1313/vesta-php7/</link>
       <pubDate>Mon, 14 Dec 2015 00:51:36 +0000</pubDate>
-      <guid>https://ferristale.com/vesta-php7/</guid>
+      <guid>http://localhost:1313/vesta-php7/</guid>
       <description>&lt;p&gt; &lt;/p&gt;&#xA;&lt;p&gt;VESTA的各種部件安裝位置令人神傷&lt;/p&gt;&#xA;&lt;p&gt;網上爬了很多文章&lt;/p&gt;&#xA;&lt;p&gt;終於無痛升級PHP7.0&lt;/p&gt;&#xA;&lt;p&gt; &lt;/p&gt;</description>
     </item>
     <item>
       <title>真・終於</title>
-      <link>https://ferristale.com/finally-final/</link>
+      <link>http://localhost:1313/finally-final/</link>
       <pubDate>Fri, 11 Dec 2015 16:43:32 +0000</pubDate>
-      <guid>https://ferristale.com/finally-final/</guid>
+      <guid>http://localhost:1313/finally-final/</guid>
       <description>&lt;p&gt; &lt;/p&gt;&#xA;&lt;p&gt;今天網站算是穩定了吧&lt;/p&gt;&#xA;&lt;p&gt;重新鼓搗的第四天&lt;/p&gt;&#xA;&lt;p&gt;第一天晚上開始到第二天凌晨 買域名&lt;/p&gt;</description>
     </item>
     <item>
       <title>終於</title>
-      <link>https://ferristale.com/secondly-finally/</link>
+      <link>http://localhost:1313/secondly-finally/</link>
       <pubDate>Wed, 09 Dec 2015 20:33:23 +0000</pubDate>
-      <guid>https://ferristale.com/secondly-finally/</guid>
+      <guid>http://localhost:1313/secondly-finally/</guid>
       <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&#34;&gt;&#xD;&#xA;    &lt;script src=&#34;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;script src=&#34;https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;  &#xD;&#xA;    &lt;meting-js&#xD;&#xA;      id=&#34;38576001&#34;&#xD;&#xA;      server=&#34;netease&#34;&#xD;&#xA;      type=&#34;song&#34;&#xD;&#xA;      fixed=&#34;true&#34;&#xD;&#xA;      mini=&#34;true&#34;&#xD;&#xA;      autoplay=&#34;true&#34;&#xD;&#xA;      loop=&#34;none&#34;&#xD;&#xA;      theme=&#34;true&#34;&#xD;&#xA;      volume=&#34;0.6&#34;&#xD;&#xA;      prelosd=&#34;auto&#34;&#xD;&#xA;      mutex=&#34;true&#34;&#xD;&#xA;      list-folded=&#34;true&#34;&gt;&#xD;&#xA;    &lt;/meting-js&gt;&#xD;&#xA;  &#xD;&#xA;&#xD;&#xA;&#xA;&lt;p&gt;改頭換面&lt;/p&gt;&#xA;&lt;p&gt;更名換姓&lt;/p&gt;&#xA;&lt;p&gt;我回來了&lt;/p&gt;&#xA;&lt;p&gt;7月15&lt;/p&gt;&#xA;&lt;p&gt;12月9&lt;/p&gt;&#xA;&lt;p&gt;將近5個月過去了&lt;/p&gt;&#xA;&lt;p&gt;博客終於更新了&lt;/p&gt;&#xA;&lt;p&gt;或者說，終於重生了&lt;/p&gt;</description>
     </item>
     <item>
       <title>關於網站速度</title>
-      <link>https://ferristale.com/website-speed/</link>
+      <link>http://localhost:1313/website-speed/</link>
       <pubDate>Fri, 26 Jun 2015 00:19:11 +0000</pubDate>
-      <guid>https://ferristale.com/website-speed/</guid>
+      <guid>http://localhost:1313/website-speed/</guid>
       <description>&lt;p&gt;其實我不是很明白&lt;/p&gt;&#xA;&lt;p&gt;我的主機ping過去也不慢&lt;/p&gt;&#xA;&lt;p&gt;可是網站訪問卻不盡人意&lt;/p&gt;</description>
     </item>
     <item>
       <title>想換主機</title>
-      <link>https://ferristale.com/damn-host-again/</link>
+      <link>http://localhost:1313/damn-host-again/</link>
       <pubDate>Thu, 25 Jun 2015 01:04:19 +0000</pubDate>
-      <guid>https://ferristale.com/damn-host-again/</guid>
+      <guid>http://localhost:1313/damn-host-again/</guid>
       <description>&lt;p&gt;抱歉這麼晚還在線&lt;/p&gt;&#xA;&lt;p&gt;想換主機&lt;/p&gt;&#xA;&lt;p&gt;看好了laoxue和cef。因爲選字麻煩我就打英文算了&lt;/p&gt;&#xA;&lt;p&gt;laoxue美國普通版超便宜。據說速度還不錯&lt;/p&gt;&#xA;&lt;p&gt;只是我不太感相信&lt;/p&gt;&#xA;&lt;p&gt;這個美國的機子訪問還是有點慢&lt;/p&gt;&#xA;&lt;p&gt;非常影響我自己的效率&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ubuntu下配置Shadowsocks實戰攻略</title>
-      <link>https://ferristale.com/shadowsocks-in-Ubuntu/</link>
+      <link>http://localhost:1313/shadowsocks-in-Ubuntu/</link>
       <pubDate>Tue, 23 Jun 2015 20:59:55 +0000</pubDate>
-      <guid>https://ferristale.com/shadowsocks-in-Ubuntu/</guid>
+      <guid>http://localhost:1313/shadowsocks-in-Ubuntu/</guid>
       <description>&lt;h3 id=&#34;我來還文章了這是第一篇&#34;&gt;我來還文章了，這是第一篇&lt;/h3&gt;&#xA;&lt;p&gt;這麼久終於要迎來第一篇真正意義上的技術貼了。內牛滿面啊TAT&lt;/p&gt;&#xA;&lt;p&gt;前段時間拿到了一個ss帳號，在win下配置成功，沒有在UBUNTU下嘗試&lt;/p&gt;&#xA;&lt;p&gt;畢竟我原本有hosts保底，對這個需求不是那麼強烈&lt;/p&gt;&#xA;&lt;p&gt;事實上，如果對fq只有谷歌搜索的需求，hosts已經夠了&lt;/p&gt;&#xA;&lt;p&gt;前幾天心血來潮，想着在UBUNTU也設置一個&lt;/p&gt;&#xA;&lt;p&gt;遇到一些問題，不過最後弄好了，拿出來分享一下&lt;/p&gt;</description>
     </item>
     <item>
       <title>这几天的电脑安全日记</title>
-      <link>https://ferristale.com/PC-security/</link>
+      <link>http://localhost:1313/PC-security/</link>
       <pubDate>Mon, 04 May 2015 04:44:29 +0000</pubDate>
-      <guid>https://ferristale.com/PC-security/</guid>
+      <guid>http://localhost:1313/PC-security/</guid>
       <description>&lt;p&gt;事实上这几天发生了不少事，有很多想写的，只是看着看着就三点半&lt;/p&gt;&#xA;&lt;p&gt;最终却写出这么个计划外的文章。。&lt;/p&gt;&#xA;&lt;p&gt; &lt;/p&gt;&#xA;&lt;p&gt;好吧。系统改进只是这几天发生的事情的微不足道之一&lt;/p&gt;&#xA;&lt;p&gt;不过还是花了好多时间&lt;/p&gt;&#xA;&lt;p&gt; &lt;/p&gt;</description>
     </item>
     <item>
       <title>终于可以访问了</title>
-      <link>https://ferristale.com/finally/</link>
+      <link>http://localhost:1313/finally/</link>
       <pubDate>Mon, 20 Apr 2015 04:16:35 +0000</pubDate>
-      <guid>https://ferristale.com/finally/</guid>
+      <guid>http://localhost:1313/finally/</guid>
       <description>&lt;p&gt;完全不知道应该怎么描述现在的心情&lt;/p&gt;&#xA;&lt;p&gt;还是要说一句&lt;/p&gt;&#xA;&lt;p&gt;终于可以访问了&lt;/p&gt;</description>
     </item>
     <item>
       <title>今晚，谈谈我的主机</title>
-      <link>https://ferristale.com/damn-host/</link>
+      <link>http://localhost:1313/damn-host/</link>
       <pubDate>Sat, 18 Apr 2015 03:45:27 +0000</pubDate>
-      <guid>https://ferristale.com/damn-host/</guid>
+      <guid>http://localhost:1313/damn-host/</guid>
       <description>&lt;p&gt;又到了两点&lt;/p&gt;&#xA;&lt;p&gt;似乎一个星期来都没有早睡过了&lt;/p&gt;&#xA;&lt;p&gt;一个多星期了&lt;/p&gt;&#xA;&lt;p&gt;自从开始做网站&lt;/p&gt;&#xA;&lt;p&gt;几乎每晚都到很晚&lt;/p&gt;&#xA;&lt;p&gt;也不一定是在做相关的事情&lt;/p&gt;&#xA;&lt;p&gt;但每天都是有不少时间花在这上面的&lt;/p&gt;&#xA;&lt;p&gt;虽然是在做自己感兴趣的事&lt;/p&gt;&#xA;&lt;p&gt;很累也是真的&lt;/p&gt;</description>
     </item>
     <item>
       <title>這應該是第一篇了</title>
-      <link>https://ferristale.com/hello-world/</link>
+      <link>http://localhost:1313/hello-world/</link>
       <pubDate>Fri, 17 Apr 2015 01:14:54 +0000</pubDate>
-      <guid>https://ferristale.com/hello-world/</guid>
+      <guid>http://localhost:1313/hello-world/</guid>
       <description>&lt;p&gt;寫這篇文章的時候，淚流滿面&lt;/p&gt;&#xA;&lt;p&gt;汝可知否&lt;/p&gt;&#xA;&lt;p&gt;看一看賬單&lt;/p&gt;&#xA;&lt;p&gt;主機是13號買的，附贈這個域名&lt;/p&gt;&#xA;&lt;p&gt;卻一直拖到現在才開始第一篇文章&lt;/p&gt;&#xA;&lt;p&gt;期間有太多事情&lt;/p&gt;&#xA;&lt;p&gt;頭兩天大量閱讀英文網頁 看的單詞絕對比我一年看得都要多&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,129 +2,129 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>网站 on 燈燈</title>
-    <link>https://ferristale.com/tags/%E7%BD%91%E7%AB%99/</link>
+    <link>http://localhost:1313/tags/%E7%BD%91%E7%AB%99/</link>
     <description>Recent content in 网站 on 燈燈</description>
     <generator>Hugo</generator>
     <language>zh-Hant</language>
     <lastBuildDate>Sat, 07 Jan 2023 15:04:06 +0800</lastBuildDate>
-    <atom:link href="https://ferristale.com/tags/%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>近期博客变动</title>
-      <link>https://ferristale.com/recent-changes-230107/</link>
+      <link>http://localhost:1313/recent-changes-230107/</link>
       <pubDate>Sat, 07 Jan 2023 15:04:06 +0800</pubDate>
-      <guid>https://ferristale.com/recent-changes-230107/</guid>
+      <guid>http://localhost:1313/recent-changes-230107/</guid>
       <description></description>
     </item>
     <item>
       <title>更换Hugo</title>
-      <link>https://ferristale.com/hello-hugo/</link>
+      <link>http://localhost:1313/hello-hugo/</link>
       <pubDate>Tue, 27 Oct 2020 22:51:39 +0800</pubDate>
-      <guid>https://ferristale.com/hello-hugo/</guid>
+      <guid>http://localhost:1313/hello-hugo/</guid>
       <description>&lt;p&gt;犹豫了那么久，终于换过来了&lt;/p&gt;</description>
     </item>
     <item>
       <title>Netlify一点都没有更快</title>
-      <link>https://ferristale.com/this-slow-netlify/</link>
+      <link>http://localhost:1313/this-slow-netlify/</link>
       <pubDate>Fri, 25 Sep 2020 19:35:07 +0800</pubDate>
-      <guid>https://ferristale.com/this-slow-netlify/</guid>
+      <guid>http://localhost:1313/this-slow-netlify/</guid>
       <description>&lt;p&gt;这玩意儿真慢&lt;/p&gt;</description>
     </item>
     <item>
       <title>重新整理博客内容</title>
-      <link>https://ferristale.com/reorganize-my-blog/</link>
+      <link>http://localhost:1313/reorganize-my-blog/</link>
       <pubDate>Mon, 29 Jul 2019 22:44:28 +0000</pubDate>
-      <guid>https://ferristale.com/reorganize-my-blog/</guid>
+      <guid>http://localhost:1313/reorganize-my-blog/</guid>
       <description>&lt;p&gt;没有简介&lt;/p&gt;</description>
     </item>
     <item>
       <title>将根域名绑定至Github Page</title>
-      <link>https://ferristale.com/rederect-apex-domain-to-Github-Page/</link>
+      <link>http://localhost:1313/rederect-apex-domain-to-Github-Page/</link>
       <pubDate>Tue, 06 Nov 2018 10:58:01 +0000</pubDate>
-      <guid>https://ferristale.com/rederect-apex-domain-to-Github-Page/</guid>
+      <guid>http://localhost:1313/rederect-apex-domain-to-Github-Page/</guid>
       <description>&lt;p&gt;Github牌免费网站空间和CDN服务了解一下？&lt;/p&gt;</description>
     </item>
     <item>
       <title>要不要转移到Hugo呢</title>
-      <link>https://ferristale.com/how-about-Hugo/</link>
+      <link>http://localhost:1313/how-about-Hugo/</link>
       <pubDate>Tue, 17 Apr 2018 19:32:57 +0000</pubDate>
-      <guid>https://ferristale.com/how-about-Hugo/</guid>
+      <guid>http://localhost:1313/how-about-Hugo/</guid>
       <description>&lt;p&gt;意外发现了名为Hugo的静态博客框架&#xA;仿佛，更有效率？&lt;/p&gt;</description>
     </item>
     <item>
       <title>好久不更，後院出問題了</title>
-      <link>https://ferristale.com/my-blog-refused-to-work/</link>
+      <link>http://localhost:1313/my-blog-refused-to-work/</link>
       <pubDate>Fri, 08 Jul 2016 19:53:23 +0000</pubDate>
-      <guid>https://ferristale.com/my-blog-refused-to-work/</guid>
+      <guid>http://localhost:1313/my-blog-refused-to-work/</guid>
       <description>&lt;p&gt;一言不合&lt;/p&gt;</description>
     </item>
     <item>
       <title>更換IP和郵箱託管</title>
-      <link>https://ferristale.com/change-IP-and-email-hosting/</link>
+      <link>http://localhost:1313/change-IP-and-email-hosting/</link>
       <pubDate>Fri, 08 Jul 2016 18:48:33 +0000</pubDate>
-      <guid>https://ferristale.com/change-IP-and-email-hosting/</guid>
+      <guid>http://localhost:1313/change-IP-and-email-hosting/</guid>
       <description>&lt;p&gt;好久不見&lt;/p&gt;</description>
     </item>
     <item>
       <title>前段时间给网站申请了免费ssl</title>
-      <link>https://ferristale.com/ssl/</link>
+      <link>http://localhost:1313/ssl/</link>
       <pubDate>Tue, 05 Jan 2016 16:12:53 +0000</pubDate>
-      <guid>https://ferristale.com/ssl/</guid>
+      <guid>http://localhost:1313/ssl/</guid>
       <description>&lt;p&gt;应该是30号。看到有free ssl这东西&lt;/p&gt;&#xA;&lt;p&gt;一时激动试了一下&lt;/p&gt;</description>
     </item>
     <item>
       <title>真・終於</title>
-      <link>https://ferristale.com/finally-final/</link>
+      <link>http://localhost:1313/finally-final/</link>
       <pubDate>Fri, 11 Dec 2015 16:43:32 +0000</pubDate>
-      <guid>https://ferristale.com/finally-final/</guid>
+      <guid>http://localhost:1313/finally-final/</guid>
       <description>&lt;p&gt; &lt;/p&gt;&#xA;&lt;p&gt;今天網站算是穩定了吧&lt;/p&gt;&#xA;&lt;p&gt;重新鼓搗的第四天&lt;/p&gt;&#xA;&lt;p&gt;第一天晚上開始到第二天凌晨 買域名&lt;/p&gt;</description>
     </item>
     <item>
       <title>終於</title>
-      <link>https://ferristale.com/secondly-finally/</link>
+      <link>http://localhost:1313/secondly-finally/</link>
       <pubDate>Wed, 09 Dec 2015 20:33:23 +0000</pubDate>
-      <guid>https://ferristale.com/secondly-finally/</guid>
+      <guid>http://localhost:1313/secondly-finally/</guid>
       <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&#34;&gt;&#xD;&#xA;    &lt;script src=&#34;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;script src=&#34;https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;  &#xD;&#xA;    &lt;meting-js&#xD;&#xA;      id=&#34;38576001&#34;&#xD;&#xA;      server=&#34;netease&#34;&#xD;&#xA;      type=&#34;song&#34;&#xD;&#xA;      fixed=&#34;true&#34;&#xD;&#xA;      mini=&#34;true&#34;&#xD;&#xA;      autoplay=&#34;true&#34;&#xD;&#xA;      loop=&#34;none&#34;&#xD;&#xA;      theme=&#34;true&#34;&#xD;&#xA;      volume=&#34;0.6&#34;&#xD;&#xA;      prelosd=&#34;auto&#34;&#xD;&#xA;      mutex=&#34;true&#34;&#xD;&#xA;      list-folded=&#34;true&#34;&gt;&#xD;&#xA;    &lt;/meting-js&gt;&#xD;&#xA;  &#xD;&#xA;&#xD;&#xA;&#xA;&lt;p&gt;改頭換面&lt;/p&gt;&#xA;&lt;p&gt;更名換姓&lt;/p&gt;&#xA;&lt;p&gt;我回來了&lt;/p&gt;&#xA;&lt;p&gt;7月15&lt;/p&gt;&#xA;&lt;p&gt;12月9&lt;/p&gt;&#xA;&lt;p&gt;將近5個月過去了&lt;/p&gt;&#xA;&lt;p&gt;博客終於更新了&lt;/p&gt;&#xA;&lt;p&gt;或者說，終於重生了&lt;/p&gt;</description>
     </item>
     <item>
       <title>關於網站速度</title>
-      <link>https://ferristale.com/website-speed/</link>
+      <link>http://localhost:1313/website-speed/</link>
       <pubDate>Fri, 26 Jun 2015 00:19:11 +0000</pubDate>
-      <guid>https://ferristale.com/website-speed/</guid>
+      <guid>http://localhost:1313/website-speed/</guid>
       <description>&lt;p&gt;其實我不是很明白&lt;/p&gt;&#xA;&lt;p&gt;我的主機ping過去也不慢&lt;/p&gt;&#xA;&lt;p&gt;可是網站訪問卻不盡人意&lt;/p&gt;</description>
     </item>
     <item>
       <title>想換主機</title>
-      <link>https://ferristale.com/damn-host-again/</link>
+      <link>http://localhost:1313/damn-host-again/</link>
       <pubDate>Thu, 25 Jun 2015 01:04:19 +0000</pubDate>
-      <guid>https://ferristale.com/damn-host-again/</guid>
+      <guid>http://localhost:1313/damn-host-again/</guid>
       <description>&lt;p&gt;抱歉這麼晚還在線&lt;/p&gt;&#xA;&lt;p&gt;想換主機&lt;/p&gt;&#xA;&lt;p&gt;看好了laoxue和cef。因爲選字麻煩我就打英文算了&lt;/p&gt;&#xA;&lt;p&gt;laoxue美國普通版超便宜。據說速度還不錯&lt;/p&gt;&#xA;&lt;p&gt;只是我不太感相信&lt;/p&gt;&#xA;&lt;p&gt;這個美國的機子訪問還是有點慢&lt;/p&gt;&#xA;&lt;p&gt;非常影響我自己的效率&lt;/p&gt;</description>
     </item>
     <item>
       <title>118</title>
-      <link>https://ferristale.com/post/118/</link>
+      <link>http://localhost:1313/post/118/</link>
       <pubDate>Thu, 23 Apr 2015 01:06:11 +0000</pubDate>
-      <guid>https://ferristale.com/post/118/</guid>
+      <guid>http://localhost:1313/post/118/</guid>
       <description>&lt;p&gt;本來想聊聊高瑜，這時間還是算了&lt;/p&gt;&#xA;&lt;p&gt;BB一下&lt;/p&gt;&#xA;&lt;p&gt;加速樂似乎有點問題，得找個時間換一個或者怎麼的&lt;/p&gt;</description>
     </item>
     <item>
       <title>终于可以访问了</title>
-      <link>https://ferristale.com/finally/</link>
+      <link>http://localhost:1313/finally/</link>
       <pubDate>Mon, 20 Apr 2015 04:16:35 +0000</pubDate>
-      <guid>https://ferristale.com/finally/</guid>
+      <guid>http://localhost:1313/finally/</guid>
       <description>&lt;p&gt;完全不知道应该怎么描述现在的心情&lt;/p&gt;&#xA;&lt;p&gt;还是要说一句&lt;/p&gt;&#xA;&lt;p&gt;终于可以访问了&lt;/p&gt;</description>
     </item>
     <item>
       <title>今晚，谈谈我的主机</title>
-      <link>https://ferristale.com/damn-host/</link>
+      <link>http://localhost:1313/damn-host/</link>
       <pubDate>Sat, 18 Apr 2015 03:45:27 +0000</pubDate>
-      <guid>https://ferristale.com/damn-host/</guid>
+      <guid>http://localhost:1313/damn-host/</guid>
       <description>&lt;p&gt;又到了两点&lt;/p&gt;&#xA;&lt;p&gt;似乎一个星期来都没有早睡过了&lt;/p&gt;&#xA;&lt;p&gt;一个多星期了&lt;/p&gt;&#xA;&lt;p&gt;自从开始做网站&lt;/p&gt;&#xA;&lt;p&gt;几乎每晚都到很晚&lt;/p&gt;&#xA;&lt;p&gt;也不一定是在做相关的事情&lt;/p&gt;&#xA;&lt;p&gt;但每天都是有不少时间花在这上面的&lt;/p&gt;&#xA;&lt;p&gt;虽然是在做自己感兴趣的事&lt;/p&gt;&#xA;&lt;p&gt;很累也是真的&lt;/p&gt;</description>
     </item>
     <item>
       <title>這應該是第一篇了</title>
-      <link>https://ferristale.com/hello-world/</link>
+      <link>http://localhost:1313/hello-world/</link>
       <pubDate>Fri, 17 Apr 2015 01:14:54 +0000</pubDate>
-      <guid>https://ferristale.com/hello-world/</guid>
+      <guid>http://localhost:1313/hello-world/</guid>
       <description>&lt;p&gt;寫這篇文章的時候，淚流滿面&lt;/p&gt;&#xA;&lt;p&gt;汝可知否&lt;/p&gt;&#xA;&lt;p&gt;看一看賬單&lt;/p&gt;&#xA;&lt;p&gt;主機是13號買的，附贈這個域名&lt;/p&gt;&#xA;&lt;p&gt;卻一直拖到現在才開始第一篇文章&lt;/p&gt;&#xA;&lt;p&gt;期間有太多事情&lt;/p&gt;&#xA;&lt;p&gt;頭兩天大量閱讀英文網頁 看的單詞絕對比我一年看得都要多&lt;/p&gt;</description>
     </item>
   </channel>
