@@ -80,10 +80,10 @@
     
     
     
-    <link rel="stylesheet" href="/css/bundle.min.5170905696514bf033f7430a8c8320d1520de28d84387a1e5361fcc79f09d5ad.css" integrity="sha256-UXCQVpZRS/Az90MKjIMg0VIN4o2EOHoeU2H8x58J1a0=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bundle.min.d7ec849071249c0ae6c629b8f670876f2dd467fe75e9428734a6d185d5d72bac12c76875aa9711f14cae0dab902435ffe18b132d56316fd2b50ae89b1d27de05.css" integrity="sha512-1&#43;yEkHEknArmxim49nCHby3UZ/516UKHNKbRhdXXK6wSx2h1qpcR8UyuDauQJDX/4YsTLVYxb9K1CuibHSfeBQ==" crossorigin="anonymous">
     
     
-    <script type="text/javascript" src="/js/theme-switch.min.0edf2132934a7c885390f2ad239255268ced13c49c325c14d087b0e74b1267db.js" defer></script>
+    <script type="text/javascript" src="/js/theme-switch.min.c8a932011fa051ed0be95ea30c924fbfa711159c9fea3b1d6a142f83a5ad8ba431853ef0ae48a7f4c5f77e616e13b7aec43170f954dedfc552460393da78f884.js"></script>
 
     
 </head>
@@ -102,7 +102,7 @@
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="current" href="https://ferristale.com/">首頁</a>
+                    <a class="" href="https://ferristale.com/">首頁</a>
                     
                     <a  href="https://ferristale.com/archives/" title="歸檔">歸檔</a>
                     
@@ -319,12 +319,32 @@
     
     
     <div class="post bg-white">
-      <script src="https://utteranc.es/client.js"
-            repo= "ferristale/ferristale.github.io"
-            issue-term="pathname"
-            theme="github-light"
-            crossorigin="anonymous"
-            async>
+      <script>
+        
+        (function() {
+          
+          const currentTheme = document.documentElement.getAttribute('data-theme');
+          const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          
+          
+          const shouldUseDarkTheme = currentTheme === 'dark' || 
+                                   (currentTheme !== 'light' && systemPrefersDark);
+          
+          const utterancesTheme = shouldUseDarkTheme ? 'github-dark' : 'github-light';
+          
+          
+          const script = document.createElement('script');
+          script.src = 'https://utteranc.es/client.js';
+          script.setAttribute('repo', 'ferristale\/ferristale.github.io');
+          script.setAttribute('issue-term', 'pathname');
+          script.setAttribute('theme', utterancesTheme);
+          script.setAttribute('crossorigin', 'anonymous');
+          script.setAttribute('async', '');
+          
+          
+          const container = document.currentScript.parentNode;
+          container.insertBefore(script, document.currentScript);
+        })();
       </script>
       <script>
         
@@ -348,15 +368,6 @@
             utterancesFrame.contentWindow.postMessage(message, 'https://utteranc.es');
           }
         }
-        
-        
-        document.addEventListener('DOMContentLoaded', function() {
-          
-          setTimeout(updateUtterancesTheme, 1000);
-          
-          
-          setTimeout(updateUtterancesTheme, 3000);
-        });
         
         
         const observer = new MutationObserver(function(mutations) {
@@ -452,9 +463,9 @@
     
     
         
-        <script type="text/javascript" src="/fancybox.umd.min_10213516633759641856.min.72e06ae243a983f24c1186e9c5bb23c46a43c87e6bd536ef112b1786d713d904.js" integrity="sha256-cuBq4kOpg/JMEYbpxbsjxGpDyH5r1TbvESsXhtcT2QQ=" crossorigin="anonymous" defer></script>
+        <script type="text/javascript" src="/fancybox.umd.min_10213516633759641856.min.9c2c1692a81251bd6e37f204591a0186d7a3e7e1e672affdc911c0b61ec15fdb367fbeba0a68c8a5d9de98f6b34d5ead931cd0a4584690783cd69e5acccf359c.js" integrity="sha512-nCwWkqgSUb1uN/IEWRoBhtej5&#43;Hmcq/9yRHAth7BX9s2f766CmjIpdnemPazTV6tkxzQpFhGkHg81p5azM81nA==" crossorigin="anonymous" defer></script>
         
-        <script type="text/javascript" src="/js/fancybox-init.min.b23f457e3ac96c778d7f9fb0ea423b5705619ae275bdab0fd5a6871158048640.js" integrity="sha256-sj9FfjrJbHeNf5&#43;w6kI7VwVhmuJ1vasP1aaHEVgEhkA=" crossorigin="anonymous" defer></script>
+        <script type="text/javascript" src="/js/fancybox-init.min.f89cc6935df2616fa38a1924d97780a155f21fc8c8caa6f4759948177632567a3935b2245ff0fe4c99c1fd537c6644d10c0ce96d5a5fea6653a01e952de1a29f.js" integrity="sha512-&#43;JzGk13yYW&#43;jihkk2XeAoVXyH8jIyqb0dZlIF3YyVno5NbIkX/D&#43;TJnB/VN8ZkTRDAzpbVpf6mZToB6VLeGinw==" crossorigin="anonymous" defer></script>
     
 
 
