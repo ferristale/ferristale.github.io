@@ -5,14 +5,18 @@
     <script>
         (function() {
             const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
             
+            
+            let themeToApply = 'light'; 
             if (savedTheme) {
-                document.documentElement.setAttribute('data-theme', savedTheme);
-            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'light');
+                themeToApply = savedTheme;
+            } else if (systemPrefersDark) {
+                themeToApply = 'dark';
             }
+            
+            
+            document.documentElement.setAttribute('data-theme', themeToApply);
         })();
     </script>
 
@@ -50,11 +54,11 @@
     
     
     
-    <link rel="stylesheet" href="/css/bundle.min.7c754f9e7e38bccd2d047a275922601fc4e23816900c2d9f3baba95f2ff05900.css" integrity="sha256-fHVPnn44vM0tBHonWSJgH8TiOBaQDC2fO6upXy/wWQA=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bundle.min.414bb61a5e3c6b99c5fa0681455ccabc06dcec1d84a141d8f6868ee61d626bab.css" integrity="sha256-QUu2Gl48a5nF&#43;gaBRVzKvAbc7B2EoUHY9oaO5h1ia6s=" crossorigin="anonymous">
     
     <link rel="alternate" type="application/rss+xml" href="https://ferristale.com/tags/%E8%AF%BB%E4%B9%A6/index.xml" title="燈燈" />
     
-    <script type="text/javascript" src="/js/theme-switch.min.de8bc0d1cb93afaeb42be9fa37c6740be5f8dbf5fd92988d05200eed943672d1.js" defer></script>
+    <script type="text/javascript" src="/js/theme-switch.min.b4e395bd1982548423b9639829fd0f9d2fad99dd3dc94a5cd30aa899aa878dc5.js" defer></script>
 
     
 </head>
