@@ -4,19 +4,41 @@
     
     <script>
         (function() {
-            const savedTheme = localStorage.getItem('theme');
-            const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
             
+            const style = document.createElement('style');
+            style.textContent = `
+                /* Block all prefers-color-scheme media queries until theme is determined */
+                @media (prefers-color-scheme: dark) {
+                    :root:not([data-theme]) {
+                        /* Prevent dark theme from being applied before we check user preference */
+                        color-scheme: light;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
             
-            let themeToApply = 'light'; 
-            if (savedTheme) {
-                themeToApply = savedTheme;
-            } else if (systemPrefersDark) {
-                themeToApply = 'dark';
+            try {
+                const savedTheme = localStorage.getItem('theme');
+                const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                
+                
+                let themeToApply = 'light'; 
+                if (savedTheme) {
+                    themeToApply = savedTheme;
+                } else if (systemPrefersDark) {
+                    themeToApply = 'dark';
+                }
+                
+                
+                document.documentElement.setAttribute('data-theme', themeToApply);
+                
+                
+                document.head.removeChild(style);
+            } catch (e) {
+                
+                document.documentElement.setAttribute('data-theme', 'light');
+                document.head.removeChild(style);
             }
-            
-            
-            document.documentElement.setAttribute('data-theme', themeToApply);
         })();
     </script>
 
@@ -54,11 +76,11 @@
     
     
     
-    <link rel="stylesheet" href="/css/bundle.min.f9c663f495b2519813c828bcf2e82d9a3da5919221444e5043777380cdbad631.css" integrity="sha256-&#43;cZj9JWyUZgTyCi88ugtmj2lkZIhRE5QQ3dzgM261jE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bundle.min.5170905696514bf033f7430a8c8320d1520de28d84387a1e5361fcc79f09d5ad.css" integrity="sha256-UXCQVpZRS/Az90MKjIMg0VIN4o2EOHoeU2H8x58J1a0=" crossorigin="anonymous">
     
     <link rel="alternate" type="application/rss+xml" href="https://ferristale.com/post/index.xml" title="燈燈" />
     
-    <script type="text/javascript" src="/js/theme-switch.min.b4e395bd1982548423b9639829fd0f9d2fad99dd3dc94a5cd30aa899aa878dc5.js" defer></script>
+    <script type="text/javascript" src="/js/theme-switch.min.0edf2132934a7c885390f2ad239255268ced13c49c325c14d087b0e74b1267db.js" defer></script>
 
     
 </head>
