@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",()=>{typeof Fancybox!="undefined"&&Fancybox.bind("[data-fancybox]")}),document.addEventListener("DOMContentLoaded",()=>{typeof Fancybox!="undefined"&&Fancybox.bind("[data-fancybox]")})

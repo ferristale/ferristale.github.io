@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学习 on 燈燈</title>
-    <link>http://localhost:1313/tags/%E5%AD%A6%E4%B9%A0/</link>
+    <link>https://ferristale.com/tags/%E5%AD%A6%E4%B9%A0/</link>
     <description>Recent content in 学习 on 燈燈</description>
     <generator>Hugo</generator>
     <language>zh-Hant</language>
     <lastBuildDate>Mon, 21 May 2018 16:26:18 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ferristale.com/tags/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>给师弟师妹的忠告</title>
-      <link>http://localhost:1313/tipes-for-fresh-man/</link>
+      <link>https://ferristale.com/tipes-for-fresh-man/</link>
       <pubDate>Mon, 21 May 2018 16:26:18 +0000</pubDate>
-      <guid>http://localhost:1313/tipes-for-fresh-man/</guid>
+      <guid>https://ferristale.com/tipes-for-fresh-man/</guid>
       <description>&lt;p&gt;给在国科大的师弟师妹的忠告&lt;/p&gt;</description>
     </item>
     <item>
       <title>补完所有的卡需要近14年</title>
-      <link>http://localhost:1313/14-years-needed-to-recheckin/</link>
+      <link>https://ferristale.com/14-years-needed-to-recheckin/</link>
       <pubDate>Mon, 14 May 2018 18:58:08 +0000</pubDate>
-      <guid>http://localhost:1313/14-years-needed-to-recheckin/</guid>
+      <guid>https://ferristale.com/14-years-needed-to-recheckin/</guid>
       <description>&lt;p&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>文献管理软件的选择</title>
-      <link>http://localhost:1313/bibliography-managing/</link>
+      <link>https://ferristale.com/bibliography-managing/</link>
       <pubDate>Thu, 15 Mar 2018 15:50:42 +0000</pubDate>
-      <guid>http://localhost:1313/bibliography-managing/</guid>
+      <guid>https://ferristale.com/bibliography-managing/</guid>
       <description>&lt;p&gt;endnote/mendeley/Citavi/zotero&lt;/p&gt;</description>
     </item>
     <item>
       <title>扇贝第二本单词书总结</title>
-      <link>http://localhost:1313/finish-2nd-worlds-book/</link>
+      <link>https://ferristale.com/finish-2nd-worlds-book/</link>
       <pubDate>Sun, 24 Apr 2016 23:14:06 +0000</pubDate>
-      <guid>http://localhost:1313/finish-2nd-worlds-book/</guid>
+      <guid>https://ferristale.com/finish-2nd-worlds-book/</guid>
       <description>&lt;p&gt;背完了一本单词书，扇贝第二本&lt;/p&gt;&#xA;&lt;p&gt;200多天了啊,14年12.23是我在扇贝的第一天&lt;/p&gt;&#xA;&lt;p&gt;那段时间打卡参差不齐，没坚持一个月就断了&lt;/p&gt;&#xA;&lt;p&gt;那段时间刚好是寒假，回家做兼职，确实也够忙&lt;/p&gt;&#xA;&lt;p&gt;3月份开始断断续续地继续&lt;/p&gt;&#xA;&lt;p&gt;那时候似乎报了6级来着？&lt;/p&gt;&#xA;&lt;p&gt;8月，一直到今年的2月，好长的一段空白&lt;/p&gt;</description>
     </item>
     <item>
       <title>233</title>
-      <link>http://localhost:1313/233/</link>
+      <link>https://ferristale.com/233/</link>
       <pubDate>Mon, 22 Jun 2015 23:22:32 +0000</pubDate>
-      <guid>http://localhost:1313/233/</guid>
-      <description>&lt;p&gt;&#xA;        &lt;a data-fancybox=&#34;gallery&#34; href=&#34;http://localhost:1313/150622-shanbay-baoguo.png&#34;&gt;&#xA;            &lt;img class=&#34;mx-auto&#34; alt=&#34;&#34; src=&#34;http://localhost:1313/150622-shanbay-baoguo.png&#34; /&gt;&#xA;        &lt;/a&gt;&#xA;    &lt;/p&gt;</description>
+      <guid>https://ferristale.com/233/</guid>
+      <description>&lt;p&gt;&#xA;        &lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://ferristale.com/150622-shanbay-baoguo.png&#34;&gt;&#xA;            &lt;img loading=&#34;lazy&#34; class=&#34;mx-auto&#34; alt=&#34;&#34; src=&#34;https://ferristale.com/150622-shanbay-baoguo.png&#34; /&gt;&#xA;        &lt;/a&gt;&#xA;    &lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

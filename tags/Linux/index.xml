@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on 燈燈</title>
-    <link>http://localhost:1313/tags/Linux/</link>
+    <link>https://ferristale.com/tags/Linux/</link>
     <description>Recent content in Linux on 燈燈</description>
     <generator>Hugo</generator>
     <language>zh-Hant</language>
     <lastBuildDate>Mon, 22 Jan 2018 19:50:42 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/Linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ferristale.com/tags/Linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>新装Ubuntu的一些软件-2018</title>
-      <link>http://localhost:1313/softwares-for-Ubuntu/</link>
+      <link>https://ferristale.com/softwares-for-Ubuntu/</link>
       <pubDate>Mon, 22 Jan 2018 19:50:42 +0000</pubDate>
-      <guid>http://localhost:1313/softwares-for-Ubuntu/</guid>
+      <guid>https://ferristale.com/softwares-for-Ubuntu/</guid>
       <description>&lt;p&gt;ssr-client&#xA;chacha20&#xA;uGet+aria2&#xA;electronic微信&#xA;开机挂载ntfs分区&lt;/p&gt;</description>
     </item>
     <item>
       <title>作死更新Ubuntu 16.04（顯示器不工作）</title>
-      <link>http://localhost:1313/upgrade-to-ubuntu-16-04/</link>
+      <link>https://ferristale.com/upgrade-to-ubuntu-16-04/</link>
       <pubDate>Wed, 04 May 2016 00:02:58 +0000</pubDate>
-      <guid>http://localhost:1313/upgrade-to-ubuntu-16-04/</guid>
+      <guid>https://ferristale.com/upgrade-to-ubuntu-16-04/</guid>
       <description>&lt;p&gt;其實這都是國慶前的事了，國慶回家鍵盤不好用，懶得打==&lt;/p&gt;</description>
     </item>
     <item>
       <title>从Ubuntu 12.04到16.04</title>
-      <link>http://localhost:1313/from-ubuntu-1204-to-1604/</link>
+      <link>https://ferristale.com/from-ubuntu-1204-to-1604/</link>
       <pubDate>Fri, 15 Jan 2016 22:18:49 +0000</pubDate>
-      <guid>http://localhost:1313/from-ubuntu-1204-to-1604/</guid>
+      <guid>https://ferristale.com/from-ubuntu-1204-to-1604/</guid>
       <description>&lt;p&gt;已经不记得刚接触ubuntu是什么时候了，反正那时用的是12.04&lt;/p&gt;&#xA;&lt;p&gt;也就是说至少也是12年&lt;/p&gt;&#xA;&lt;p&gt;后来用上了14.04。（其实现在还在用）&lt;/p&gt;&#xA;&lt;p&gt;还以为很新的版本，今天意外看到16.04beta&lt;/p&gt;&#xA;&lt;p&gt;才惊觉原来已经两年了&lt;/p&gt;</description>
     </item>
   </channel>
