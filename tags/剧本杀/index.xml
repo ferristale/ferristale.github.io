@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>剧本杀 on 燈燈</title>
-    <link>http://localhost:1313/tags/%E5%89%A7%E6%9C%AC%E6%9D%80/</link>
+    <link>https://ferristale.com/tags/%E5%89%A7%E6%9C%AC%E6%9D%80/</link>
     <description>Recent content in 剧本杀 on 燈燈</description>
     <generator>Hugo</generator>
     <language>zh-Hant</language>
     <lastBuildDate>Sun, 08 Aug 2021 23:24:12 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E5%89%A7%E6%9C%AC%E6%9D%80/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ferristale.com/tags/%E5%89%A7%E6%9C%AC%E6%9D%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>剧本记录</title>
-      <link>http://localhost:1313/LARP-records/</link>
+      <link>https://ferristale.com/LARP-records/</link>
       <pubDate>Sun, 08 Aug 2021 23:24:12 +0800</pubDate>
-      <guid>http://localhost:1313/LARP-records/</guid>
+      <guid>https://ferristale.com/LARP-records/</guid>
       <description>&lt;p&gt;记录打过的本&lt;/p&gt;</description>
     </item>
     <item>
       <title>从前有座玄离山 | 炒鸡惊喜！</title>
-      <link>http://localhost:1313/xuanlishan/</link>
+      <link>https://ferristale.com/xuanlishan/</link>
       <pubDate>Sun, 08 Aug 2021 23:18:13 +0800</pubDate>
-      <guid>http://localhost:1313/xuanlishan/</guid>
+      <guid>https://ferristale.com/xuanlishan/</guid>
       <description>&lt;p&gt;讲道理，超值！（不过现在可能差点了）&lt;/p&gt;</description>
     </item>
     <item>
       <title>修复师1 | 一生一世一双人</title>
-      <link>http://localhost:1313/relic-restorer-1/</link>
+      <link>https://ferristale.com/relic-restorer-1/</link>
       <pubDate>Sun, 01 Aug 2021 23:29:26 +0800</pubDate>
-      <guid>http://localhost:1313/relic-restorer-1/</guid>
+      <guid>https://ferristale.com/relic-restorer-1/</guid>
       <description>&lt;p&gt;惨就一个字，记第一次破防&lt;/p&gt;</description>
     </item>
   </channel>

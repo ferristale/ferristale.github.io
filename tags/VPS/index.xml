@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VPS on 燈燈</title>
-    <link>http://localhost:1313/tags/VPS/</link>
+    <link>https://ferristale.com/tags/VPS/</link>
     <description>Recent content in VPS on 燈燈</description>
     <generator>Hugo</generator>
     <language>zh-Hant</language>
     <lastBuildDate>Sun, 28 Jul 2019 16:35:44 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/VPS/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ferristale.com/tags/VPS/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multi-V2Ray 一键部署</title>
-      <link>http://localhost:1313/V2Ray/</link>
+      <link>https://ferristale.com/V2Ray/</link>
       <pubDate>Sun, 28 Jul 2019 16:35:44 +0000</pubDate>
-      <guid>http://localhost:1313/V2Ray/</guid>
+      <guid>https://ferristale.com/V2Ray/</guid>
       <description>&lt;p&gt;安装&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;source &amp;lt;(curl -sL https://git.io/fNgqx) --zh&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;脚本更新&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;source &amp;lt;(curl -sL https://git.io/fNgqx) -k&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>离线下载服务器一键搭建（Aria2 &#43; AriaNG &#43; Caddy）</title>
-      <link>http://localhost:1313/remote-download-server/</link>
+      <link>https://ferristale.com/remote-download-server/</link>
       <pubDate>Fri, 26 Jul 2019 16:10:00 +0000</pubDate>
-      <guid>http://localhost:1313/remote-download-server/</guid>
+      <guid>https://ferristale.com/remote-download-server/</guid>
       <description>&lt;p&gt;for CentOS 7&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yum -y install wget unzip curl&#xA;wget https://github.com/helloxz/ccaa/archive/master.zip&#xA;unzip master.zip &amp;amp;&amp;amp; cd ccaa-master &amp;amp;&amp;amp; sh ccaa.sh&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Enjoy it!&lt;/p&gt;</description>
     </item>
     <item>
       <title>SSH登录服务器</title>
-      <link>http://localhost:1313/SSH-your-VPS/</link>
+      <link>https://ferristale.com/SSH-your-VPS/</link>
       <pubDate>Sun, 28 Jan 2018 15:50:42 +0000</pubDate>
-      <guid>http://localhost:1313/SSH-your-VPS/</guid>
+      <guid>https://ferristale.com/SSH-your-VPS/</guid>
       <description>&lt;p&gt;无论是使用HEXO还是维护服务器，SSH都是一大利器呢&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ubuntu下配置Shadowsocks實戰攻略</title>
-      <link>http://localhost:1313/shadowsocks-in-Ubuntu/</link>
+      <link>https://ferristale.com/shadowsocks-in-Ubuntu/</link>
       <pubDate>Tue, 23 Jun 2015 20:59:55 +0000</pubDate>
-      <guid>http://localhost:1313/shadowsocks-in-Ubuntu/</guid>
+      <guid>https://ferristale.com/shadowsocks-in-Ubuntu/</guid>
       <description>&lt;h3 id=&#34;我來還文章了這是第一篇&#34;&gt;我來還文章了，這是第一篇&lt;/h3&gt;&#xA;&lt;p&gt;這麼久終於要迎來第一篇真正意義上的技術貼了。內牛滿面啊TAT&lt;/p&gt;&#xA;&lt;p&gt;前段時間拿到了一個ss帳號，在win下配置成功，沒有在UBUNTU下嘗試&lt;/p&gt;&#xA;&lt;p&gt;畢竟我原本有hosts保底，對這個需求不是那麼強烈&lt;/p&gt;&#xA;&lt;p&gt;事實上，如果對fq只有谷歌搜索的需求，hosts已經夠了&lt;/p&gt;&#xA;&lt;p&gt;前幾天心血來潮，想着在UBUNTU也設置一個&lt;/p&gt;&#xA;&lt;p&gt;遇到一些問題，不過最後弄好了，拿出來分享一下&lt;/p&gt;</description>
     </item>
   </channel>
