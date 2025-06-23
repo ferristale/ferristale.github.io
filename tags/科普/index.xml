@@ -1,1 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>科普 on 燈燈</title><link>https://ferristale.com/tags/%E7%A7%91%E6%99%AE/</link><description>Recent content in 科普 on 燈燈</description><generator>Hugo</generator><language>zh-Hant</language><lastBuildDate>Mon, 18 Jun 2018 19:10:44 +0000</lastBuildDate><atom:link href="https://ferristale.com/tags/%E7%A7%91%E6%99%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>从网络访问角度讲讲网站建设</title><link>https://ferristale.com/what-happen-when-you-click-into-a-website/</link><pubDate>Mon, 18 Jun 2018 19:10:44 +0000</pubDate><guid>https://ferristale.com/what-happen-when-you-click-into-a-website/</guid><description>&lt;p>当你上网的时候，你在上什么&lt;/p></description></item><item><title>科普：从生物群落组成出发的人生观</title><link>https://ferristale.com/to-be-what-you-want/</link><pubDate>Wed, 30 May 2018 09:43:30 +0000</pubDate><guid>https://ferristale.com/to-be-what-you-want/</guid><description>&lt;p>To be what you want&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>科普 on 燈燈</title>
+    <link>https://ferristale.com/tags/%E7%A7%91%E6%99%AE/</link>
+    <description>Recent content in 科普 on 燈燈</description>
+    <generator>Hugo</generator>
+    <language>zh-Hant</language>
+    <lastBuildDate>Mon, 18 Jun 2018 19:10:44 +0000</lastBuildDate>
+    <atom:link href="https://ferristale.com/tags/%E7%A7%91%E6%99%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从网络访问角度讲讲网站建设</title>
+      <link>https://ferristale.com/what-happen-when-you-click-into-a-website/</link>
+      <pubDate>Mon, 18 Jun 2018 19:10:44 +0000</pubDate>
+      <guid>https://ferristale.com/what-happen-when-you-click-into-a-website/</guid>
+      <description>&lt;p&gt;当你上网的时候，你在上什么&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>科普：从生物群落组成出发的人生观</title>
+      <link>https://ferristale.com/to-be-what-you-want/</link>
+      <pubDate>Wed, 30 May 2018 09:43:30 +0000</pubDate>
+      <guid>https://ferristale.com/to-be-what-you-want/</guid>
+      <description>&lt;p&gt;To be what you want&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

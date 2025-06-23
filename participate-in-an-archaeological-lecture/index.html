@@ -1,4 +1,12 @@
-<!doctype html><html lang=zh-Hant><head><script>(function(){const e=document.createElement("style");e.textContent=`
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+    
+    <script>
+        (function() {
+            
+            const style = document.createElement('style');
+            style.textContent = `
                 /* Block all prefers-color-scheme media queries until theme is determined */
                 @media (prefers-color-scheme: dark) {
                     :root:not([data-theme]) {
@@ -6,57 +14,328 @@
                         color-scheme: light;
                     }
                 }
-            `,document.head.appendChild(e);try{const n=localStorage.getItem("theme"),s=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;let t="light";n?t=n:s&&(t="dark"),document.documentElement.setAttribute("data-theme",t),document.head.removeChild(e)}catch{document.documentElement.setAttribute("data-theme","light"),document.head.removeChild(e)}})()</script><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>《开讲啦》：考古，盗墓，文物修复与职业选择 | 燈燈</title><meta property="og:type" content="article"><meta property="article:published_time" content='2018-05-18T23:54:31+08:00'><meta property="article:modified_time" content='2018-05-18T23:54:31+08:00'><meta name=description content="《开讲啦》：考古，盗墓，文物修复与职业选择"><meta name=author content="燈燈"><meta property="og:title" content="《开讲啦》：考古，盗墓，文物修复与职业选择 - 燈燈"><meta property="og:url" content="https://ferristale.com/participate-in-an-archaeological-lecture/"><link rel=icon href=/favicon.png type=image/png><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link rel=stylesheet href=/css/bundle.min.css><script type=text/javascript src=/js/theme-switch.min.js></script></head><body><header id=header class=clearfix><div class=container><div class=col-group><div class=site-name><a id=logo href=https://ferristale.com/>燈燈</a><p class=description>朝蒸藜藿暮烹葵</p></div><div><div id=theme-toggle-container></div><nav id=nav-menu class=clearfix><a href=https://ferristale.com/>首頁</a>
-<a href=https://ferristale.com/archives/ title=歸檔>歸檔</a>
-<a href=https://ferristale.com/about title=關於>關於</a></nav></div></div></div></header><div id=body><div class=container><div class=col-group><div class=col-8 id=main><div class=res-cons><style type=text/css>.post-toc{position:fixed;width:200px;margin-left:-210px;padding:5px 10px;font-family:Athelas,STHeiti,Microsoft Yahei,serif;font-size:12px;border:1px solid rgba(0,0,0,7%);border-radius:5px;background-color:rgba(255,255,255,.98);background-clip:padding-box;-webkit-box-shadow:1px 1px 2px rgba(0,0,0,.125);box-shadow:1px 1px 2px rgba(0,0,0,.125);word-wrap:break-word;white-space:nowrap;-webkit-box-sizing:border-box;box-sizing:border-box;z-index:999;cursor:pointer;max-height:70%;overflow-y:auto;overflow-x:hidden}.post-toc .post-toc-title{width:100%;margin:0 auto;font-size:20px;font-weight:400;text-transform:uppercase;text-align:center}.post-toc .post-toc-content{font-size:15px}.post-toc .post-toc-content>nav>ul{margin:10px 0}.post-toc .post-toc-content ul{padding-left:20px;list-style:square;margin:.5em;line-height:1.8em}.post-toc .post-toc-content ul ul{padding-left:15px;display:none}@media print,screen and (max-width:1057px){.post-toc{display:none}}</style><div class=post-toc style=position:absolute;top:188px><h2 class=post-toc-title>文章目錄</h2><div class=post-toc-content><nav id=TableOfContents><ul><li><a href=#高老师身上流露着对他所做之事的热爱>高老师身上流露着对他所做之事的热爱</a></li><li><a href=#考古文物修复>考古，文物修复</a></li><li><a href=#法医司法技术入殓师>法医，司法技术，入殓师</a><ul><li><a href=#入殓师>入殓师</a></li></ul></li><li><a href=#满足经济回报>满足、经济回报</a></li><li><a href=#插曲考古是盗墓吗>插曲：考古是盗墓吗</a></li></ul></nav></div></div><script type=text/javascript>$(document).ready(function(){if(e=$(".post-toc"),e.length){t=$("#main").offset().left,t<220&&e.css({width:t-10,"margin-left":0-t});var e,t,n=e.offset().top-20,s={start:{position:"absolute",top:n},process:{position:"fixed",top:20}};$(window).scroll(function(){var t=$(window).scrollTop();t<n?e.css(s.start):e.css(s.process)})}$("#TableOfContents").children().length<1&&$(".post-toc").remove()})</script><article class=post><header><h1 class=post-title>《开讲啦》：考古，盗墓，文物修复与职业选择</h1></header><time datetime=2018-05-18T23:54:31Z class="post-meta meta-date dt-published">2018年5月18日</time><div class="post-meta meta-category"><span>&nbsp;|</span>
-<a href=/categories/%E6%9D%82%E6%96%87>杂文</a></div><div class=clear style=display:none><div class=toc-article><div class=toc-title>文章目錄</div></div></div><div class=post-content><p>参与了一场《开讲啦》的录制，是高大伦院长的考古主题分享
-关于考古的内容，其实我没听进多少，但其他东西却给了我思考的空间</p><p>首先要吐槽会场
+            `;
+            document.head.appendChild(style);
+            
+            try {
+                const savedTheme = localStorage.getItem('theme');
+                const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                
+                
+                let themeToApply = 'light'; 
+                if (savedTheme) {
+                    themeToApply = savedTheme;
+                } else if (systemPrefersDark) {
+                    themeToApply = 'dark';
+                }
+                
+                
+                document.documentElement.setAttribute('data-theme', themeToApply);
+                
+                
+                document.head.removeChild(style);
+            } catch (e) {
+                
+                document.documentElement.setAttribute('data-theme', 'light');
+                document.head.removeChild(style);
+            }
+        })();
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>《开讲啦》：考古，盗墓，文物修复与职业选择 | 燈燈</title>
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2018-05-18T23:54:31&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2018-05-18T23:54:31&#43;08:00'>
+        
+    <meta name="description" content="《开讲啦》：考古，盗墓，文物修复与职业选择">
+        
+        <meta name="author" content="燈燈">
+    
+    
+    <meta property="og:title" content="《开讲啦》：考古，盗墓，文物修复与职业选择 - 燈燈">
+    <meta property="og:url" content="https://ferristale.com/participate-in-an-archaeological-lecture/">
+    
+    
+    <link rel="icon" href='/favicon.png' type="image/png">
+    <link rel="shortcut icon" href='/favicon.ico' type="image/x-icon">
+
+    
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+    
+    
+    <link rel="stylesheet" href="/css/bundle.min.css">
+    
+    
+    <script type="text/javascript" src="/js/theme-switch.min.js"></script>
+
+    
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://ferristale.com/">
+                        燈燈
+                    </a>
+                
+                <p class="description">朝蒸藜藿暮烹葵</p>
+            </div>
+            <div>
+                <div id="theme-toggle-container"></div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="" href="https://ferristale.com/">首頁</a>
+                    
+                    <a  href="https://ferristale.com/archives/" title="歸檔">歸檔</a>
+                    
+                    <a  href="https://ferristale.com/about" title="關於">關於</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目錄</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#高老师身上流露着对他所做之事的热爱">高老师身上流露着对他所做之事的热爱</a></li>
+    <li><a href="#考古文物修复">考古，文物修复</a></li>
+    <li><a href="#法医司法技术入殓师">法医，司法技术，入殓师</a>
+      <ul>
+        <li><a href="#入殓师">入殓师</a></li>
+      </ul>
+    </li>
+    <li><a href="#满足经济回报">满足、经济回报</a></li>
+    <li><a href="#插曲考古是盗墓吗">插曲：考古是盗墓吗</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if (leftPos < 220) {
+                postToc.css({ "width": leftPos - 10, "margin-left": (0 - leftPos) })
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+
+        if ($("#TableOfContents").children().length < 1) {
+            $(".post-toc").remove();
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">《开讲啦》：考古，盗墓，文物修复与职业选择</h1>
+        </header>
+        
+  <time datetime="2018-05-18T23:54:31Z" class="post-meta meta-date dt-published">
+    2018年5月18日
+  </time>
+
+
+<div class="post-meta meta-category">
+  <span>&nbsp;|</span>
+  
+    <a href='/categories/%E6%9D%82%E6%96%87' >杂文</a>
+  
+</div>
+
+
+        
+        
+        <div class="clear" style="display: none">
+            <div class="toc-article">
+                <div class="toc-title">文章目錄</div>
+            </div>
+        </div>
+        
+        <div class="post-content">
+            <p>参与了一场《开讲啦》的录制，是高大伦院长的考古主题分享
+关于考古的内容，其实我没听进多少，但其他东西却给了我思考的空间</p>
+<p>首先要吐槽会场
 太冷了
-吹了三小时冷风，到最后全身都在抖</p><h2 id=高老师身上流露着对他所做之事的热爱>高老师身上流露着对他所做之事的热爱</h2><p>一个上场时举臂高呼的老师
+吹了三小时冷风，到最后全身都在抖</p>
+<h2 id="高老师身上流露着对他所做之事的热爱">高老师身上流露着对他所做之事的热爱</h2>
+<p>一个上场时举臂高呼的老师
 一个在台上如数家珍一样陈述自家发现的老师
-语气中透着自信与自豪</p><p>但同时他也对我国考古研究队伍的现状表现出一种担忧
+语气中透着自信与自豪</p>
+<p>但同时他也对我国考古研究队伍的现状表现出一种担忧
 人才极度缺乏
 人力极度缺乏
 以至于要推行大众考古
-招募考古工作志愿者</p><p>我在学校内外听过两场考古的讲座，当时就觉得他们很苦
+招募考古工作志愿者</p>
+<p>我在学校内外听过两场考古的讲座，当时就觉得他们很苦
 但也很帅
 但我一直下不了转行的决心
 当年我选择我现在专业的时候，也是觉得，可以在林子里穿越，在山里做实验，很帅
 但进来以后发现好像也不那么好玩
 不过其实这坑也不应该由专业来背，研究生本来就是要干各种各样的活
 最主要的还是我发现我可能没有那么喜欢我现在做的方向
-现在缺乏一个积极的正反馈来给予我前进的动力</p><p>所以，现在，作为一个门外汉，我觉得考古很帅，很值得托付终身
+现在缺乏一个积极的正反馈来给予我前进的动力</p>
+<p>所以，现在，作为一个门外汉，我觉得考古很帅，很值得托付终身
 但他到底是不是真的可以吸引我，我不知
 而且，还有一个问题
 我到底适不适合做科研
-我指的是一辈子的那种</p><p>也许我还是比较适合写代码？</p><h2 id=考古文物修复>考古，文物修复</h2><p>考古，探寻来处，也寻访出处
+我指的是一辈子的那种</p>
+<p>也许我还是比较适合写代码？</p>
+<h2 id="考古文物修复">考古，文物修复</h2>
+<p>考古，探寻来处，也寻访出处
 高老师说，任何一项工作（可能是科研工作），无外乎有五个目的
-他们占了两个（另外三个忘记是什么了）</p><ol><li>人类的来源</li><li>文明的来源</li></ol><p>可以说是很有意义的事情（当然了很多事情同样很有意义）
+他们占了两个（另外三个忘记是什么了）</p>
+<ol>
+<li>人类的来源</li>
+<li>文明的来源</li>
+</ol>
+<p>可以说是很有意义的事情（当然了很多事情同样很有意义）
 另外，考古已经不仅仅局限于对历史文物的考古
 有观众问，到未来，我们还有什么东西可以考？
 高老师说，
-由于考古工作的特殊性，以下两者也属于考古工作之一</p><ul><li>地震现场的挖掘</li><li>地震文物的研究</li></ul><p>我们现在的此时此刻，都将成为明天的过去
+由于考古工作的特殊性，以下两者也属于考古工作之一</p>
+<ul>
+<li>地震现场的挖掘</li>
+<li>地震文物的研究</li>
+</ul>
+<p>我们现在的此时此刻，都将成为明天的过去
 最重要的，不是有什么可以考，无论什么时候都有物可考
-最重要的，是我们有什么东西可以留给未来</p><h2 id=法医司法技术入殓师>法医，司法技术，入殓师</h2><p>法医，是为未来而生的职业，这是《unnatural》里的一句台词
-在司法技术学生发言时我突然想起</p><p>司法技术和考古相似的地方在于，都利用现有的东西，去推断过去，还原过去
-法医亦如</p><p>这些，都是很帅的职业</p><h3 id=入殓师>入殓师</h3><p>为什么要说入殓师，因为想到法医之后，不自觉就想起了入殓师
+最重要的，是我们有什么东西可以留给未来</p>
+<h2 id="法医司法技术入殓师">法医，司法技术，入殓师</h2>
+<p>法医，是为未来而生的职业，这是《unnatural》里的一句台词
+在司法技术学生发言时我突然想起</p>
+<p>司法技术和考古相似的地方在于，都利用现有的东西，去推断过去，还原过去
+法医亦如</p>
+<p>这些，都是很帅的职业</p>
+<h3 id="入殓师">入殓师</h3>
+<p>为什么要说入殓师，因为想到法医之后，不自觉就想起了入殓师
 当年看的《入殓师》，确实被感动到了
 后来有传闻说入殓师收入很高很高
 再后来被辟谣了
 入殓师同样很苦，同样是少有人选的职业
 但，同样是很帅的职业
 而我还记得我18岁那年，许了个愿，或者说立了个志
-以后打拼够了，回来给别人做入殓师</p><p>当然了，随着年龄增长，也明白这样的决定是很不负责任的
+以后打拼够了，回来给别人做入殓师</p>
+<p>当然了，随着年龄增长，也明白这样的决定是很不负责任的
 不是说这么随便地立志不负责任
 而是说，把入殓师当成一个想做就做，想做就能做的职业
 是很不负责任的
 不过等老了，入门从学徒开始，也未尝不可
-又不过，未来的事情，怎能说得如此清楚</p><h2 id=满足经济回报>满足、经济回报</h2><p>回到职业选择的问题上来了
+又不过，未来的事情，怎能说得如此清楚</p>
+<h2 id="满足经济回报">满足、经济回报</h2>
+<p>回到职业选择的问题上来了
 这次的讲座，对我来说真的很值
 当天是图书馆日，而且天气难得的好
 飘了两周霾的北京终于迎来了两天晴天
 去故宫一定很棒
-但是这期《开讲啦》同样精彩</p><p>他让我见识到很多很有趣的职业
+但是这期《开讲啦》同样精彩</p>
+<p>他让我见识到很多很有趣的职业
 这些职业都是一些默默无闻，或者说少有人选的职业
 考古，历史，文物修复，博物馆员，司法技术人员
 文物修复和考古工作息息相关
@@ -64,7 +343,8 @@
 马老师说这几年《我在故宫修文物》纪录片带火了文物修复
 很多人开始投身到这个很帅的行业中
 但是文物修复这一行，全国从业人员只2000余
-（又让我想起unnatural）</p><p>这个社会有太多太多的职业
+（又让我想起unnatural）</p>
+<p>这个社会有太多太多的职业
 但往往由于目光所限，我们了解的职业只是那么些社会顶梁柱
 医生，教师，销售，金融etc
 相当大部分的职业，我们并不知晓
@@ -73,7 +353,8 @@
 这些工作，薪酬不一定高，社会地位不一定高
 但社会贡献不一定不高，价值意义不一定不高
 高老师说，做考古肯定是赚不到钱的
-但经济回报也不应该是我们要考虑的唯一因素</p><p>都说要做真正喜欢的工作
+但经济回报也不应该是我们要考虑的唯一因素</p>
+<p>都说要做真正喜欢的工作
 其实喜欢的工作，不一定就只有一种
 对社会有贡献的工作，也不一定只有几种
 事实上我很早就觉得，过好自己的一生，在自己的领域，不负于社会，不负于他人
@@ -81,30 +362,469 @@
 当然你要是能给国家造几艘航母，造几架飞机，造几个空间站，那贡献就更大了
 但做一个文物修复师，填补行业空缺，让更多国家和民族的历史文化遗产可以展现给大众
 不也很好吗
-而且，说不定还可以在故宫里上班呢</p><p><strong>择一业，终一生
+而且，说不定还可以在故宫里上班呢</p>
+<p><strong>择一业，终一生
 就是最好的贡献</strong>
-至于这一业如何择，我还不知，但这次的讲座开阔了我的眼界，距离跳出既定的框架，也许更进了一步</p><h2 id=插曲考古是盗墓吗>插曲：考古是盗墓吗</h2><p>在线观众提的问题，问高老师怎么看待“考古也是盗墓”这个说法
-我个人觉得，我们可以先想几个问题</p><ul><li>善意的谎言是谎言吗</li><li>行刑者是杀人犯吗</li></ul><p>本来还有一个，不过忘记了
-&lt;完></p><p> </p></div><div class=post-tags><a href=/tags/%E6%9D%82%E5%BF%B5 class=tag-link>#杂念</a></div><div class=post-archive><ul class=post-copyright><li><strong>原文作者：</strong><a rel=author href=https://ferristale.com/>燈燈</a></li><li style=word-break:break-all><strong>原文鏈接：</strong><a href=https://ferristale.com/participate-in-an-archaeological-lecture/>https://ferristale.com/participate-in-an-archaeological-lecture/</a></li><li><strong>原文鏈接：</strong>本作品採用<a rel=license href=https://creativecommons.org/licenses/by-nc-nd/4.0/>CC BY-NC-ND 4.0</a>. 進行許可，非商業轉載請註明出處（作者，原文鏈接），商業轉載請聯繫作者獲得授權。</li></ul></div><br><div class=post-archive><h2>相關文章</h2><ul class=listing><li><a href=/our-education/>孩子，请放下你的裤脚？</a></li><li><a href=/what-is-your-dream/>长大后当科学家，？</a></li><li><a href=/fireworks/>新年的烟火</a></li><li><a href=/the-biggest-lie-in-the-history/>《人类简史》之史上最大的谎言</a></li><li><a href=/amper2/>《安珀志：阿瓦隆之槍》</a></li></ul></div></article><div class="post bg-white"><script>(function(){const t=document.documentElement.getAttribute("data-theme"),n=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t==="dark"||t!=="light"&&n,o=s?"github-dark":"github-light",e=document.createElement("script");e.src="https://utteranc.es/client.js",e.setAttribute("repo","ferristale/ferristale.github.io"),e.setAttribute("issue-term","pathname"),e.setAttribute("theme",o),e.setAttribute("crossorigin","anonymous"),e.setAttribute("async","");const i=document.currentScript.parentNode;i.insertBefore(e,document.currentScript)})()</script><script>function updateUtterancesTheme(){const e=document.documentElement.getAttribute("data-theme"),n=window.matchMedia("(prefers-color-scheme: dark)").matches,s=e==="dark"||e!=="light"&&n,o=s?"github-dark":"github-light",t=document.querySelector(".utterances-frame");if(t){const e={type:"set-theme",theme:o};t.contentWindow.postMessage(e,"https://utteranc.es")}}const observer=new MutationObserver(function(e){e.forEach(function(e){e.type==="attributes"&&e.attributeName==="data-theme"&&setTimeout(updateUtterancesTheme,100)})});observer.observe(document.documentElement,{attributes:!0,attributeFilter:["data-theme"]}),window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",function(){setTimeout(updateUtterancesTheme,100)})</script></div><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"\"《开讲啦》：考古，盗墓，文物修复与职业选择\"","datePublished":"\"2018-05-18T23:54:31Z\"","dateModified":"\"2018-05-18T23:54:31Z\"","url":"\"https://ferristale.com/participate-in-an-archaeological-lecture/\"","description":"\"参与了一场《开讲啦》的录制，是高大伦院长的考古主题分享 关于考古的内容，其实我没听进多少，但其他东西却给了我思考的空间\\n\"","author":{"@type":"Person","name":"\"燈燈\""},"keywords":"\"杂念\"","publisher":{"@type":"Organization","name":"\"燈燈\""},"mainEntityOfPage":{"@type":"WebPage","@id":"\"https://ferristale.com/participate-in-an-archaeological-lecture/\""}}</script></div><footer id=footer><div>&copy; 2025 <a href=https://ferristale.com/>燈燈</a></div><br><div><div class=github-badge><a href=https://gohugo.io/ target=_black rel=nofollow><span class=badge-subject>Powered by</span><span class="badge-value bg-blue">Hugo</span></a></div><div class=github-badge><a href=https://github.com/ferristale/maupassant-hugo target=_black><span class=badge-subject>Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a></div></div></footer><script type=text/javascript>window.MathJax={tex2jax:{inlineMath:[["$","$"]],processEscapes:!0}}</script><script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script><script type=text/javascript src=/fancybox.umd.min_10213516633759641856.min.js defer></script><script type=text/javascript src=/js/fancybox-init.min.js defer></script><a id=rocket href=#top></a><script type=text/javascript src=/js/totop.min.js async></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZEJD14J6L"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-2ZEJD14J6L")}</script><style type=text/css>div.highlight{position:relative;margin:1em 0}.copy-code{display:none;position:absolute;top:4px;right:4px;color:rgba(255,255,255,.8);background:rgba(78,78,78,.8);border-radius:var(--radius);padding:0 5px;font:inherit;user-select:none;cursor:pointer;border:0;--radius:8px}div.highlight:hover .copy-code,pre:hover .copy-code{display:block}</style><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></div><div id=secondary><section class=widget><form id=search action=https://ferristale.com/search method=get accept-charset=utf-8 _lpchecked=1><input type=text name=q maxlength=20 placeholder=Search>
-<input type=hidden name=sitesearch value=https://ferristale.com/>
-<button type=submit class="submit icon-search"></button></form></section><section class=widget><h3 class=widget-title>最近文章</h3><ul class=widget-list><li><a href=https://ferristale.com/2023/ title=一則訪談>一則訪談</a></li><li><a href=https://ferristale.com/so-im-here-in-oz/ title=就到了澳洲>就到了澳洲</a></li><li><a href=https://ferristale.com/Sudden-Nostalgia/ title=再打开就是别人的青春啦>再打开就是别人的青春啦</a></li><li><a href=https://ferristale.com/time-sync-script-for-windows/ title=Windows时间同步脚本>Windows时间同步脚本</a></li><li><a href=https://ferristale.com/wandering-2-visit-lasha-again/ title=流浪记3：再游拉萨>流浪记3：再游拉萨</a></li><li><a href=https://ferristale.com/notitle-231121/ title=无题>无题</a></li><li><a href=https://ferristale.com/wandering-2-collecting-garbage-on-the-Plateau/ title=流浪记2：我在青藏高原捡垃圾（58P）>流浪记2：我在青藏高原捡垃圾（58P）</a></li><li><a href=https://ferristale.com/fragments-in-hainan/ title=海南碎片>海南碎片</a></li><li><a href=https://ferristale.com/wandering-1-hainan/ title=流浪记1：海南游>流浪记1：海南游</a></li><li><a href=https://ferristale.com/recent-changes-230107/ title=近期博客变动>近期博客变动</a></li></ul></section><section class=widget><h3 class=widget-title><a href=/categories/>分類</a></h3><ul class=widget-list><li><a href=https://ferristale.com/categories/%E5%88%86%E4%BA%AB/>分享 (25)</a></li><li><a href=https://ferristale.com/categories/%E6%9D%82%E6%96%87/>杂文 (54)</a></li><li><a href=https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/>瞎搞 (41)</a></li></ul></section><section class=widget><h3 class=widget-title><a href=/tags/>標籤</a></h3><div class=tagcloud><a href=https://ferristale.com/tags/Hexo/>Hexo</a>
-<a href=https://ferristale.com/tags/Linux/>Linux</a>
-<a href=https://ferristale.com/tags/LyricGhost/>LyricGhost</a>
-<a href=https://ferristale.com/tags/Pets/>Pets</a>
-<a href=https://ferristale.com/tags/R/>R</a>
-<a href=https://ferristale.com/tags/VPS/>VPS</a>
-<a href=https://ferristale.com/tags/WP/>WP</a>
-<a href=https://ferristale.com/tags/%E5%89%A7%E6%9C%AC%E6%9D%80/>剧本杀</a>
-<a href=https://ferristale.com/tags/%E5%AD%A6%E4%B9%A0/>学习</a>
-<a href=https://ferristale.com/tags/%E5%BD%B1%E8%A7%86/>影视</a>
-<a href=https://ferristale.com/tags/%E6%8A%98%E8%85%BE/>折腾</a>
-<a href=https://ferristale.com/tags/%E6%91%84%E5%BD%B1/>摄影</a>
-<a href=https://ferristale.com/tags/%E6%9D%82%E5%BF%B5/>杂念</a>
-<a href=https://ferristale.com/tags/%E6%9D%82%E8%AE%B0/>杂记</a>
-<a href=https://ferristale.com/tags/%E6%9D%82%E8%B0%88/>杂谈</a>
-<a href=https://ferristale.com/tags/%E7%A7%91%E6%99%AE/>科普</a>
-<a href=https://ferristale.com/tags/%E7%BD%91%E7%AB%99/>网站</a>
-<a href=https://ferristale.com/tags/%E8%8D%90%E6%96%87/>荐文</a>
-<a href=https://ferristale.com/tags/%E8%AF%BB%E4%B9%A6/>读书</a>
-<a href=https://ferristale.com/tags/%E9%9F%B3%E4%B9%90/>音乐</a>
-<a href=https://ferristale.com/tags/%E9%AD%94%E6%B3%95/>魔法</a></div></section><section class=widget><h3 class=widget-title>友情鏈接</h3><ul class=widget-list><li><a target=_blank href=https://www.iplaysoft.com/ title=异次元软件>不错的软件分享站</a></li><li><a target=_blank href=https://tinypng.com/ title=TinyPng>高质量在线图片压缩</a></li></ul></section><section class=widget><h3 class=widget-title>其它</h3><ul class=widget-list><li><a href=https://ferristale.com/index.xml>文章 RSS</a></li></ul></section></div></div></div></div></body></html>
+至于这一业如何择，我还不知，但这次的讲座开阔了我的眼界，距离跳出既定的框架，也许更进了一步</p>
+<h2 id="插曲考古是盗墓吗">插曲：考古是盗墓吗</h2>
+<p>在线观众提的问题，问高老师怎么看待“考古也是盗墓”这个说法
+我个人觉得，我们可以先想几个问题</p>
+<ul>
+<li>善意的谎言是谎言吗</li>
+<li>行刑者是杀人犯吗</li>
+</ul>
+<p>本来还有一个，不过忘记了
+&lt;完&gt;</p>
+<p> </p>
+        </div>
+
+        
+        
+        <div class="post-tags">
+            
+            <a href='/tags/%E6%9D%82%E5%BF%B5' class="tag-link">#杂念</a>
+            
+        </div>
+        
+
+        
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>原文作者：</strong><a rel="author" href="https://ferristale.com/">燈燈</a></li>
+        <li style="word-break:break-all"><strong>原文鏈接：</strong><a href="https://ferristale.com/participate-in-an-archaeological-lecture/">https://ferristale.com/participate-in-an-archaeological-lecture/</a></li>
+        <li><strong>原文鏈接：</strong>本作品採用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>. 進行許可，非商業轉載請註明出處（作者，原文鏈接），商業轉載請聯繫作者獲得授權。</li>
+    </ul>
+</div>
+<br/>
+
+
+
+        
+
+<div class="post-archive">
+    <h2>相關文章</h2>
+    <ul class="listing">
+        
+        <li><a href="/our-education/">孩子，请放下你的裤脚？</a></li>
+        
+        <li><a href="/what-is-your-dream/">长大后当科学家，？</a></li>
+        
+        <li><a href="/fireworks/">新年的烟火</a></li>
+        
+        <li><a href="/the-biggest-lie-in-the-history/">《人类简史》之史上最大的谎言</a></li>
+        
+        <li><a href="/amper2/">《安珀志：阿瓦隆之槍》</a></li>
+        
+    </ul>
+</div>
+
+    </article>
+    
+    
+
+    
+    
+    <div class="post bg-white">
+      <script>
+        
+        (function() {
+          
+          const currentTheme = document.documentElement.getAttribute('data-theme');
+          const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          
+          
+          const shouldUseDarkTheme = currentTheme === 'dark' || 
+                                   (currentTheme !== 'light' && systemPrefersDark);
+          
+          const utterancesTheme = shouldUseDarkTheme ? 'github-dark' : 'github-light';
+          
+          
+          const script = document.createElement('script');
+          script.src = 'https://utteranc.es/client.js';
+          script.setAttribute('repo', 'ferristale\/ferristale.github.io');
+          script.setAttribute('issue-term', 'pathname');
+          script.setAttribute('theme', utterancesTheme);
+          script.setAttribute('crossorigin', 'anonymous');
+          script.setAttribute('async', '');
+          
+          
+          const container = document.currentScript.parentNode;
+          container.insertBefore(script, document.currentScript);
+        })();
+      </script>
+      <script>
+        
+        function updateUtterancesTheme() {
+          const currentTheme = document.documentElement.getAttribute('data-theme');
+          const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          
+          
+          const shouldUseDarkTheme = currentTheme === 'dark' || 
+                                   (currentTheme !== 'light' && systemPrefersDark);
+          
+          const utterancesTheme = shouldUseDarkTheme ? 'github-dark' : 'github-light';
+          
+          
+          const utterancesFrame = document.querySelector('.utterances-frame');
+          if (utterancesFrame) {
+            const message = {
+              type: 'set-theme',
+              theme: utterancesTheme
+            };
+            utterancesFrame.contentWindow.postMessage(message, 'https://utteranc.es');
+          }
+        }
+        
+        
+        const observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+              setTimeout(updateUtterancesTheme, 100);
+            }
+          });
+        });
+        
+        observer.observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ['data-theme']
+        });
+        
+        
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+          setTimeout(updateUtterancesTheme, 100);
+        });
+      </script>
+    </div>
+    
+    
+    
+
+    
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "\"《开讲啦》：考古，盗墓，文物修复与职业选择\"",
+        "datePublished": "\"2018-05-18T23:54:31Z\"",
+        "dateModified": "\"2018-05-18T23:54:31Z\"",
+        "url": "\"https://ferristale.com/participate-in-an-archaeological-lecture/\"",
+        "description": "\"参与了一场《开讲啦》的录制，是高大伦院长的考古主题分享 关于考古的内容，其实我没听进多少，但其他东西却给了我思考的空间\\n\"",
+        "author": {
+            "@type": "Person",
+            "name": "\"燈燈\""
+        },
+        "keywords": "\"杂念\"",
+        
+        "publisher": {
+            "@type": "Organization",
+            "name": "\"燈燈\""
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\"https://ferristale.com/participate-in-an-archaeological-lecture/\""
+        }
+    }
+    </script>
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2025 <a href="https://ferristale.com/">燈燈</a>
+        
+    </div>
+    <br />
+    <div>
+        <div class="github-badge">
+            <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
+        </div>
+
+        <div class="github-badge">
+            <a href="https://github.com/ferristale/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
+        </div>
+    </div>
+</footer>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+            }
+        };
+    </script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    
+    
+    
+        
+        <script type="text/javascript" src="/fancybox.umd.min_10213516633759641856.min.js" defer></script>
+        
+        <script type="text/javascript" src="/js/fancybox-init.min.js" defer></script>
+    
+
+
+<a id="rocket" href="#top"></a>
+
+<script type="text/javascript" src="/js/totop.min.js" async></script>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZEJD14J6L"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2ZEJD14J6L');
+        }
+      </script>
+
+
+<style type="text/css">
+div.highlight {
+    position: relative;
+    margin: 1em 0px;
+}
+
+.copy-code {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(78, 78, 78, 0.8);
+    border-radius: var(--radius);
+    padding: 0 5px;
+    font: inherit;
+    user-select: none;
+    cursor: pointer;
+    border: 0;
+    --radius: 8px;
+}
+
+div.highlight:hover .copy-code,pre:hover .copy-code {
+    display: block;
+}
+
+</style>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+
+
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='https://ferristale.com/search' method="get" accept-charset="utf-8"  _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://ferristale.com/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://ferristale.com/2023/" title="一則訪談" >一則訪談</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/so-im-here-in-oz/" title="就到了澳洲" >就到了澳洲</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/Sudden-Nostalgia/" title="再打开就是别人的青春啦" >再打开就是别人的青春啦</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/time-sync-script-for-windows/" title="Windows时间同步脚本" >Windows时间同步脚本</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/wandering-2-visit-lasha-again/" title="流浪记3：再游拉萨" >流浪记3：再游拉萨</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/notitle-231121/" title="无题" >无题</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/wandering-2-collecting-garbage-on-the-Plateau/" title="流浪记2：我在青藏高原捡垃圾（58P）" >流浪记2：我在青藏高原捡垃圾（58P）</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/fragments-in-hainan/" title="海南碎片" >海南碎片</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/wandering-1-hainan/" title="流浪记1：海南游" >流浪记1：海南游</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/recent-changes-230107/" title="近期博客变动" >近期博客变动</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/categories/'>分類</a></h3>
+<ul class="widget-list">
+    
+    <li><a href="https://ferristale.com/categories/%E5%88%86%E4%BA%AB/">分享 (25)</a></li>
+    
+    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (54)</a></li>
+    
+    <li><a href="https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/">瞎搞 (41)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/tags/'>標籤</a></h3>
+<div class="tagcloud">
+    
+    <a href="https://ferristale.com/tags/Hexo/">Hexo</a>
+    
+    <a href="https://ferristale.com/tags/Linux/">Linux</a>
+    
+    <a href="https://ferristale.com/tags/LyricGhost/">LyricGhost</a>
+    
+    <a href="https://ferristale.com/tags/Pets/">Pets</a>
+    
+    <a href="https://ferristale.com/tags/R/">R</a>
+    
+    <a href="https://ferristale.com/tags/VPS/">VPS</a>
+    
+    <a href="https://ferristale.com/tags/WP/">WP</a>
+    
+    <a href="https://ferristale.com/tags/%E5%89%A7%E6%9C%AC%E6%9D%80/">剧本杀</a>
+    
+    <a href="https://ferristale.com/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+    
+    <a href="https://ferristale.com/tags/%E5%BD%B1%E8%A7%86/">影视</a>
+    
+    <a href="https://ferristale.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>
+    
+    <a href="https://ferristale.com/tags/%E6%91%84%E5%BD%B1/">摄影</a>
+    
+    <a href="https://ferristale.com/tags/%E6%9D%82%E5%BF%B5/">杂念</a>
+    
+    <a href="https://ferristale.com/tags/%E6%9D%82%E8%AE%B0/">杂记</a>
+    
+    <a href="https://ferristale.com/tags/%E6%9D%82%E8%B0%88/">杂谈</a>
+    
+    <a href="https://ferristale.com/tags/%E7%A7%91%E6%99%AE/">科普</a>
+    
+    <a href="https://ferristale.com/tags/%E7%BD%91%E7%AB%99/">网站</a>
+    
+    <a href="https://ferristale.com/tags/%E8%8D%90%E6%96%87/">荐文</a>
+    
+    <a href="https://ferristale.com/tags/%E8%AF%BB%E4%B9%A6/">读书</a>
+    
+    <a href="https://ferristale.com/tags/%E9%9F%B3%E4%B9%90/">音乐</a>
+    
+    <a href="https://ferristale.com/tags/%E9%AD%94%E6%B3%95/">魔法</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情鏈接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://www.iplaysoft.com/" title="异次元软件">不错的软件分享站</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://tinypng.com/" title="TinyPng">高质量在线图片压缩</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://ferristale.com/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
