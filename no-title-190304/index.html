@@ -286,104 +286,165 @@
 
 
         
+        
+        
 
-<div class="post-archive">
-    <h2>相關文章</h2>
-    <ul class="listing">
+
+
+<div class="post-navigation">
+    <div class="nav-links">
         
-        <li><a href="/goodbye-Ubuntu/">放弃&amp;卸载Ubuntu</a></li>
+        <div class="nav-previous">
+            <a href="/first-time-shopping-oversea-online/" rel="prev">
+                <span class="nav-subtitle">不念過往</span>
+                <span class="nav-title">第一次海淘是买实验用品</span>
+            </a>
+        </div>
         
-        <li><a href="/first-time-shopping-oversea-online/">第一次海淘是买实验用品</a></li>
         
-        <li><a href="/younger-me-and-xinhua-bookstore-and-now/">年幼的我、新华书店、现在</a></li>
         
-        <li><a href="/Platinum-PNB-10000/">白金#3776世纪 - 教堂蓝</a></li>
+        <div class="nav-next">
+            <a href="/remote-download-server/" rel="next">
+                <span class="nav-subtitle">不問將來</span>
+                <span class="nav-title">离线下载服务器一键搭建（Aria2 &#43; AriaNG &#43; Caddy）</span>
+            </a>
+        </div>
         
-        <li><a href="/new-nutstore-and-old-netease-music/">新版的坚果云和旧版的网易云</a></li>
-        
-    </ul>
+    </div>
 </div>
-
+ 
+        
     </article>
     
     
+    <div class="comments-toggle-container">
+        <button id="comments-toggle" class="comments-toggle-btn">
+            <span class="toggle-text">顯示評論</span>
+            <span class="toggle-icon">▼</span>
+        </button>
+    </div>
 
     
-    
-    <div class="post bg-white">
-      <script>
+    <div id="comments-container" class="comments-container" style="display: none;">
         
-        (function() {
-          
-          const currentTheme = document.documentElement.getAttribute('data-theme');
-          const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-          
-          
-          const shouldUseDarkTheme = currentTheme === 'dark' || 
-                                   (currentTheme !== 'light' && systemPrefersDark);
-          
-          const utterancesTheme = shouldUseDarkTheme ? 'github-dark' : 'github-light';
-          
-          
-          const script = document.createElement('script');
-          script.src = 'https://utteranc.es/client.js';
-          script.setAttribute('repo', 'ferristale\/ferristale.github.io');
-          script.setAttribute('issue-term', 'pathname');
-          script.setAttribute('theme', utterancesTheme);
-          script.setAttribute('crossorigin', 'anonymous');
-          script.setAttribute('async', '');
-          
-          
-          const container = document.currentScript.parentNode;
-          container.insertBefore(script, document.currentScript);
-        })();
-      </script>
-      <script>
-        
-        function updateUtterancesTheme() {
-          const currentTheme = document.documentElement.getAttribute('data-theme');
-          const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          
-          
-          const shouldUseDarkTheme = currentTheme === 'dark' || 
-                                   (currentTheme !== 'light' && systemPrefersDark);
-          
-          const utterancesTheme = shouldUseDarkTheme ? 'github-dark' : 'github-light';
-          
-          
-          const utterancesFrame = document.querySelector('.utterances-frame');
-          if (utterancesFrame) {
-            const message = {
-              type: 'set-theme',
-              theme: utterancesTheme
-            };
-            utterancesFrame.contentWindow.postMessage(message, 'https://utteranc.es');
-          }
-        }
+
         
         
-        const observer = new MutationObserver(function(mutations) {
-          mutations.forEach(function(mutation) {
-            if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
-              setTimeout(updateUtterancesTheme, 100);
+        <div class="post bg-white">
+          <script>
+            
+            (function() {
+              
+              const currentTheme = document.documentElement.getAttribute('data-theme');
+              const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+              
+              
+              const shouldUseDarkTheme = currentTheme === 'dark' || 
+                                       (currentTheme !== 'light' && systemPrefersDark);
+              
+              const utterancesTheme = shouldUseDarkTheme ? 'github-dark' : 'github-light';
+              
+              
+              const script = document.createElement('script');
+              script.src = 'https://utteranc.es/client.js';
+              script.setAttribute('repo', 'ferristale\/ferristale.github.io');
+              script.setAttribute('issue-term', 'pathname');
+              script.setAttribute('theme', utterancesTheme);
+              script.setAttribute('crossorigin', 'anonymous');
+              script.setAttribute('async', '');
+              
+              
+              const container = document.currentScript.parentNode;
+              container.insertBefore(script, document.currentScript);
+            })();
+          </script>
+          <script>
+            
+            function updateUtterancesTheme() {
+              const currentTheme = document.documentElement.getAttribute('data-theme');
+              const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+              
+              
+              const shouldUseDarkTheme = currentTheme === 'dark' || 
+                                       (currentTheme !== 'light' && systemPrefersDark);
+              
+              const utterancesTheme = shouldUseDarkTheme ? 'github-dark' : 'github-light';
+              
+              
+              const utterancesFrame = document.querySelector('.utterances-frame');
+              if (utterancesFrame) {
+                const message = {
+                  type: 'set-theme',
+                  theme: utterancesTheme
+                };
+                utterancesFrame.contentWindow.postMessage(message, 'https://utteranc.es');
+              }
             }
-          });
-        });
+            
+            
+            const observer = new MutationObserver(function(mutations) {
+              mutations.forEach(function(mutation) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+                  setTimeout(updateUtterancesTheme, 100);
+                }
+              });
+            });
+            
+            observer.observe(document.documentElement, {
+              attributes: true,
+              attributeFilter: ['data-theme']
+            });
+            
+            
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+              setTimeout(updateUtterancesTheme, 100);
+            });
+          </script>
+        </div>
         
-        observer.observe(document.documentElement, {
-          attributes: true,
-          attributeFilter: ['data-theme']
-        });
         
         
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
-          setTimeout(updateUtterancesTheme, 100);
-        });
-      </script>
     </div>
+
     
-    
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleBtn = document.getElementById('comments-toggle');
+            const commentsContainer = document.getElementById('comments-container');
+            const toggleText = toggleBtn.querySelector('.toggle-text');
+            const toggleIcon = toggleBtn.querySelector('.toggle-icon');
+            
+            if (toggleBtn && commentsContainer) {
+                toggleBtn.addEventListener('click', function() {
+                    const isHidden = commentsContainer.style.display === 'none';
+                    
+                    if (isHidden) {
+                        
+                        commentsContainer.style.display = 'block';
+                        toggleText.textContent = '隱藏評論';
+                        toggleIcon.textContent = '▲';
+                        toggleBtn.classList.add('active');
+                        
+                        
+                        setTimeout(function() {
+                            const containerTop = commentsContainer.offsetTop;
+                            const scrollPosition = containerTop - 100; 
+                            window.scrollTo({
+                                top: scrollPosition,
+                                behavior: 'smooth'
+                            });
+                        }, 1500);
+                    } else {
+                        
+                        commentsContainer.style.display = 'none';
+                        toggleText.textContent = '顯示評論';
+                        toggleIcon.textContent = '▼';
+                        toggleBtn.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
 
     
     
@@ -461,7 +522,6 @@
     
 
 
-<a id="rocket" href="#top"></a>
 
 <script type="text/javascript" src="/js/totop.min.js" async></script>
 
@@ -711,6 +771,7 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
             </div>
         </div>
     </div>
+    <a id="rocket" href="#top"></a>
 </body>
 
 </html>
