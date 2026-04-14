@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+    
+    <script>
+        (function() {
+            
+            const style = document.createElement('style');
+            style.textContent = `
+                /* Block all prefers-color-scheme media queries until theme is determined */
+                @media (prefers-color-scheme: dark) {
+                    :root:not([data-theme]) {
+                        /* Prevent dark theme from being applied before we check user preference */
+                        color-scheme: light;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            try {
+                const savedTheme = localStorage.getItem('theme');
+                const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                
+                
+                let themeToApply = 'light'; 
+                if (savedTheme) {
+                    themeToApply = savedTheme;
+                } else if (systemPrefersDark) {
+                    themeToApply = 'dark';
+                }
+                
+                
+                document.documentElement.setAttribute('data-theme', themeToApply);
+                
+                
+                document.head.removeChild(style);
+            } catch (e) {
+                
+                document.documentElement.setAttribute('data-theme', 'light');
+                document.head.removeChild(style);
+            }
+        })();
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>近期看的一些克系小说 | 燈燈</title>
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content='2026-04-14T20:49:37&#43;08:00'>
+        
+        
+    <meta property="article:modified_time" content='2026-04-14T20:49:37&#43;08:00'>
+        
+    <meta name="description" content="《请勿洞察》《铁鹤书》《光怪陆离侦探社》《黎明医生》
+">
+        
+        <meta name="author" content="燈燈">
+    
+    
+    <meta property="og:title" content="近期看的一些克系小说 - 燈燈">
+    <meta property="og:url" content="https://ferristale.com/2026-4-14-fiction-review/">
+    
+    
+    <link rel="icon" href='/favicon.png' type="image/png">
+    <link rel="shortcut icon" href='/favicon.ico' type="image/x-icon">
+
+    
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+    
+    
+    <link rel="stylesheet" href="/css/bundle.min.css">
+    
+    
+    <script type="text/javascript" src="/js/theme-switch.min.js"></script>
+
+    
+</head>
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="/">
+                        燈燈
+                    </a>
+                
+                <p class="description">朝蒸藜藿暮烹葵</p>
+            </div>
+            <div>
+                <div id="theme-toggle-container"></div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="" href="/">首頁</a>
+                    
+                    <a  href="/archives/" title="歸檔">歸檔</a>
+                    
+                    <a  href="/about/" title="關於">關於</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">近期看的一些克系小说</h1>
+        </header>
+        
+  <time datetime="2026-04-14T11:19:37Z" class="post-meta meta-date dt-published">
+    2026年4月14日
+  </time>
+
+
+<div class="post-meta meta-category">
+  <span>&nbsp;|</span>
+  
+    <a href='/categories/%E6%9D%82%E6%96%87' >杂文</a>
+  
+</div>
+
+
+        
+        
+        <div class="post-content">
+            <p>《请勿洞察》《铁鹤书》《光怪陆离侦探社》《黎明医生》</p>
+<h3 id="请勿洞察">请勿洞察</h3>
+<p>进度：~60%</p>
+<p>朋友给推的书，说很克，于是试了试。</p>
+<p>首先要说，作者开头就表明，这本书不是克苏鲁小说，只是带一点克系元素，于是很开心地开始了阅读（毕竟不用担心它标榜克苏鲁但实际套皮）。坦白说，作者说得没错，它确实不是正统克苏鲁，只是稍稍带了一点克味。</p>
+<p>为什么说稍稍带一点，因为作品前期有非常多关于“请勿洞察”的描述，并且有非常多奇奇怪怪的存在，只是实际上洞察了也并不会怎么样，或者说洞察它所带来的后果并不是克苏鲁式的。这本小说要表达也是别的东西，不过却是挺有意思，大致上是写认识世界的方式，虽然设定有点奇怪。（当然了，还有情感戏）</p>
+<p>另外要说的是，小说使用了“门”和“表里世界”的设定，“表里世界”就不说了，太多这样的作品了。而“门”，不知道是起源于哪里，这是我第三次见到这个设定，第一次是《死亡万花筒》，第二次是《我有一座恐怖屋》，对我来说不太新鲜，甚至有点无聊。（题外话：这本小说似乎没必要使用这个设定，充其量只是一个通道，没有什么特殊）</p>
+<p>倒是可以一看，只是不能当克系小说，就像作者简介说的那样，就行。</p>
+<h3 id="铁鹤书">铁鹤书</h3>
+<p>进度：&lt;10%</p>
+<p>说这本之前要批评Gemini，我问它给我推荐小说，结果它给我的信息大部分是张冠李戴，最后只能求助Grok。</p>
+<p>这本书就是Gemini给我推的，它跟我说这是跑团圈一本非常著名的小说，结果我打开一看，根本南辕北辙。不过它的剑三和武侠背景倒是让我多看了几章。只是看得不怎么得劲，没有继续下去。</p>
+<h3 id="光怪陆离侦探社">光怪陆离侦探社</h3>
+<p>进度：~20%</p>
+<p>书的开头，穿越，英伦，街道，侦探，港口城市，蒸汽时代，守夜人，真的，你说这是乌贼同人我都不会怀疑。然后猎魔人，博物馆奇妙夜，，太缝了&hellip;可能还有小小梦魇（甚至还有叶青？我不太清楚叶青那种是什么风格，又是哪里的首创）。我承认星期五让我看笑了，跑团也让我很开心（然后点开了极乐迪斯科），但还是觉得太能逢了</p>
+<p>还有对历史人物的魔改，，这点见仁见智吧，只是在我觉得它很能逢的前提下，突然把历史人物也缝了进来，就&hellip;</p>
+<p>支撑我读下去的是我感觉作者仿佛懂一点生态学，或者植物学，里面出现了一点物候和植物的性状，还有可爱的幽灵小姐姐，不过因为它真的是很长的小说，没有更多的动力支撑我往下读。而且看了下书评，后面的情节有点跳脱，主角似乎又穿越了一次，然后变成了追妻公路片，，emmm&hellip;至于说人类勇气的赞歌，我觉得有大眼珠子就够了。</p>
+<p>哦还有一点，这本书也有“门”和“表里世界”，，，虽然它的“门”不是前面说的那种，可能更像命运石之门？我觉得我对这两个设定PTSD了。</p>
+<h3 id="黎明医生瘟疫医生">黎明医生/瘟疫医生</h3>
+<p>进度：21%</p>
+<p>硬核医学科幻文？</p>
+<p>这本的开头很有意思，一个身患绝症的医疗狗突然拿到了一个系统，然后开始了，医学拯救世界之路。。作者可能是学医的，开局一个小鼠对照实验，接着各种手术操作眼花缭乱，十分硬核，也十分新鲜。而世界是一个神秘复苏的背景（大概也不能叫复苏，就是有奇怪的教徒在搞事），为探寻父母失踪真相，主角由一个咸鱼学霸迅速转变为真大神，一举加入国家神秘部门，惊艳所有人。</p>
+<p>而当作者成为神秘部门的一员，开始马不停蹄的培训，真正开始面对异常的时候，本书已经完成10%&hellip;.是的你没有看错，这本书花了十分之一的篇幅介绍主角以前是多么的废物，底子是多么的强，同学和老师是怎么看他，他是如何潇洒地把钱捐给慈善组织（不知道这个组织后来怎么样了），到父母失踪地进行临终旅行，奇怪的系统，医学实验，手术，等等。倒也不是说有什么问题，只是由此也可以看出，克苏鲁在这本书的比重没有很大。它实际上是一个医学科幻文。</p>
+<p>说说克系元素，这本书毫无疑问使用了克系背景，不过“知识”变成了“瘟疫”，神在另一个世界打酱油，一些奇奇怪怪的教派则跑过来投毒。而我们的主角则千方百计地对抗瘟疫，拯救世界。豆瓣有一篇书评，大致写了情节：教派A放出了疫病1，主角解剖解剖解剖发现病原体，跑去异世界把污染源炸了；教派B放出疫病2，主角解剖解剖解剖发现罪魁祸首，跑过去走献祭流；教派C放出疫病3，主角解剖解剖解剖发现不对，献祭系统拯救世界；然后教派A卷土重来，放出疫病4&hellip;&hellip;一直写了很多病，逐渐扩宽地图，到最后牺牲自己，拯救世界，差不多是这样的剧情。</p>
+<p>那么问题就来了，且不说这个“克苏鲁”是不是有点太工具人，不说这里的“知识”够不够危险，也不说解剖对抗异常这个设定。首先个人英雄主义太重，不管情况多紧急，没了主角都得停摆。比如说针对疫病2的手术，只有主角能做，病人再多也得等着一个一个来。而且很中二很热血（这个描述不一定准确），我是医生，我不会放弃每一个病人，救，都救，能救。不是说这样不对，只是这再次说明这是医学文，而且紧跟时事。</p>
+<p>其次，你说这不是科幻吧，可是它花了很多力气把神秘事物科学化，神秘力量通过瘟疫来传播，病理通过解剖来研究，精神层面走心理学，火力输出有枪支弹药。你说他科幻吧，那还有咒语，系统，旧神呢，生命女神呢？而与敌人的战斗，前期再怎么解剖解剖解剖，最终也还是魔法对轰，而且是直接莽。就问你，这哪里克了？</p>
+<p>所以总的来说这就是充满理想主义和个人英雄主义的医学科幻文（咱就不说披着克苏鲁皮了），差不多是医生行业的宣传教育文。不是说反对宣传，只是这种写法不能吸引我。</p>
+<p>而说到医者行业，我仍然会记得《恶龙从未杀死持剑的少年》，路途遥远，脚步未停，路途艰险，披荆斩棘。</p>
+<h3 id="final-words">Final Words</h3>
+<p>克系小说总还是宽泛的概念，我不知道它有没有严谨的定义，但个人而言，我认为它至少要有“未知的、不可名状的、超越人类理解的知识/力量/存在”，并且对这种“知识/力量/存在”的接触会带来恐惧、疯狂、崩坏。也许有些原教旨，但话又说回来，如果只是这样的标准，《黎明医生》也是满足的，你看，未知的瘟疫，未知的生物，恐怖的症状，满足的。只是有些流于表面了，主角似乎不在这个规则内，或者说，他本身就是规则的一部分。恐惧疯狂都是别人的，他则是那个车翻一切的男人，合理。</p>
+<p>Anyway吧，不是说这些作品不优秀，只是优秀的作品太多了。</p>
+        </div>
+
+        
+        
+        <div class="post-tags">
+            
+            <a href='/tags/%E8%AF%BB%E4%B9%A6' class="tag-link">#读书</a>
+            
+        </div>
+        
+
+        
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>原文作者：</strong><a rel="author" href="https://ferristale.com/">燈燈</a></li>
+        <li style="word-break:break-all"><strong>原文鏈接：</strong><a href="https://ferristale.com/2026-4-14-fiction-review/">https://ferristale.com/2026-4-14-fiction-review/</a></li>
+        <li><strong>原文鏈接：</strong>本作品採用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>. 進行許可，非商業轉載請註明出處（作者，原文鏈接），商業轉載請聯繫作者獲得授權。</li>
+    </ul>
+</div>
+<br/>
+
+
+
+        
+        
+        
+
+
+
+<div class="post-navigation">
+    <div class="nav-links">
+        
+        <div class="nav-previous">
+            <a href="/2023/" rel="prev">
+                <span class="nav-subtitle">不念過往</span>
+                <span class="nav-title">一則訪談</span>
+            </a>
+        </div>
+        
+        
+        
+    </div>
+</div>
+ 
+        
+    </article>
+    
+    
+    <div class="comments-toggle-container">
+        <button id="comments-toggle" class="comments-toggle-btn">
+            <span class="toggle-text">顯示評論</span>
+            <span class="toggle-icon">▼</span>
+        </button>
+    </div>
+
+    
+    <div id="comments-container" class="comments-container" style="display: none;">
+        
+
+        
+        
+        <div class="post bg-white">
+          <script>
+            
+            (function() {
+              
+              const currentTheme = document.documentElement.getAttribute('data-theme');
+              const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+              
+              
+              const shouldUseDarkTheme = currentTheme === 'dark' || 
+                                       (currentTheme !== 'light' && systemPrefersDark);
+              
+              const utterancesTheme = shouldUseDarkTheme ? 'github-dark' : 'github-light';
+              
+              
+              const script = document.createElement('script');
+              script.src = 'https://utteranc.es/client.js';
+              script.setAttribute('repo', 'ferristale\/ferristale.github.io');
+              script.setAttribute('issue-term', 'pathname');
+              script.setAttribute('theme', utterancesTheme);
+              script.setAttribute('crossorigin', 'anonymous');
+              script.setAttribute('async', '');
+              
+              
+              const container = document.currentScript.parentNode;
+              container.insertBefore(script, document.currentScript);
+            })();
+          </script>
+          <script>
+            
+            function updateUtterancesTheme() {
+              const currentTheme = document.documentElement.getAttribute('data-theme');
+              const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+              
+              
+              const shouldUseDarkTheme = currentTheme === 'dark' || 
+                                       (currentTheme !== 'light' && systemPrefersDark);
+              
+              const utterancesTheme = shouldUseDarkTheme ? 'github-dark' : 'github-light';
+              
+              
+              const utterancesFrame = document.querySelector('.utterances-frame');
+              if (utterancesFrame) {
+                const message = {
+                  type: 'set-theme',
+                  theme: utterancesTheme
+                };
+                utterancesFrame.contentWindow.postMessage(message, 'https://utteranc.es');
+              }
+            }
+            
+            
+            const observer = new MutationObserver(function(mutations) {
+              mutations.forEach(function(mutation) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+                  setTimeout(updateUtterancesTheme, 100);
+                }
+              });
+            });
+            
+            observer.observe(document.documentElement, {
+              attributes: true,
+              attributeFilter: ['data-theme']
+            });
+            
+            
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function() {
+              setTimeout(updateUtterancesTheme, 100);
+            });
+          </script>
+        </div>
+        
+        
+        
+    </div>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleBtn = document.getElementById('comments-toggle');
+            const commentsContainer = document.getElementById('comments-container');
+            const toggleText = toggleBtn.querySelector('.toggle-text');
+            const toggleIcon = toggleBtn.querySelector('.toggle-icon');
+            
+            if (toggleBtn && commentsContainer) {
+                toggleBtn.addEventListener('click', function() {
+                    const isHidden = commentsContainer.style.display === 'none';
+                    
+                    if (isHidden) {
+                        
+                        commentsContainer.style.display = 'block';
+                        toggleText.textContent = '隱藏評論';
+                        toggleIcon.textContent = '▲';
+                        toggleBtn.classList.add('active');
+                        
+                        
+                        setTimeout(function() {
+                            const containerTop = commentsContainer.offsetTop;
+                            const scrollPosition = containerTop - 100; 
+                            window.scrollTo({
+                                top: scrollPosition,
+                                behavior: 'smooth'
+                            });
+                        }, 1500);
+                    } else {
+                        
+                        commentsContainer.style.display = 'none';
+                        toggleText.textContent = '顯示評論';
+                        toggleIcon.textContent = '▼';
+                        toggleBtn.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
+
+    
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "\"近期看的一些克系小说\"",
+        "datePublished": "\"2026-04-14T20:49:37+09:30\"",
+        "dateModified": "\"2026-04-14T20:49:37+09:30\"",
+        "url": "\"https://ferristale.com/2026-4-14-fiction-review/\"",
+        "description": "\"《请勿洞察》《铁鹤书》《光怪陆离侦探社》《黎明医生》\\n\"",
+        "author": {
+            "@type": "Person",
+            "name": "\"燈燈\""
+        },
+        "keywords": "\"读书\"",
+        
+        "publisher": {
+            "@type": "Organization",
+            "name": "\"燈燈\""
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\"https://ferristale.com/2026-4-14-fiction-review/\""
+        }
+    }
+    </script>
+</div>
+
+                    <footer id="footer">
+    <div>
+        &copy; 2026 <a href="/">燈燈</a>
+        
+    </div>
+    <br />
+    <div>
+        <div class="github-badge">
+            <a href="https://gohugo.io/" target="_black" rel="nofollow"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hugo</span></a>
+        </div>
+
+        <div class="github-badge">
+            <a href="https://github.com/ferristale/maupassant-hugo" target="_black"><span class="badge-subject">Theme</span><span class="badge-value bg-yellowgreen">Maupassant</span></a>
+        </div>
+    </div>
+</footer>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+            }
+        };
+    </script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    
+    
+    
+        
+        <script type="text/javascript" src="/fancybox.umd.min_10213516633759641856.min.js" defer></script>
+        
+        <script type="text/javascript" src="/js/fancybox-init.min.js" defer></script>
+    
+
+
+
+<script type="text/javascript" src="/js/totop.min.js" async></script>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZEJD14J6L"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2ZEJD14J6L');
+        }
+      </script>
+
+
+<style type="text/css">
+div.highlight {
+    position: relative;
+    margin: 1em 0px;
+}
+
+.copy-code {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(78, 78, 78, 0.8);
+    border-radius: var(--radius);
+    padding: 0 5px;
+    font: inherit;
+    user-select: none;
+    cursor: pointer;
+    border: 0;
+    --radius: 8px;
+}
+
+div.highlight:hover .copy-code,pre:hover .copy-code {
+    display: block;
+}
+
+</style>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+
+
+
+
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='https://ferristale.com/search' method="get" accept-charset="utf-8"  _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://ferristale.com/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://ferristale.com/2026-4-14-fiction-review/" title="近期看的一些克系小说" >近期看的一些克系小说</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/2023/" title="一則訪談" >一則訪談</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/so-im-here-in-oz/" title="就到了澳洲" >就到了澳洲</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/Sudden-Nostalgia/" title="再打开就是别人的青春啦" >再打开就是别人的青春啦</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/time-sync-script-for-windows/" title="Windows时间同步脚本" >Windows时间同步脚本</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/wandering-2-visit-lasha-again/" title="流浪记3：再游拉萨" >流浪记3：再游拉萨</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/notitle-231121/" title="无题" >无题</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/wandering-2-collecting-garbage-on-the-Plateau/" title="流浪记2：我在青藏高原捡垃圾（58P）" >流浪记2：我在青藏高原捡垃圾（58P）</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/fragments-in-hainan/" title="海南碎片" >海南碎片</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/wandering-1-hainan/" title="流浪记1：海南游" >流浪记1：海南游</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/categories/'>分類</a></h3>
+<ul class="widget-list">
+    
+    <li><a href="https://ferristale.com/categories/%E5%88%86%E4%BA%AB/">分享 (25)</a></li>
+    
+    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (55)</a></li>
+    
+    <li><a href="https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/">瞎搞 (41)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title"><a href='/tags/'>標籤</a></h3>
+<div class="tagcloud">
+    
+    <a href="https://ferristale.com/tags/Hexo/">Hexo</a>
+    
+    <a href="https://ferristale.com/tags/Linux/">Linux</a>
+    
+    <a href="https://ferristale.com/tags/LyricGhost/">LyricGhost</a>
+    
+    <a href="https://ferristale.com/tags/Pets/">Pets</a>
+    
+    <a href="https://ferristale.com/tags/R/">R</a>
+    
+    <a href="https://ferristale.com/tags/VPS/">VPS</a>
+    
+    <a href="https://ferristale.com/tags/WP/">WP</a>
+    
+    <a href="https://ferristale.com/tags/%E5%89%A7%E6%9C%AC%E6%9D%80/">剧本杀</a>
+    
+    <a href="https://ferristale.com/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+    
+    <a href="https://ferristale.com/tags/%E5%BD%B1%E8%A7%86/">影视</a>
+    
+    <a href="https://ferristale.com/tags/%E6%8A%98%E8%85%BE/">折腾</a>
+    
+    <a href="https://ferristale.com/tags/%E6%91%84%E5%BD%B1/">摄影</a>
+    
+    <a href="https://ferristale.com/tags/%E6%9D%82%E5%BF%B5/">杂念</a>
+    
+    <a href="https://ferristale.com/tags/%E6%9D%82%E8%AE%B0/">杂记</a>
+    
+    <a href="https://ferristale.com/tags/%E6%9D%82%E8%B0%88/">杂谈</a>
+    
+    <a href="https://ferristale.com/tags/%E7%A7%91%E6%99%AE/">科普</a>
+    
+    <a href="https://ferristale.com/tags/%E7%BD%91%E7%AB%99/">网站</a>
+    
+    <a href="https://ferristale.com/tags/%E8%8D%90%E6%96%87/">荐文</a>
+    
+    <a href="https://ferristale.com/tags/%E8%AF%BB%E4%B9%A6/">读书</a>
+    
+    <a href="https://ferristale.com/tags/%E9%9F%B3%E4%B9%90/">音乐</a>
+    
+    <a href="https://ferristale.com/tags/%E9%AD%94%E6%B3%95/">魔法</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情鏈接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://www.iplaysoft.com/" title="异次元软件">不错的软件分享站</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://tinypng.com/" title="TinyPng">高质量在线图片压缩</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://ferristale.com/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+            </div>
+        </div>
+    </div>
+    <a id="rocket" href="#top"></a>
+</body>
+
+</html>

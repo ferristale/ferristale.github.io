@@ -55,7 +55,9 @@
         
     <meta property="article:modified_time" content='2020-04-04T22:44:25&#43;08:00'>
         
-    <meta name="description" content="nlsLM擬合多條指數函數並繪製于ggplot">
+    <meta name="description" content="折騰了我兩天的
+$$ y = c &#43; (1 - a*e^{-bx}) $$
+">
         
         <meta name="author" content="燈燈">
     
@@ -260,7 +262,7 @@ y = c + (1 - a*e^{-bx})
 $$</p>
 <p>我估計會有人跟我一樣因爲數據不是很完善，nls擬合會出現singular gradient blabla的，這時候你需要一個更好的初始值，或者修改數據，但這都不是那麽好弄的，意外發現了一個<a href="https://www.r-bloggers.com/a-better-nls/">nlsLM函數</a>，試了下能用，但又發現好像不能夠直接像lm一樣同時畫兩條綫（最終效果見下圖）。soo，最終確定的思路是先做擬合，然後在ggplot2中畫出predict值</p>
 <p>需要的包：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ggplot2)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ggplot2)
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(ggsci) <span style="color:#75715e"># 美化</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(dplyr) <span style="color:#75715e"># 數據處理</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">library</span>(minpack.lm) <span style="color:#75715e"># nlsLM所在包</span>
@@ -274,7 +276,7 @@ $$</p>
 6  1.1175526 493.735   MT
 </code></pre><h2 id="指數擬合">指數擬合</h2>
 <p>首先我們要為這個數據框添加一列predict數據，然後根據x，y畫數據點；根據x，predict畫擬合綫</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">rbind</span>(
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">rbind</span>(
 </span></span><span style="display:flex;"><span>  data <span style="color:#f92672">%&gt;%</span> 
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">filter</span>(plot <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;PN&#39;</span>) <span style="color:#f92672">%&gt;%</span> <span style="color:#75715e"># 選出index為PN的數據進行擬合</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mutate</span>(prd<span style="color:#f92672">=</span> <span style="color:#75715e"># 這裏的初始值，沒有nls要求那麽嚴，多試幾次就行了，當然最好有大概範圍</span>
@@ -298,7 +300,7 @@ $$</p>
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">6</span>  <span style="color:#ae81ff">1.1175526</span> <span style="color:#ae81ff">493.735</span>   MT <span style="color:#ae81ff">0.6158806</span>
 </span></span></code></pre></div><h2 id="擬合並作圖">擬合並作圖</h2>
 <p>（我並沒有儲存中間變量，所以直接用管道進行作圖，反正這個數據框用一次就不用的）</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">rbind</span>(
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">rbind</span>(
 </span></span><span style="display:flex;"><span>  data <span style="color:#f92672">%&gt;%</span> 
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">filter</span>(plot <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;PN&#39;</span>) <span style="color:#f92672">%&gt;%</span> 
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mutate</span>(prd<span style="color:#f92672">=</span>
@@ -325,7 +327,7 @@ $$</p>
     </p>
 <h2 id="參數及p值">參數及P值</h2>
 <p>圖上不能直接顯示參數和P值，ggplot2在這方面有點弱，如果是綫性模型倒可以有ggpmisc包實現，但這個非綫性模型，我估計他沒這麽强，所以要手動提取</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75715e"># 簡化版</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#75715e"># 簡化版</span>
 </span></span><span style="display:flex;"><span>data <span style="color:#f92672">%&gt;%</span> 
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(plot <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;MF&#39;</span>) <span style="color:#f92672">%&gt;%</span> 
 </span></span><span style="display:flex;"><span>           <span style="color:#a6e22e">nlsLM</span>(formula <span style="color:#f92672">=</span> Js.d <span style="color:#f92672">~</span> c<span style="color:#f92672">+</span> a <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">exp</span>( <span style="color:#f92672">-</span>b<span style="color:#f92672">*</span> VT )) ,
@@ -337,7 +339,7 @@ $$</p>
 </span></span><span style="display:flex;"><span>            plot <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;MF&#39;</span>)
 </span></span></code></pre></div><p>做到這一步，就可以提取參數，P值，參數名，和index名了。</p>
 <p>但這裏的代碼實際上是我的節選簡化版，我原始數據index中有index，可以理解爲大處理裏有小處理，上面一個圖是一個小處理，再加三個圖是三個大處理，所以我的提取參數代碼是這樣的</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">rbind</span>(
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-R" data-lang="R"><span style="display:flex;"><span><span style="color:#a6e22e">rbind</span>(
 </span></span><span style="display:flex;"><span>  data <span style="color:#f92672">%&gt;%</span> 
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filter</span>(Tree <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;Ss&#39;</span> <span style="color:#f92672">&amp;</span> plot <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;TW&#39;</span>) <span style="color:#f92672">%&gt;%</span> 
 </span></span><span style="display:flex;"><span>           <span style="color:#a6e22e">nlsLM</span>(formula <span style="color:#f92672">=</span> Js.d <span style="color:#f92672">~</span> c<span style="color:#f92672">+</span> a <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">exp</span>( <span style="color:#f92672">-</span>b<span style="color:#f92672">*</span> VT )) ,
@@ -624,7 +626,7 @@ $$</p>
 
                     <footer id="footer">
     <div>
-        &copy; 2025 <a href="/">燈燈</a>
+        &copy; 2026 <a href="/">燈燈</a>
         
     </div>
     <br />
@@ -676,7 +678,7 @@ $$</p>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZEJD14J6L"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -785,6 +787,10 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
 <ul class="widget-list">
     
     <li>
+        <a href="https://ferristale.com/2026-4-14-fiction-review/" title="近期看的一些克系小说" >近期看的一些克系小说</a>
+    </li>
+    
+    <li>
         <a href="https://ferristale.com/2023/" title="一則訪談" >一則訪談</a>
     </li>
     
@@ -820,10 +826,6 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
         <a href="https://ferristale.com/wandering-1-hainan/" title="流浪记1：海南游" >流浪记1：海南游</a>
     </li>
     
-    <li>
-        <a href="https://ferristale.com/recent-changes-230107/" title="近期博客变动" >近期博客变动</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -835,7 +837,7 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
     
     <li><a href="https://ferristale.com/categories/%E5%88%86%E4%BA%AB/">分享 (25)</a></li>
     
-    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (54)</a></li>
+    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (55)</a></li>
     
     <li><a href="https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/">瞎搞 (41)</a></li>
     

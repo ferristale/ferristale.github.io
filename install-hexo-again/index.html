@@ -55,7 +55,8 @@
         
     <meta property="article:modified_time" content='2018-01-26T13:01:42&#43;08:00'>
         
-    <meta name="description" content="再次部署Hexo">
+    <meta name="description" content="参照网上教程，融合了我遇到的问题写就此文 基本上，把nginx装好 把git弄好 就差不多了
+">
         
         <meta name="author" content="燈燈">
     
@@ -260,7 +261,8 @@
 <p>以前不会git，觉得麻烦，选了rsync
 但其实rsync何曾不麻烦，我还专门吐槽了一把</p>
 <blockquote>
-<p>我选择的是同时deploy到coding和VPS</p></blockquote>
+<p>我选择的是同时deploy到coding和VPS</p>
+</blockquote>
 <p>git的话，第一次用，搞不懂怎么pull，生成了无数遍KEY之后
 才算成功
 rsync 這貨纔是真正的棘手，照着網上的教程試了好多邊
@@ -294,7 +296,7 @@ npm install hexo-deployer-git --save
 <pre tabindex="0"><code>yum install nginx
 </code></pre><p>在/etc/nginx/nginx.conf文件<code>http</code>字段加入下面的内容
 这个配置文件其实写得不好，log直接写到了home下，但我VPS也只做网站服务器用，也就由他了</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span>    <span style="color:#66d9ef">server</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span>    <span style="color:#66d9ef">server</span> {
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">listen</span>       <span style="color:#ae81ff">80</span>;
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">server_name</span>  <span style="color:#e6db74">a.com</span>;
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">charset</span> <span style="color:#e6db74">utf-8</span>;
@@ -530,7 +532,7 @@ npm install hexo-deployer-git --save
 
                     <footer id="footer">
     <div>
-        &copy; 2025 <a href="/">燈燈</a>
+        &copy; 2026 <a href="/">燈燈</a>
         
     </div>
     <br />
@@ -582,7 +584,7 @@ npm install hexo-deployer-git --save
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZEJD14J6L"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -691,6 +693,10 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
 <ul class="widget-list">
     
     <li>
+        <a href="https://ferristale.com/2026-4-14-fiction-review/" title="近期看的一些克系小说" >近期看的一些克系小说</a>
+    </li>
+    
+    <li>
         <a href="https://ferristale.com/2023/" title="一則訪談" >一則訪談</a>
     </li>
     
@@ -726,10 +732,6 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
         <a href="https://ferristale.com/wandering-1-hainan/" title="流浪记1：海南游" >流浪记1：海南游</a>
     </li>
     
-    <li>
-        <a href="https://ferristale.com/recent-changes-230107/" title="近期博客变动" >近期博客变动</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -741,7 +743,7 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
     
     <li><a href="https://ferristale.com/categories/%E5%88%86%E4%BA%AB/">分享 (25)</a></li>
     
-    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (54)</a></li>
+    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (55)</a></li>
     
     <li><a href="https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/">瞎搞 (41)</a></li>
     
