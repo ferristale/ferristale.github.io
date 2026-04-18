@@ -43,7 +43,6 @@
     </script>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
@@ -65,7 +64,6 @@
     <meta property="og:url" content="https://ferristale.com/The-game-is-on/">
     
     
-    <link rel="icon" href='/favicon.png' type="image/png">
     <link rel="shortcut icon" href='/favicon.ico' type="image/x-icon">
 
     
@@ -123,115 +121,6 @@
                 <div class="col-8" id="main">
                     
 <div class="res-cons">
-    <style type="text/css">
-    .post-toc {
-        position: fixed;
-        width: 200px;
-        margin-left: -210px;
-        padding: 5px 10px;
-        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
-        font-size: 12px;
-        border: 1px solid rgba(0, 0, 0, .07);
-        border-radius: 5px;
-        background-color: rgba(255, 255, 255, 0.98);
-        background-clip: padding-box;
-        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
-        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
-        word-wrap: break-word;
-        white-space: nowrap;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        z-index: 999;
-        cursor: pointer;
-        max-height: 70%;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
-
-    .post-toc .post-toc-title {
-        width: 100%;
-        margin: 0 auto;
-        font-size: 20px;
-        font-weight: 400;
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    .post-toc .post-toc-content {
-        font-size: 15px;
-    }
-
-    .post-toc .post-toc-content>nav>ul {
-        margin: 10px 0;
-    }
-
-    .post-toc .post-toc-content ul {
-        padding-left: 20px;
-        list-style: square;
-        margin: 0.5em;
-        line-height: 1.8em;
-    }
-
-    .post-toc .post-toc-content ul ul {
-        padding-left: 15px;
-        display: none;
-    }
-
-    @media print,
-    screen and (max-width:1057px) {
-        .post-toc {
-            display: none;
-        }
-    }
-</style>
-<div class="post-toc" style="position: absolute; top: 188px;">
-    <h2 class="post-toc-title">文章目錄</h2>
-    <div class="post-toc-content">
-        <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#從五一開始講吧">從五一開始講吧</a></li>
-        <li><a href="#合併郵箱">合併郵箱</a></li>
-        <li><a href="#the-game-is-on">The Game Is On</a></li>
-        <li><a href="#小劇場">小劇場</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-    </div>
-</div>
-<script type="text/javascript">
-    $(document).ready(function () {
-        var postToc = $(".post-toc");
-        if (postToc.length) {
-            var leftPos = $("#main").offset().left;
-            if (leftPos < 220) {
-                postToc.css({ "width": leftPos - 10, "margin-left": (0 - leftPos) })
-            }
-
-            var t = postToc.offset().top - 20,
-                a = {
-                    start: {
-                        position: "absolute",
-                        top: t
-                    },
-                    process: {
-                        position: "fixed",
-                        top: 20
-                    },
-                };
-            $(window).scroll(function () {
-                var e = $(window).scrollTop();
-                e < t ? postToc.css(a.start) : postToc.css(a.process)
-            })
-        }
-
-        if ($("#TableOfContents").children().length < 1) {
-            $(".post-toc").remove();
-        }
-    })
-</script>
     <article class="post">
         <header>
             <h1 class="post-title">The Game is On</h1>
@@ -251,13 +140,50 @@
 
 
         
-        
-        <div class="clear" style="display: none">
-            <div class="toc-article">
-                <div class="toc-title">文章目錄</div>
-            </div>
-        </div>
-        
+        <style type="text/css">
+    .post-toc {
+        margin: 1.5em 0;
+        padding: 0.6em 1em;
+        border: 1px solid var(--theme-border);
+        border-radius: 4px;
+        background-color: var(--theme-secondary-bg);
+        font-size: 0.95em;
+    }
+    .post-toc-title {
+        cursor: pointer;
+        font-weight: 600;
+        color: var(--theme-muted-color);
+        list-style-position: inside;
+    }
+    .post-toc[open] .post-toc-title {
+        margin-bottom: 0.4em;
+    }
+    .post-toc-content ul {
+        padding-left: 1.4em;
+        margin: 0.3em 0;
+        line-height: 1.7;
+    }
+    .post-toc-content > nav > ul {
+        padding-left: 1.2em;
+    }
+</style>
+<details class="post-toc" open>
+    <summary class="post-toc-title">文章目錄</summary>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#從五一開始講吧">從五一開始講吧</a></li>
+        <li><a href="#合併郵箱">合併郵箱</a></li>
+        <li><a href="#the-game-is-on">The Game Is On</a></li>
+        <li><a href="#小劇場">小劇場</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</details>
         <div class="post-content">
             <p>跑完步回來，不想幹活，於是過來寫文（多麼光明正大的理由）
 （事實上從決定寫文到現在已經25分鐘..主要是回了一下關於內核問題的帖子）</p>
@@ -656,7 +582,7 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
 
                 <div id="secondary">
     <section class="widget">
-        <form id="search" action='https://ferristale.com/search' method="get" accept-charset="utf-8"  _lpchecked="1">
+        <form id="search" action='https://ferristale.com/search' method="get" accept-charset="utf-8">
       
       <input type="text" name="q" maxlength="20" placeholder="Search">
       <input type="hidden" name="sitesearch" value="https://ferristale.com/">
@@ -669,7 +595,11 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
 <ul class="widget-list">
     
     <li>
-        <a href="https://ferristale.com/2026-4-14-fiction-review/" title="近期看的一些克系小说" >近期看的一些克系小说</a>
+        <a href="https://ferristale.com/Reminiscing-about-OuYang/" title="好久不見" >好久不見</a>
+    </li>
+    
+    <li>
+        <a href="https://ferristale.com/2026-4-14-fiction-review/" title="近期看的一些克系小說" >近期看的一些克系小說</a>
     </li>
     
     <li>
@@ -704,10 +634,6 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
         <a href="https://ferristale.com/fragments-in-hainan/" title="海南碎片" >海南碎片</a>
     </li>
     
-    <li>
-        <a href="https://ferristale.com/wandering-1-hainan/" title="流浪记1：海南游" >流浪记1：海南游</a>
-    </li>
-    
 </ul>
     </section>
 
@@ -719,7 +645,7 @@ div.highlight:hover .copy-code,pre:hover .copy-code {
     
     <li><a href="https://ferristale.com/categories/%E5%88%86%E4%BA%AB/">分享 (25)</a></li>
     
-    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (55)</a></li>
+    <li><a href="https://ferristale.com/categories/%E6%9D%82%E6%96%87/">杂文 (56)</a></li>
     
     <li><a href="https://ferristale.com/categories/%E7%9E%8E%E6%90%9E/">瞎搞 (41)</a></li>
     
