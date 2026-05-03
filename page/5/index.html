@@ -1,46 +1,22 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" data-theme="light">
 <head>
 	<meta name="generator" content="Hugo 0.161.1">
-    
     <script>
-        (function() {
-            
-            const style = document.createElement('style');
-            style.textContent = `
-                /* Block all prefers-color-scheme media queries until theme is determined */
-                @media (prefers-color-scheme: dark) {
-                    :root:not([data-theme]) {
-                        /* Prevent dark theme from being applied before we check user preference */
-                        color-scheme: light;
-                    }
-                }
-            `;
-            document.head.appendChild(style);
-            
+        {
             try {
                 const savedTheme = localStorage.getItem('theme');
-                const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-                
-                
-                let themeToApply = 'light'; 
-                if (savedTheme) {
-                    themeToApply = savedTheme;
-                } else if (systemPrefersDark) {
-                    themeToApply = 'dark';
-                }
-                
-                
-                document.documentElement.setAttribute('data-theme', themeToApply);
-                
-                
-                document.head.removeChild(style);
-            } catch (e) {
-                
-                document.documentElement.setAttribute('data-theme', 'light');
-                document.head.removeChild(style);
+                const systemDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+                const theme = savedTheme === 'dark' || savedTheme === 'light'
+                    ? savedTheme
+                    : systemDark ? 'dark' : 'light';
+
+                document.documentElement.dataset.theme = theme;
+                document.documentElement.style.colorScheme = theme;
+            } catch {
+                document.documentElement.style.colorScheme = 'light';
             }
-        })();
+        }
     </script>
 
     <meta charset="utf-8">
@@ -65,9 +41,8 @@
     
     
     
-        
-        
-        
+    
+    
     
     
     
@@ -75,10 +50,11 @@
     
     <link rel="alternate" type="application/rss+xml" href="https://ferristale.com/index.xml" title="燈燈" />
     
-    <script type="text/javascript" src="/js/theme-switch.min.js"></script>
+    <script src="/js/theme-switch.min.js"></script>
 
     
 </head>
+
 
 <body>
     <header id="header" class="clearfix">
@@ -117,40 +93,10 @@
                     
 <div class="res-cons">
     
-    
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/fariy-town-plus/" title="童话镇之上" >童话镇之上</a>
-            </h1>
-        </header>
-        
-  <time datetime="2018-06-03T23:38:03Z" class="post-meta meta-date dt-published">
-    2018年6月3日
-  </time>
-
-
-<div class="post-meta meta-category">
-  <span>&nbsp;|</span>
-  
-    <a href='/categories/%E5%88%86%E4%BA%AB' >分享</a>
-  
-</div>
-
-
-        <div class="post-content">
-            <p>感谢陈一发，让我遇见暗杠和他的我的我们的童话镇</p>
-        </div>
-        <p class="readmore"><a href="https://ferristale.com/fariy-town-plus/" >閱讀全文</a></p>
-        <hr>
-    </article>
-    
-    
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://ferristale.com/to-be-what-you-want/" title="科普：从生物群落组成出发的人生观" >科普：从生物群落组成出发的人生观</a>
+                <a href="/to-be-what-you-want/" title="科普：从生物群落组成出发的人生观" >科普：从生物群落组成出发的人生观</a>
             </h1>
         </header>
         
@@ -170,16 +116,14 @@
         <div class="post-content">
             <p>To be what you want</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/to-be-what-you-want/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/to-be-what-you-want/" >閱讀全文</a></p>
         <hr>
     </article>
-    
-    
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/cherish-each-of-your-shutters/" title="花时间去拍花时间等待，珍惜每次的快门" >花时间去拍花时间等待，珍惜每次的快门</a>
+                <a href="/cherish-each-of-your-shutters/" title="花时间去拍花时间等待，珍惜每次的快门" >花时间去拍花时间等待，珍惜每次的快门</a>
             </h1>
         </header>
         
@@ -199,16 +143,14 @@
         <div class="post-content">
             <p>在淘宝上看到的话，感动，有感，遂搬了过来</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/cherish-each-of-your-shutters/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/cherish-each-of-your-shutters/" >閱讀全文</a></p>
         <hr>
     </article>
-    
-    
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/tipes-for-fresh-man/" title="给师弟师妹的忠告" >给师弟师妹的忠告</a>
+                <a href="/tipes-for-fresh-man/" title="给师弟师妹的忠告" >给师弟师妹的忠告</a>
             </h1>
         </header>
         
@@ -228,16 +170,14 @@
         <div class="post-content">
             <p>给在国科大的师弟师妹的忠告</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/tipes-for-fresh-man/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/tipes-for-fresh-man/" >閱讀全文</a></p>
         <hr>
     </article>
-    
-    
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/Platinum-PNB-10000/" title="白金#3776世纪 - 教堂蓝" >白金#3776世纪 - 教堂蓝</a>
+                <a href="/Platinum-PNB-10000/" title="白金#3776世纪 - 教堂蓝" >白金#3776世纪 - 教堂蓝</a>
             </h1>
         </header>
         
@@ -257,16 +197,14 @@
         <div class="post-content">
             <p>为信仰充值</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/Platinum-PNB-10000/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/Platinum-PNB-10000/" >閱讀全文</a></p>
         <hr>
     </article>
-    
-    
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/participate-in-an-archaeological-lecture/" title="《开讲啦》：考古，盗墓，文物修复与职业选择" >《开讲啦》：考古，盗墓，文物修复与职业选择</a>
+                <a href="/participate-in-an-archaeological-lecture/" title="《开讲啦》：考古，盗墓，文物修复与职业选择" >《开讲啦》：考古，盗墓，文物修复与职业选择</a>
             </h1>
         </header>
         
@@ -287,16 +225,14 @@
             <p>参与了一场《开讲啦》的录制，是高大伦院长的考古主题分享
 关于考古的内容，其实我没听进多少，但其他东西却给了我思考的空间</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/participate-in-an-archaeological-lecture/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/participate-in-an-archaeological-lecture/" >閱讀全文</a></p>
         <hr>
     </article>
-    
-    
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/supporting-genuine/" title="入正IDM及MS 2016" >入正IDM及MS 2016</a>
+                <a href="/supporting-genuine/" title="入正IDM及MS 2016" >入正IDM及MS 2016</a>
             </h1>
         </header>
         
@@ -316,16 +252,14 @@
         <div class="post-content">
             <p>用了这么久的盗版，终于补了一波船票</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/supporting-genuine/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/supporting-genuine/" >閱讀全文</a></p>
         <hr>
     </article>
-    
-    
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/new-nutstore-and-old-netease-music/" title="新版的坚果云和旧版的网易云" >新版的坚果云和旧版的网易云</a>
+                <a href="/new-nutstore-and-old-netease-music/" title="新版的坚果云和旧版的网易云" >新版的坚果云和旧版的网易云</a>
             </h1>
         </header>
         
@@ -345,16 +279,14 @@
         <div class="post-content">
             <p>蛋疼</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/new-nutstore-and-old-netease-music/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/new-nutstore-and-old-netease-music/" >閱讀全文</a></p>
         <hr>
     </article>
-    
-    
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/14-years-needed-to-recheckin/" title="补完所有的卡需要近14年" >补完所有的卡需要近14年</a>
+                <a href="/14-years-needed-to-recheckin/" title="补完所有的卡需要近14年" >补完所有的卡需要近14年</a>
             </h1>
         </header>
         
@@ -374,16 +306,14 @@
         <div class="post-content">
             <p>.</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/14-years-needed-to-recheckin/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/14-years-needed-to-recheckin/" >閱讀全文</a></p>
         <hr>
     </article>
-    
-    
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/how-about-Hugo/" title="要不要转移到Hugo呢" >要不要转移到Hugo呢</a>
+                <a href="/how-about-Hugo/" title="要不要转移到Hugo呢" >要不要转移到Hugo呢</a>
             </h1>
         </header>
         
@@ -404,10 +334,36 @@
             <p>意外发现了名为Hugo的静态博客框架
 仿佛，更有效率？</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/how-about-Hugo/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/how-about-Hugo/" >閱讀全文</a></p>
         <hr>
     </article>
     
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="/our-education/" title="孩子，请放下你的裤脚？" >孩子，请放下你的裤脚？</a>
+            </h1>
+        </header>
+        
+  <time datetime="2018-04-13T14:31:29Z" class="post-meta meta-date dt-published">
+    2018年4月13日
+  </time>
+
+
+<div class="post-meta meta-category">
+  <span>&nbsp;|</span>
+  
+    <a href='/categories/%E6%9D%82%E6%96%87' >杂文</a>
+  
+</div>
+
+
+        <div class="post-content">
+            <p>同学评论说，不能穿过膝短裤已经变成不能露脚踝了？</p>
+        </div>
+        <p class="readmore"><a href="/our-education/" >閱讀全文</a></p>
+        <hr>
+    </article>
     
     
 
@@ -549,6 +505,7 @@
 
 
 
+
                 </div>
 
                 <div id="secondary">
@@ -562,50 +519,52 @@
     </section>
 
     <section class="widget">
-        <h3 class="widget-title">最近文章</h3>
+        
+<h3 class="widget-title">最近文章</h3>
 <ul class="widget-list">
     
     <li>
-        <a href="https://ferristale.com/Reminiscing-about-OuYang/" title="好久不見" >好久不見</a>
+        <a href="/2026-4-14-fiction-review/" title="近期看的一些克系小說" >近期看的一些克系小說</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/2026-4-14-fiction-review/" title="近期看的一些克系小說" >近期看的一些克系小說</a>
+        <a href="/2023/" title="一則訪談" >一則訪談</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/2023/" title="一則訪談" >一則訪談</a>
+        <a href="/so-im-here-in-oz/" title="就到了澳洲" >就到了澳洲</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/so-im-here-in-oz/" title="就到了澳洲" >就到了澳洲</a>
+        <a href="/Sudden-Nostalgia/" title="再打开就是别人的青春啦" >再打开就是别人的青春啦</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/Sudden-Nostalgia/" title="再打开就是别人的青春啦" >再打开就是别人的青春啦</a>
+        <a href="/time-sync-script-for-windows/" title="Windows时间同步脚本" >Windows时间同步脚本</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/time-sync-script-for-windows/" title="Windows时间同步脚本" >Windows时间同步脚本</a>
+        <a href="/wandering-2-visit-lasha-again/" title="流浪记3：再游拉萨" >流浪记3：再游拉萨</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/wandering-2-visit-lasha-again/" title="流浪记3：再游拉萨" >流浪记3：再游拉萨</a>
+        <a href="/notitle-231121/" title="无题" >无题</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/notitle-231121/" title="无题" >无题</a>
+        <a href="/wandering-2-collecting-garbage-on-the-Plateau/" title="流浪记2：我在青藏高原捡垃圾（58P）" >流浪记2：我在青藏高原捡垃圾（58P）</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/wandering-2-collecting-garbage-on-the-Plateau/" title="流浪记2：我在青藏高原捡垃圾（58P）" >流浪记2：我在青藏高原捡垃圾（58P）</a>
+        <a href="/fragments-in-hainan/" title="海南碎片" >海南碎片</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/fragments-in-hainan/" title="海南碎片" >海南碎片</a>
+        <a href="/wandering-1-hainan/" title="流浪记1：海南游" >流浪记1：海南游</a>
     </li>
     
 </ul>
+
     </section>
 
     
@@ -692,10 +651,11 @@
     <section class="widget">
         <h3 class="widget-title">其它</h3>
         <ul class="widget-list">
-            <li><a href="https://ferristale.com/index.xml">文章 RSS</a></li>
+            <li><a href="https://ferristale.com/index.xml">RSS</a></li>
         </ul>
     </section>
 </div>
+
             </div>
         </div>
     </div>

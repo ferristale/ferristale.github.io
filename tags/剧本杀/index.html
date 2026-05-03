@@ -1,45 +1,21 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" data-theme="light">
 <head>
-    
     <script>
-        (function() {
-            
-            const style = document.createElement('style');
-            style.textContent = `
-                /* Block all prefers-color-scheme media queries until theme is determined */
-                @media (prefers-color-scheme: dark) {
-                    :root:not([data-theme]) {
-                        /* Prevent dark theme from being applied before we check user preference */
-                        color-scheme: light;
-                    }
-                }
-            `;
-            document.head.appendChild(style);
-            
+        {
             try {
                 const savedTheme = localStorage.getItem('theme');
-                const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-                
-                
-                let themeToApply = 'light'; 
-                if (savedTheme) {
-                    themeToApply = savedTheme;
-                } else if (systemPrefersDark) {
-                    themeToApply = 'dark';
-                }
-                
-                
-                document.documentElement.setAttribute('data-theme', themeToApply);
-                
-                
-                document.head.removeChild(style);
-            } catch (e) {
-                
-                document.documentElement.setAttribute('data-theme', 'light');
-                document.head.removeChild(style);
+                const systemDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+                const theme = savedTheme === 'dark' || savedTheme === 'light'
+                    ? savedTheme
+                    : systemDark ? 'dark' : 'light';
+
+                document.documentElement.dataset.theme = theme;
+                document.documentElement.style.colorScheme = theme;
+            } catch {
+                document.documentElement.style.colorScheme = 'light';
             }
-        })();
+        }
     </script>
 
     <meta charset="utf-8">
@@ -68,9 +44,8 @@
     
     
     
-        
-        
-        
+    
+    
     
     
     
@@ -78,10 +53,11 @@
     
     <link rel="alternate" type="application/rss+xml" href="https://ferristale.com/tags/%E5%89%A7%E6%9C%AC%E6%9D%80/index.xml" title="燈燈" />
     
-    <script type="text/javascript" src="/js/theme-switch.min.js"></script>
+    <script src="/js/theme-switch.min.js"></script>
 
     
 </head>
+
 
 <body>
     <header id="header" class="clearfix">
@@ -125,7 +101,7 @@
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/LARP-records/" >剧本记录</a>
+                <a href="/LARP-records/" >剧本记录</a>
             </h1>
         </header>
         
@@ -144,14 +120,14 @@
 
         <div class="post-content">
             <p>记录打过的本</p>……
-            <p class="readmore"><a href="https://ferristale.com/LARP-records/" >閱讀全文</a></p>
+            <p class="readmore"><a href="/LARP-records/" >閱讀全文</a></p>
         </div>
     </article>
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/xuanlishan/" >从前有座玄离山 | 炒鸡惊喜！</a>
+                <a href="/xuanlishan/" >从前有座玄离山 | 炒鸡惊喜！</a>
             </h1>
         </header>
         
@@ -170,14 +146,14 @@
 
         <div class="post-content">
             <p>讲道理，超值！（不过现在可能差点了）</p>……
-            <p class="readmore"><a href="https://ferristale.com/xuanlishan/" >閱讀全文</a></p>
+            <p class="readmore"><a href="/xuanlishan/" >閱讀全文</a></p>
         </div>
     </article>
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/relic-restorer-1/" >修复师1 | 一生一世一双人</a>
+                <a href="/relic-restorer-1/" >修复师1 | 一生一世一双人</a>
             </h1>
         </header>
         
@@ -196,7 +172,7 @@
 
         <div class="post-content">
             <p>惨就一个字，记第一次破防</p>……
-            <p class="readmore"><a href="https://ferristale.com/relic-restorer-1/" >閱讀全文</a></p>
+            <p class="readmore"><a href="/relic-restorer-1/" >閱讀全文</a></p>
         </div>
     </article>
     
@@ -253,6 +229,7 @@
 
 
 
+
                 </div>
 
                 <div id="secondary">
@@ -266,50 +243,52 @@
     </section>
 
     <section class="widget">
-        <h3 class="widget-title">最近文章</h3>
+        
+<h3 class="widget-title">最近文章</h3>
 <ul class="widget-list">
     
     <li>
-        <a href="https://ferristale.com/Reminiscing-about-OuYang/" title="好久不見" >好久不見</a>
+        <a href="/2026-4-14-fiction-review/" title="近期看的一些克系小說" >近期看的一些克系小說</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/2026-4-14-fiction-review/" title="近期看的一些克系小說" >近期看的一些克系小說</a>
+        <a href="/2023/" title="一則訪談" >一則訪談</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/2023/" title="一則訪談" >一則訪談</a>
+        <a href="/so-im-here-in-oz/" title="就到了澳洲" >就到了澳洲</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/so-im-here-in-oz/" title="就到了澳洲" >就到了澳洲</a>
+        <a href="/Sudden-Nostalgia/" title="再打开就是别人的青春啦" >再打开就是别人的青春啦</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/Sudden-Nostalgia/" title="再打开就是别人的青春啦" >再打开就是别人的青春啦</a>
+        <a href="/time-sync-script-for-windows/" title="Windows时间同步脚本" >Windows时间同步脚本</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/time-sync-script-for-windows/" title="Windows时间同步脚本" >Windows时间同步脚本</a>
+        <a href="/wandering-2-visit-lasha-again/" title="流浪记3：再游拉萨" >流浪记3：再游拉萨</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/wandering-2-visit-lasha-again/" title="流浪记3：再游拉萨" >流浪记3：再游拉萨</a>
+        <a href="/notitle-231121/" title="无题" >无题</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/notitle-231121/" title="无题" >无题</a>
+        <a href="/wandering-2-collecting-garbage-on-the-Plateau/" title="流浪记2：我在青藏高原捡垃圾（58P）" >流浪记2：我在青藏高原捡垃圾（58P）</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/wandering-2-collecting-garbage-on-the-Plateau/" title="流浪记2：我在青藏高原捡垃圾（58P）" >流浪记2：我在青藏高原捡垃圾（58P）</a>
+        <a href="/fragments-in-hainan/" title="海南碎片" >海南碎片</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/fragments-in-hainan/" title="海南碎片" >海南碎片</a>
+        <a href="/wandering-1-hainan/" title="流浪记1：海南游" >流浪记1：海南游</a>
     </li>
     
 </ul>
+
     </section>
 
     
@@ -396,10 +375,11 @@
     <section class="widget">
         <h3 class="widget-title">其它</h3>
         <ul class="widget-list">
-            <li><a href="https://ferristale.com/index.xml">文章 RSS</a></li>
+            <li><a href="https://ferristale.com/index.xml">RSS</a></li>
         </ul>
     </section>
 </div>
+
             </div>
         </div>
     </div>

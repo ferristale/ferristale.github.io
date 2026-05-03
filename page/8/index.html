@@ -1,46 +1,22 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" data-theme="light">
 <head>
 	<meta name="generator" content="Hugo 0.161.1">
-    
     <script>
-        (function() {
-            
-            const style = document.createElement('style');
-            style.textContent = `
-                /* Block all prefers-color-scheme media queries until theme is determined */
-                @media (prefers-color-scheme: dark) {
-                    :root:not([data-theme]) {
-                        /* Prevent dark theme from being applied before we check user preference */
-                        color-scheme: light;
-                    }
-                }
-            `;
-            document.head.appendChild(style);
-            
+        {
             try {
                 const savedTheme = localStorage.getItem('theme');
-                const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-                
-                
-                let themeToApply = 'light'; 
-                if (savedTheme) {
-                    themeToApply = savedTheme;
-                } else if (systemPrefersDark) {
-                    themeToApply = 'dark';
-                }
-                
-                
-                document.documentElement.setAttribute('data-theme', themeToApply);
-                
-                
-                document.head.removeChild(style);
-            } catch (e) {
-                
-                document.documentElement.setAttribute('data-theme', 'light');
-                document.head.removeChild(style);
+                const systemDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+                const theme = savedTheme === 'dark' || savedTheme === 'light'
+                    ? savedTheme
+                    : systemDark ? 'dark' : 'light';
+
+                document.documentElement.dataset.theme = theme;
+                document.documentElement.style.colorScheme = theme;
+            } catch {
+                document.documentElement.style.colorScheme = 'light';
             }
-        })();
+        }
     </script>
 
     <meta charset="utf-8">
@@ -65,9 +41,8 @@
     
     
     
-        
-        
-        
+    
+    
     
     
     
@@ -75,10 +50,11 @@
     
     <link rel="alternate" type="application/rss+xml" href="https://ferristale.com/index.xml" title="燈燈" />
     
-    <script type="text/javascript" src="/js/theme-switch.min.js"></script>
+    <script src="/js/theme-switch.min.js"></script>
 
     
 </head>
+
 
 <body>
     <header id="header" class="clearfix">
@@ -117,40 +93,10 @@
                     
 <div class="res-cons">
     
-    
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/green-TVshow/" title="“綠色”電視劇" >“綠色”電視劇</a>
-            </h1>
-        </header>
-        
-  <time datetime="2016-06-11T21:37:38Z" class="post-meta meta-date dt-published">
-    2016年6月11日
-  </time>
-
-
-<div class="post-meta meta-category">
-  <span>&nbsp;|</span>
-  
-    <a href='/categories/%E6%9D%82%E6%96%87' >杂文</a>
-  
-</div>
-
-
-        <div class="post-content">
-            
-        </div>
-        <p class="readmore"><a href="https://ferristale.com/green-TVshow/" >閱讀全文</a></p>
-        <hr>
-    </article>
-    
-    
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://ferristale.com/about-help-and-be-helped/" title="這是一個幫助與被幫助的故事" >這是一個幫助與被幫助的故事</a>
+                <a href="/about-help-and-be-helped/" title="這是一個幫助與被幫助的故事" >這是一個幫助與被幫助的故事</a>
             </h1>
         </header>
         
@@ -171,16 +117,14 @@
             <p>2018.1.29更新：
 这是一个很久有感而发开的题，可惜现在忘了</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/about-help-and-be-helped/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/about-help-and-be-helped/" >閱讀全文</a></p>
         <hr>
     </article>
-    
-    
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/the-first-apple-in-my-life/" title="人生第一口苹果" >人生第一口苹果</a>
+                <a href="/the-first-apple-in-my-life/" title="人生第一口苹果" >人生第一口苹果</a>
             </h1>
         </header>
         
@@ -202,16 +146,14 @@
 Ps：我真不是故意黑坚果
 PPs：你们都说热，然而我在图书馆好冷{(&gt;_&lt;)}</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/the-first-apple-in-my-life/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/the-first-apple-in-my-life/" >閱讀全文</a></p>
         <hr>
     </article>
-    
-    
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/maupassant/" title="更換maupassant主題" >更換maupassant主題</a>
+                <a href="/maupassant/" title="更換maupassant主題" >更換maupassant主題</a>
             </h1>
         </header>
         
@@ -231,16 +173,14 @@ PPs：你们都说热，然而我在图书馆好冷{(&gt;_&lt;)}</p>
         <div class="post-content">
             <p>表示對新主題的速度非常滿意</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/maupassant/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/maupassant/" >閱讀全文</a></p>
         <hr>
     </article>
-    
-    
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/dragon-raja/" title="我為什麼喜歡龍族" >我為什麼喜歡龍族</a>
+                <a href="/dragon-raja/" title="我為什麼喜歡龍族" >我為什麼喜歡龍族</a>
             </h1>
         </header>
         
@@ -260,16 +200,14 @@ PPs：你们都说热，然而我在图书馆好冷{(&gt;_&lt;)}</p>
         <div class="post-content">
             <p>大概是，我們心底最深的地方都有一個死小孩吧</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/dragon-raja/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/dragon-raja/" >閱讀全文</a></p>
         <hr>
     </article>
-    
-    
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/dragon-raja-4-2/" title="龍族4-2" >龍族4-2</a>
+                <a href="/dragon-raja-4-2/" title="龍族4-2" >龍族4-2</a>
             </h1>
         </header>
         
@@ -291,16 +229,14 @@ PPs：你们都说热，然而我在图书馆好冷{(&gt;_&lt;)}</p>
 那麼多
 彷彿怎麼都無法排解</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/dragon-raja-4-2/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/dragon-raja-4-2/" >閱讀全文</a></p>
         <hr>
     </article>
-    
-    
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/a-whole-week-with-tired/" title="終於明白抱佛腳的累" >終於明白抱佛腳的累</a>
+                <a href="/a-whole-week-with-tired/" title="終於明白抱佛腳的累" >終於明白抱佛腳的累</a>
             </h1>
         </header>
         
@@ -321,16 +257,14 @@ PPs：你们都说热，然而我在图书馆好冷{(&gt;_&lt;)}</p>
             <p>本來想說學霸的累
 想想其實是學渣的累吧</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/a-whole-week-with-tired/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/a-whole-week-with-tired/" >閱讀全文</a></p>
         <hr>
     </article>
-    
-    
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/Jueves/" title="Jueves" >Jueves</a>
+                <a href="/Jueves/" title="Jueves" >Jueves</a>
             </h1>
         </header>
         
@@ -350,16 +284,14 @@ PPs：你们都说热，然而我在图书馆好冷{(&gt;_&lt;)}</p>
         <div class="post-content">
             <h3 id="一">【一】</h3>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/Jueves/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/Jueves/" >閱讀全文</a></p>
         <hr>
     </article>
-    
-    
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/dragon-raja-4-1/" title="龍族4-奧丁之潮-1" >龍族4-奧丁之潮-1</a>
+                <a href="/dragon-raja-4-1/" title="龍族4-奧丁之潮-1" >龍族4-奧丁之潮-1</a>
             </h1>
         </header>
         
@@ -381,16 +313,14 @@ PPs：你们都说热，然而我在图书馆好冷{(&gt;_&lt;)}</p>
 路明非終於起來
 過了這麼久我終於決定更一篇</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/dragon-raja-4-1/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/dragon-raja-4-1/" >閱讀全文</a></p>
         <hr>
     </article>
-    
-    
     
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://ferristale.com/sth-about-Wifi/" title="Sth. about Wifi" >Sth. about Wifi</a>
+                <a href="/sth-about-Wifi/" title="Sth. about Wifi" >Sth. about Wifi</a>
             </h1>
         </header>
         
@@ -410,10 +340,37 @@ PPs：你们都说热，然而我在图书馆好冷{(&gt;_&lt;)}</p>
         <div class="post-content">
             <p>Wifi是一隻貓</p>
         </div>
-        <p class="readmore"><a href="https://ferristale.com/sth-about-Wifi/" >閱讀全文</a></p>
+        <p class="readmore"><a href="/sth-about-Wifi/" >閱讀全文</a></p>
         <hr>
     </article>
     
+    <article class="post">
+        <header>
+            <h1 class="post-title">
+                <a href="/The-game-is-on/" title="The Game is On" >The Game is On</a>
+            </h1>
+        </header>
+        
+  <time datetime="2016-05-04T22:22:12Z" class="post-meta meta-date dt-published">
+    2016年5月4日
+  </time>
+
+
+<div class="post-meta meta-category">
+  <span>&nbsp;|</span>
+  
+    <a href='/categories/%E6%9D%82%E6%96%87' >杂文</a>
+  
+</div>
+
+
+        <div class="post-content">
+            <p>跑完步回來，不想幹活，於是過來寫文（多麼光明正大的理由）
+（事實上從決定寫文到現在已經25分鐘..主要是回了一下關於內核問題的帖子）</p>
+        </div>
+        <p class="readmore"><a href="/The-game-is-on/" >閱讀全文</a></p>
+        <hr>
+    </article>
     
     
 
@@ -555,6 +512,7 @@ PPs：你们都说热，然而我在图书馆好冷{(&gt;_&lt;)}</p>
 
 
 
+
                 </div>
 
                 <div id="secondary">
@@ -568,50 +526,52 @@ PPs：你们都说热，然而我在图书馆好冷{(&gt;_&lt;)}</p>
     </section>
 
     <section class="widget">
-        <h3 class="widget-title">最近文章</h3>
+        
+<h3 class="widget-title">最近文章</h3>
 <ul class="widget-list">
     
     <li>
-        <a href="https://ferristale.com/Reminiscing-about-OuYang/" title="好久不見" >好久不見</a>
+        <a href="/2026-4-14-fiction-review/" title="近期看的一些克系小說" >近期看的一些克系小說</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/2026-4-14-fiction-review/" title="近期看的一些克系小說" >近期看的一些克系小說</a>
+        <a href="/2023/" title="一則訪談" >一則訪談</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/2023/" title="一則訪談" >一則訪談</a>
+        <a href="/so-im-here-in-oz/" title="就到了澳洲" >就到了澳洲</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/so-im-here-in-oz/" title="就到了澳洲" >就到了澳洲</a>
+        <a href="/Sudden-Nostalgia/" title="再打开就是别人的青春啦" >再打开就是别人的青春啦</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/Sudden-Nostalgia/" title="再打开就是别人的青春啦" >再打开就是别人的青春啦</a>
+        <a href="/time-sync-script-for-windows/" title="Windows时间同步脚本" >Windows时间同步脚本</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/time-sync-script-for-windows/" title="Windows时间同步脚本" >Windows时间同步脚本</a>
+        <a href="/wandering-2-visit-lasha-again/" title="流浪记3：再游拉萨" >流浪记3：再游拉萨</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/wandering-2-visit-lasha-again/" title="流浪记3：再游拉萨" >流浪记3：再游拉萨</a>
+        <a href="/notitle-231121/" title="无题" >无题</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/notitle-231121/" title="无题" >无题</a>
+        <a href="/wandering-2-collecting-garbage-on-the-Plateau/" title="流浪记2：我在青藏高原捡垃圾（58P）" >流浪记2：我在青藏高原捡垃圾（58P）</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/wandering-2-collecting-garbage-on-the-Plateau/" title="流浪记2：我在青藏高原捡垃圾（58P）" >流浪记2：我在青藏高原捡垃圾（58P）</a>
+        <a href="/fragments-in-hainan/" title="海南碎片" >海南碎片</a>
     </li>
     
     <li>
-        <a href="https://ferristale.com/fragments-in-hainan/" title="海南碎片" >海南碎片</a>
+        <a href="/wandering-1-hainan/" title="流浪记1：海南游" >流浪记1：海南游</a>
     </li>
     
 </ul>
+
     </section>
 
     
@@ -698,10 +658,11 @@ PPs：你们都说热，然而我在图书馆好冷{(&gt;_&lt;)}</p>
     <section class="widget">
         <h3 class="widget-title">其它</h3>
         <ul class="widget-list">
-            <li><a href="https://ferristale.com/index.xml">文章 RSS</a></li>
+            <li><a href="https://ferristale.com/index.xml">RSS</a></li>
         </ul>
     </section>
 </div>
+
             </div>
         </div>
     </div>
